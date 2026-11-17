@@ -11247,5 +11247,404 @@
     "any_referencia": null,
     "confianca": "alta",
     "estat": "pendent"
+  },
+  {
+    "id": "cat-092",
+    "pregunta": {
+      "ca": "Quants nassos té l'Home dels Nassos el dia 31 de desembre?",
+      "es": "¿Cuántas narices tiene el Home dels Nassos el 31 de diciembre?"
+    },
+    "resposta": 1,
+    "unitat": {
+      "ca": "nas",
+      "es": "nariz"
+    },
+    "tags": [
+      "catalunya",
+      "facil",
+      "tradicions",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Té tants nassos com dies queden de l'any. Per això el 31 de desembre només en té un, i pot ser qualsevol persona del carrer.",
+      "es": "Tiene tantas narices como días quedan del año. Por eso el 31 de diciembre solo tiene una, y puede ser cualquier persona de la calle."
+    },
+    "font": "https://en.wikipedia.org/wiki/Home_dels_nassos",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "cat-093",
+    "pregunta": {
+      "ca": "Quants metres feia el caganer més gran del món, rècord Guinness del 2010?",
+      "es": "¿Cuántos metros medía el caganer más grande del mundo, récord Guinness de 2010?"
+    },
+    "resposta": 6,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "tradicions",
+      "art",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "El va exposar el centre comercial Maremagnum de Barcelona. Feia 2 metres d'ample.",
+      "es": "Lo expuso el centro comercial Maremagnum de Barcelona. Medía 2 metros de ancho."
+    },
+    "font": "https://guinnessworldrecords.com/world-records/largest-caganer",
+    "any_referencia": 2010,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "cat-094",
+    "pregunta": {
+      "ca": "Quantes tones de cargols es van menjar a l'Aplec del Caragol de Lleida del 2022?",
+      "es": "¿Cuántas toneladas de caracoles se comieron en el Aplec del Caragol de Lleida de 2022?"
+    },
+    "resposta": 12.5,
+    "unitat": {
+      "ca": "tones",
+      "es": "toneladas"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "gastronomia",
+      "tradicions",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "És la festa del cargol més gran del món: més de 100 colles i uns 200.000 visitants.",
+      "es": "Es la fiesta del caracol más grande del mundo: más de 100 peñas y unos 200.000 visitantes."
+    },
+    "font": "https://naciodigital.cat/societat/laplec-del-caragol-tanca-ledicio-del-retorn-amb-200000-visitants.html",
+    "any_referencia": 2022,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "cat-095",
+    "pregunta": {
+      "ca": "Quantes tones de caramels es van repartir a la Cavalcada de Reis de Barcelona del 2026?",
+      "es": "¿Cuántas toneladas de caramelos se repartieron en la Cabalgata de Reyes de Barcelona de 2026?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "tones",
+      "es": "toneladas"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "tradicions",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Uns 7.000 quilos, i tots sense gluten.",
+      "es": "Unos 7.000 kilos, y todos sin gluten."
+    },
+    "font": "https://beteve.cat/cultura/caramels-sense-gluten-cavalcada-reis/",
+    "any_referencia": 2026,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-096",
+    "pregunta": {
+      "ca": "Quants metres feia la llonganisseta solidària que es va fer a Ripoll?",
+      "es": "¿Cuántos metros medía la longaniza solidaria que se hizo en Ripoll?"
+    },
+    "resposta": 1126,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "gastronomia",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": null,
+    "font": "https://naciodigital.cat/societat/1126-metres-de-llonganisseta-solidaria-a-ripoll.html",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-100",
+    "pregunta": {
+      "ca": "Quants anys tenia Cecilia Giménez quan va 'restaurar' l'Ecce Homo de Borja, el 2012?",
+      "es": "¿Cuántos años tenía Cecilia Giménez cuando 'restauró' el Ecce Homo de Borja, en 2012?"
+    },
+    "resposta": 81,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "art",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "La pintura es va fer famosa a tot el món com el 'Ecce Mono' i va convertir Borja en destinació turística.",
+      "es": "La pintura se hizo famosa en todo el mundo como el 'Ecce Mono' y convirtió Borja en destino turístico."
+    },
+    "font": "https://www.publico.es/sociedad/muere-cecilia-gimenez-autora-restauracion-ecce-homo.amp.html",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-101",
+    "pregunta": {
+      "ca": "Quantes persones van anar a veure l'Ecce Homo de Borja entre l'agost i el desembre del 2012, després de la 'restauració'?",
+      "es": "¿Cuántas personas fueron a ver el Ecce Homo de Borja entre agosto y diciembre de 2012, tras la 'restauración'?"
+    },
+    "resposta": 45824,
+    "unitat": {
+      "ca": "persones",
+      "es": "personas"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "art",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Venien de 110 països. Abans del cas, el santuari rebia uns 5.000 visitants l'any.",
+      "es": "Venían de 110 países. Antes del caso, el santuario recibía unos 5.000 visitantes al año."
+    },
+    "font": "https://www.dn.pt/artes/ecce-homo-um-restauro-desastroso-feito-milagre-5349833.html",
+    "any_referencia": 2012,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-102",
+    "pregunta": {
+      "ca": "Quants anys va estar l'aeroport de Castelló obert sense que hi aterrés cap avió comercial?",
+      "es": "¿Cuántos años estuvo el aeropuerto de Castellón abierto sin que aterrizara ningún avión comercial?"
+    },
+    "resposta": 4,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "transport",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Es va inaugurar el 2011 i no va tenir el primer vol comercial fins al 2015.",
+      "es": "Se inauguró en 2011 y no tuvo el primer vuelo comercial hasta 2015."
+    },
+    "font": "https://horacerotam.com/internacional/espana-y-sus-aeropuertos-abandonados",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-103",
+    "pregunta": {
+      "ca": "Per quants euros va oferir un grup xinès comprar l'aeroport de Ciudad Real el 2015?",
+      "es": "¿Por cuántos euros ofreció un grupo chino comprar el aeropuerto de Ciudad Real en 2015?"
+    },
+    "resposta": 10000,
+    "unitat": {
+      "ca": "€",
+      "es": "€"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "transport",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Havia costat uns 1.000 milions d'euros. Va ser l'única oferta de la subasta, però el jutjat la va rebutjar.",
+      "es": "Había costado unos 1.000 millones de euros. Fue la única oferta de la subasta, pero el juzgado la rechazó."
+    },
+    "font": "https://www.euronews.com/2015/07/19/spain-s-bargain-ghost-airport-sold-for-10000-euros",
+    "any_referencia": 2015,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-104",
+    "pregunta": {
+      "ca": "Quants ous es van fer servir per a la truita de patates gegant de Melide (Galícia) del 2025?",
+      "es": "¿Cuántos huevos se usaron para la tortilla de patatas gigante de Melide (Galicia) de 2025?"
+    },
+    "resposta": 17000,
+    "unitat": {
+      "ca": "ous",
+      "es": "huevos"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "I 2.000 kg de patates en una paella de 6 metres. En total, unes 10 tones de truita.",
+      "es": "Y 2.000 kg de patatas en una sartén de 6 metros. En total, unas 10 toneladas de tortilla."
+    },
+    "font": "https://www.infobae.com/espana/2025/09/08/un-pueblo-gallego-rompe-su-propio-record-con-la-tortilla-mas-grande-del-mundo-17000-huevos-2000-kg-de-patatas-y-una-sarten-de-6-metros/",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-105",
+    "pregunta": {
+      "ca": "Quants litres de vi es van llançar a la Batalla del Vi d'Haro (La Rioja) el 2022?",
+      "es": "¿Cuántos litros de vino se lanzaron en la Batalla del Vino de Haro (La Rioja) en 2022?"
+    },
+    "resposta": 40000,
+    "unitat": {
+      "ca": "litres",
+      "es": "litros"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "tradicions",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Es fa cada 29 de juny: els participants es mullen de vi amb galledes, botes i pistoles d'aigua.",
+      "es": "Se celebra cada 29 de junio: los participantes se empapan de vino con cubos, botas y pistolas de agua."
+    },
+    "font": "https://vivirediciones.es/?p=159246",
+    "any_referencia": 2022,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-106",
+    "pregunta": {
+      "ca": "Quants metres feia la llesca de pernil més llarga del món, rècord Guinness del 2012?",
+      "es": "¿Cuántos metros medía la loncha de jamón más larga del mundo, récord Guinness de 2012?"
+    },
+    "resposta": 30.11,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "La va tallar el cortador espanyol Francisco Alonso.",
+      "es": "La cortó el cortador español Francisco Alonso."
+    },
+    "font": "https://www.guinnessworldrecords.com/world-records/longest-slice-of-meat",
+    "any_referencia": 2012,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-107",
+    "pregunta": {
+      "ca": "Quants metres d'alçada fa un toro d'Osborne de les carreteres?",
+      "es": "¿Cuántos metros de altura mide un toro de Osborne de las carreteras?"
+    },
+    "resposta": 14,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "art",
+      "transport",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "El primer, del 1957, en feia 7. Va créixer quan una llei va obligar a allunyar els anuncis de la carretera.",
+      "es": "El primero, de 1957, medía 7. Creció cuando una ley obligó a alejar los anuncios de la carretera."
+    },
+    "font": "https://en.wikipedia.org/wiki/Osborne_bull",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-108",
+    "pregunta": {
+      "ca": "Quants punts va treure Rodolfo Chikilicuatre a Eurovisió 2008 amb 'Baila el Chiki-chiki'?",
+      "es": "¿Cuántos puntos sacó Rodolfo Chikilicuatre en Eurovisión 2008 con 'Baila el Chiki-chiki'?"
+    },
+    "resposta": 55,
+    "unitat": {
+      "ca": "punts",
+      "es": "puntos"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "musica",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Va quedar setzè. La cançó la va triar el públic per internet.",
+      "es": "Quedó decimosexto. La canción la eligió el público por internet."
+    },
+    "font": "https://www.formulatv.com/eurovision/2008/",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-109",
+    "pregunta": {
+      "ca": "A quants metres va escopir un pinyol d'oliva el guanyador del campionat del món de Cieza (Múrcia) del 2016?",
+      "es": "¿A cuántos metros escupió un hueso de aceituna el ganador del campeonato del mundo de Cieza (Murcia) de 2016?"
+    },
+    "resposta": 25.08,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "jocs",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Era un guàrdia civil del poble, que va batre el seu propi rècord de 21,43 metres.",
+      "es": "Era un guardia civil del pueblo, que batió su propio récord de 21,43 metros."
+    },
+    "font": "https://www.ultimahora.es/noticias/sociedad/2016/08/26/216818/guardia-civil-record-lanzamiento-hueso-oliva.html",
+    "any_referencia": 2016,
+    "confianca": "alta",
+    "estat": "verificat"
   }
 ]
