@@ -67,19 +67,18 @@ Depèn de **com de probable és saber la xifra exacta** i de **com de fàcil és
 
 ## Estat actual
 
-443 preguntes (91 de Catalunya, 99 d'Espanya i 253 internacionals), repartides de manera gairebé uniforme pels 16 temes: cada tema té entre 22 i 31 preguntes com a tema principal (el primer tag de tema). Hi ha 69 preguntes `facil`, 239 `mitja` i 135 `dificil`; 52 són `divertit` i 85 són per a `nens`.
+458 preguntes (96 de Catalunya, 109 d'Espanya i 253 internacionals), repartides de manera gairebé uniforme pels 16 temes: cada tema té entre 22 i 31 preguntes com a tema principal (el primer tag de tema). Hi ha 70 preguntes `facil`, 245 `mitja` i 143 `dificil`; 67 són `divertit` i 87 són per a `nens`.
 
-14 preguntes estan `verificat`. La resta són `pendent`: s'han escrit a partir de dades conegudes i amb una font, però encara no s'han contrastat una per una. Prioritat de verificació: primer les de `confianca: baixa`, després les de `mitjana`.
+26 preguntes estan `verificat`. La resta són `pendent`: s'han escrit a partir de dades conegudes i amb una font, però encara no s'han contrastat una per una. Prioritat de verificació: primer les de `confianca: baixa`, després les de `mitjana`.
 
 Què es podria millorar:
-- **Àmbit:** més de la meitat són internacionals. Caldrien més preguntes de Catalunya i d'Espanya, sobretot de `divertit` (ara gairebé totes són internacionals).
-- **Fàcils:** n'hi ha 69; es podrien afegir més per jugar amb nens.
+- **Àmbit:** més de la meitat són internacionals. Caldrien més preguntes de Catalunya i d'Espanya.
+- **Fàcils:** n'hi ha 70; es podrien afegir més per jugar amb nens.
 
 ### Idees divertides pendents de dada
 Encara no hi ha una xifra fiable per a aquestes idees, i per això no són al JSON. No hi posis un número fins que trobis la font.
 - Quants quilos de xocolata es venen a Espanya per Sant Valentí? (Produlce no publica xifres en quilos. La xifra que circula, uns 26 milions de kg, és dels EUA i no té una font clara.)
 - Quants panellets es venen a Catalunya per Tots Sants? (Gremi de Pastisseria)
 - Quants caganers diferents es fabriquen cada any?
-- Quants quilos pesava la truita de patates més gran del món? (Guinness)
 - Quants raïms es mengen a Espanya per Cap d'Any?
-- Rècords de concursos populars: menjar panellets, escopir pinyols d'oliva, llançament d'espardenya…
+- Rècords de concursos populars: menjar panellets, llançament d'espardenya… (el d'escopir pinyols d'oliva de Cieza ja és al banc)
