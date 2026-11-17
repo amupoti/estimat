@@ -51,10 +51,16 @@ fun QuestionScreen(
     onRevealAnswer: () -> Unit,
     onRestartDeck: () -> Unit,
     onFunnyOnlyChange: (Boolean) -> Unit,
+    sessionActions: SessionActions,
 ) {
     val bank = state.bank
     Column(modifier = Modifier.fillMaxSize()) {
         if (bank != null) {
+            SessionBar(
+                state = state,
+                actions = sessionActions,
+                modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 8.dp),
+            )
             val funnyOnly = state.filter.tones == setOf(QuestionBank.TAG_FUNNY)
             FilterChip(
                 selected = funnyOnly,
