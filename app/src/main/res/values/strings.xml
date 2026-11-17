@@ -57,6 +57,7 @@
     <string name="view_changelog">View changelog</string>
     <string name="close">Close</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v120_funny_europe">227 new funny questions from Catalonia, Spain, Europe and the world, and a new Europe scope filter.</string>
     <string name="changelog_v111_no_answer_spoiler">The next question\'s answer no longer flashes on screen when you move on from a revealed answer.</string>
     <string name="changelog_v110_sessions">Game sessions: each group keeps its own played questions, so you can play over several days without repeats.</string>
     <string name="changelog_v110_more_questions">Many more questions, and an “only funny questions” chip on the question tab.</string>
