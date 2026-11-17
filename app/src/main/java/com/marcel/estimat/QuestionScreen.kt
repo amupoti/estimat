@@ -16,10 +16,14 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
@@ -46,8 +50,36 @@ fun QuestionScreen(
     onDrawQuestion: () -> Unit,
     onRevealAnswer: () -> Unit,
     onRestartDeck: () -> Unit,
+    onFunnyOnlyChange: (Boolean) -> Unit,
 ) {
     val bank = state.bank
+    Column(modifier = Modifier.fillMaxSize()) {
+        if (bank != null) {
+            val funnyOnly = state.filter.tones == setOf(QuestionBank.TAG_FUNNY)
+            FilterChip(
+                selected = funnyOnly,
+                onClick = { onFunnyOnlyChange(!funnyOnly) },
+                label = { Text(stringResource(R.string.funny_only)) },
+                leadingIcon = if (funnyOnly) {
+                    { Icon(Icons.Rounded.Check, contentDescription = null) }
+                } else {
+                    null
+                },
+                modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 8.dp),
+            )
+        }
+        QuestionContent(state, bank, onDrawQuestion, onRevealAnswer, onRestartDeck)
+    }
+}
+
+@Composable
+private fun QuestionContent(
+    state: AppUiState,
+    bank: QuestionBank?,
+    onDrawQuestion: () -> Unit,
+    onRevealAnswer: () -> Unit,
+    onRestartDeck: () -> Unit,
+) {
     when {
         state.loadFailed -> MessageCard(title = stringResource(R.string.questions_load_failed))
         bank == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {

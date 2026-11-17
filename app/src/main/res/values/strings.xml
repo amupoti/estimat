@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Estimat</string>
     <string name="app_subtitle">The closest guess wins</string>
+    <string name="funny_only">Only funny questions</string>
     <string name="navigation_question">Question</string>
     <string name="navigation_filters">Filters</string>
     <string name="navigation_settings">Settings</string>

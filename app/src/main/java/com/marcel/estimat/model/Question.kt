@@ -87,6 +87,7 @@ data class QuestionBank(
         const val GROUP_TONE = "to"
         const val TAG_KIDS = "nens"
         const val TAG_ADULTS = "adults"
+        const val TAG_FUNNY = "divertit"
     }
 }
 

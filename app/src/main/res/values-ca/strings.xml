@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Estimat</string>
     <string name="app_subtitle">Qui s\'hi acosta més, guanya</string>
+    <string name="funny_only">Només preguntes divertides</string>
     <string name="navigation_question">Pregunta</string>
     <string name="navigation_filters">Filtres</string>
     <string name="navigation_settings">Opcions</string>

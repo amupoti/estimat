@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Estimat</string>
     <string name="app_subtitle">Gana quien más se acerca</string>
+    <string name="funny_only">Solo preguntas divertidas</string>
     <string name="navigation_question">Pregunta</string>
     <string name="navigation_filters">Filtros</string>
     <string name="navigation_settings">Ajustes</string>

@@ -68,6 +68,8 @@ numeric answer and the closest guess wins. It was created from the
 
 - Question tab: random question in Catalan or Spanish, answer hidden until
   revealed, then answer with unit, explanation, reference year, and source.
+- Question tab has an "only funny questions" chip that sets the tone filter to
+  `divertit` (the same filter as the Tone card in Filters).
 - Played questions are remembered across games and never repeated until the
   player starts over for the current filters.
 - Filters tab: question language, audience (everyone hides +18, kids shows only

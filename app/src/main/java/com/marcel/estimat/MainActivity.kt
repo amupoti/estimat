@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.marcel.estimat.data.QuestionRepository
 import com.marcel.estimat.data.SettingsRepository
+import com.marcel.estimat.model.QuestionBank
 import com.marcel.estimat.model.ThemePreference
 import com.marcel.estimat.ui.AppUiState
 import com.marcel.estimat.ui.AppViewModel
@@ -208,6 +209,13 @@ private fun EstimatApp(
                     onDrawQuestion = viewModel::nextQuestion,
                     onRevealAnswer = viewModel::revealAnswer,
                     onRestartDeck = viewModel::restartDeck,
+                    onFunnyOnlyChange = { funnyOnly ->
+                        viewModel.setQuestionFilter(
+                            state.filter.copy(
+                                tones = if (funnyOnly) setOf(QuestionBank.TAG_FUNNY) else emptySet(),
+                            ),
+                        )
+                    },
                 )
                 1 -> FiltersScreen(
                     state = state,
