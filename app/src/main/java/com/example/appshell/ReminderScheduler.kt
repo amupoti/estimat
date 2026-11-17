@@ -1,0 +1,117 @@
+package com.example.appshell
+
+import android.Manifest
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
+import androidx.work.ExistingPeriodicWorkPolicy
+import androidx.work.PeriodicWorkRequestBuilder
+import androidx.work.WorkManager
+import androidx.work.Worker
+import androidx.work.WorkerParameters
+import com.example.appshell.data.SettingsRepository
+import com.example.appshell.model.ReminderSettings
+import com.example.appshell.model.delayUntilReminder
+import java.time.LocalTime
+import java.util.concurrent.TimeUnit
+
+class ReminderScheduler(context: Context) {
+    private val context = context.applicationContext
+    private val workManager = WorkManager.getInstance(this.context)
+
+    fun sync(settings: ReminderSettings) {
+        createNotificationChannel(context)
+        if (!settings.enabled) {
+            WORK_NAMES.forEach(workManager::cancelUniqueWork)
+            return
+        }
+        schedule(WORK_NAMES[0], settings.firstTime)
+        schedule(WORK_NAMES[1], settings.secondTime)
+    }
+
+    private fun schedule(name: String, time: LocalTime) {
+        val request = PeriodicWorkRequestBuilder<ReminderWorker>(
+            24,
+            TimeUnit.HOURS,
+        )
+            .setInitialDelay(delayUntilReminder(time), TimeUnit.MILLISECONDS)
+            .build()
+        workManager.enqueueUniquePeriodicWork(
+            name,
+            ExistingPeriodicWorkPolicy.CANCEL_AND_REENQUEUE,
+            request,
+        )
+    }
+
+    private companion object {
+        val WORK_NAMES = listOf("app-reminder-first", "app-reminder-second")
+    }
+}
+
+class ReminderWorker(
+    context: Context,
+    parameters: WorkerParameters,
+) : Worker(context, parameters) {
+    override fun doWork(): Result {
+        val repository = SettingsRepository(applicationContext)
+        if (!repository.reminderSettings().enabled) {
+            return Result.success()
+        }
+        showReminderNotification(applicationContext)
+        return Result.success()
+    }
+}
+
+private fun createNotificationChannel(context: Context) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
+    val channel = NotificationChannel(
+        REMINDER_CHANNEL_ID,
+        context.getString(R.string.reminder_channel_name),
+        NotificationManager.IMPORTANCE_DEFAULT,
+    ).apply {
+        description = context.getString(R.string.reminder_channel_description)
+    }
+    context.getSystemService(NotificationManager::class.java)
+        .createNotificationChannel(channel)
+}
+
+private fun showReminderNotification(context: Context) {
+    if (
+        Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+        ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
+        PackageManager.PERMISSION_GRANTED
+    ) {
+        return
+    }
+    createNotificationChannel(context)
+    val intent = Intent(context, MainActivity::class.java)
+    val pendingIntent = PendingIntent.getActivity(
+        context,
+        0,
+        intent,
+        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+    )
+    val notification = NotificationCompat.Builder(context, REMINDER_CHANNEL_ID)
+        .setSmallIcon(R.drawable.app_icon)
+        .setContentTitle(context.getString(R.string.reminder_notification_title))
+        .setContentText(context.getString(R.string.reminder_general_message))
+        .setStyle(
+            NotificationCompat.BigTextStyle()
+                .bigText(context.getString(R.string.reminder_general_message)),
+        )
+        .setContentIntent(pendingIntent)
+        .setAutoCancel(true)
+        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+        .build()
+    NotificationManagerCompat.from(context).notify(REMINDER_NOTIFICATION_ID, notification)
+}
+
+private const val REMINDER_CHANNEL_ID = "app_reminders"
+private const val REMINDER_NOTIFICATION_ID = 1101
