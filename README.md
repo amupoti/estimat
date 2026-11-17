@@ -3,6 +3,18 @@
 A trivia game where every answer is a number. Nobody needs to know the exact
 value: the closest guess wins.
 
+Estimat is a question deck for playing estimation board games with the physical
+board, chips, and betting: it shows a random question in Catalan or Spanish,
+keeps the answer hidden until you reveal it, and never repeats a question until
+you start over. It works offline.
+
+- Questions live in `app/src/main/assets/questions/`. See
+  [questions/README.md](questions/README.md) for the format, tags, and how to
+  add and verify questions, and run `python3 questions/validate.py` after
+  editing them.
+- Filters: question language, audience (everyone, kids, +18), scope,
+  difficulty, tone, and topics.
+
 ## Requirements
 
 - JDK 17

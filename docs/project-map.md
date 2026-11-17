@@ -39,36 +39,50 @@ numeric answer and the closest guess wins. It was created from the
 
 ## Main Structure
 
-- `app/src/main/java/com/marcel/estimat/MainActivity.kt` is the Compose
-  entry point, theme setup, navigation shell, and notification permission handoff.
-- `app/src/main/java/com/marcel/estimat/ui/AppViewModel.kt`
-  coordinates reminder settings and theme preference state.
-- `app/src/main/java/com/marcel/estimat/data/SettingsRepository.kt`
-  stores reminder settings and theme preference in `SharedPreferences`.
-- `app/src/main/java/com/marcel/estimat/SettingsScreen.kt` contains
+- `app/src/main/assets/questions/` holds the bundled question bank
+  (`questions.json`) and tag taxonomy (`tags.json`).
+- `questions/README.md` documents the question format and the editorial
+  process; `questions/validate.py` validates the bank.
+- `app/src/main/java/com/marcel/estimat/MainActivity.kt` is the Compose entry point, theme setup, and the
+  three-tab navigation (Question, Filters, Settings).
+- `app/src/main/java/com/marcel/estimat/QuestionScreen.kt` shows a question, reveals the answer, and draws
+  the next one.
+- `app/src/main/java/com/marcel/estimat/FiltersScreen.kt` selects question language, audience, and tag filters.
+- `app/src/main/java/com/marcel/estimat/ui/AppViewModel.kt` holds the game state (bank, filters, played
+  questions, current question) plus reminder and theme settings.
+- `app/src/main/java/com/marcel/estimat/data/QuestionRepository.kt` loads the bank from assets;
+  `data/QuestionParser.kt` parses the JSON.
+- `app/src/main/java/com/marcel/estimat/data/SettingsRepository.kt` stores settings, filters, question
+  language, and played question ids in `SharedPreferences`.
+- `app/src/main/java/com/marcel/estimat/model/` contains the question model, `QuestionFilter` (OR inside a
+  tag group, AND across groups), `QuestionDeck` (no repeats), and reminder and
+  theme preference code.
+- `app/src/main/java/com/marcel/estimat/SettingsScreen.kt` contains the "only verified questions" switch,
   appearance, reminders, changelog, and update/install UI.
-- `app/src/main/java/com/marcel/estimat/ReminderScheduler.kt` schedules
-  two daily reminder notifications with WorkManager.
-- `app/src/main/java/com/marcel/estimat/AppUpdateChecker.kt` and
-  `ApkUpdateInstaller.kt` implement the GitHub Releases update check and APK
-  install flow.
-- `app/src/main/java/com/marcel/estimat/model/` contains reminder and
-  theme preference model code.
-- `app/src/main/res/values/strings.xml` and `app/src/main/res/values-ca/strings.xml`
-  hold localized strings.
+- `app/src/main/java/com/marcel/estimat/ReminderScheduler.kt`, `AppUpdateChecker.kt`, and
+  `ApkUpdateInstaller.kt` come from the app template.
+- `app/src/main/res/values*/strings.xml` hold English, Catalan, and Spanish
+  strings.
 - `docs/backlog.md` tracks future ideas and known issues.
 
 ## Main Features
 
-- Home tab preserved as a reusable starting point.
-- Settings tab with light, dark, and system theme preference.
-- Reminder scheduling with two configurable reminder times.
-- Settings update check and APK install flow backed by GitHub Releases.
+- Question tab: random question in Catalan or Spanish, answer hidden until
+  revealed, then answer with unit, explanation, reference year, and source.
+- Played questions are remembered across games and never repeated until the
+  player starts over for the current filters.
+- Filters tab: question language, audience (everyone hides +18, kids shows only
+  `nens`, +18 shows all), scope, difficulty, tone, and topics.
+- Settings: only verified questions (off by default), theme, reminders,
+  changelog, and GitHub Releases update/install flow.
+- Works fully offline.
 
 ## Notes For Future Changes
 
 - Keep edits targeted; this is a small single-module Android app.
 - Prefer updating model tests when changing `model/`.
+- Run `python3 questions/validate.py` after editing the question bank;
+  `QuestionParserTest` also parses the bundled bank.
 - Run `./gradlew test` after logic changes.
 - Update this map when adding a major feature, module, package, or new build
   command.

@@ -11,28 +11,20 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Home
+import androidx.compose.material.icons.automirrored.rounded.List
+import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material.icons.rounded.Settings
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Shapes
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
@@ -49,11 +41,11 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.marcel.estimat.data.QuestionRepository
 import com.marcel.estimat.data.SettingsRepository
 import com.marcel.estimat.model.ThemePreference
 import com.marcel.estimat.ui.AppUiState
@@ -65,6 +57,7 @@ class MainActivity : ComponentActivity() {
     private val viewModel: AppViewModel by viewModels {
         AppViewModelFactory(
             repository = SettingsRepository(applicationContext),
+            questionRepository = QuestionRepository(applicationContext),
             reminderScheduler = ReminderScheduler(applicationContext),
         )
     }
@@ -82,8 +75,9 @@ class MainActivity : ComponentActivity() {
                         viewModel.setRemindersEnabled(true)
                     }
                 }
-                ReusableApp(
+                EstimatApp(
                     state = state,
+                    viewModel = viewModel,
                     onRemindersEnabledChange = { enabled ->
                         if (
                             !enabled ||
@@ -189,15 +183,17 @@ private fun AppTheme(
 }
 
 @Composable
-private fun ReusableApp(
+private fun EstimatApp(
     state: AppUiState,
+    viewModel: AppViewModel,
     onRemindersEnabledChange: (Boolean) -> Unit,
     onReminderTimeChange: (Int, LocalTime) -> Unit,
     onThemePreferenceChange: (ThemePreference) -> Unit,
 ) {
     var selectedView by rememberSaveable { mutableIntStateOf(0) }
     val destinations = listOf(
-        Pair(stringResource(R.string.navigation_home), Icons.Rounded.Home),
+        Pair(stringResource(R.string.navigation_question), Icons.Rounded.PlayArrow),
+        Pair(stringResource(R.string.navigation_filters), Icons.AutoMirrored.Rounded.List),
         Pair(stringResource(R.string.navigation_settings), Icons.Rounded.Settings),
     )
     Scaffold(
@@ -239,79 +235,30 @@ private fun ReusableApp(
                     color = MaterialTheme.colorScheme.secondary,
                 )
             }
-            if (selectedView == 0) {
-                HomeScreen()
-            } else {
-                SettingsScreen(
+            when (selectedView) {
+                0 -> QuestionScreen(
+                    state = state,
+                    onDrawQuestion = viewModel::nextQuestion,
+                    onRevealAnswer = viewModel::revealAnswer,
+                    onRestartDeck = viewModel::restartDeck,
+                )
+                1 -> FiltersScreen(
+                    state = state,
+                    onLanguageChange = viewModel::setQuestionLanguage,
+                    onFilterChange = viewModel::setQuestionFilter,
+                )
+                else -> SettingsScreen(
                     settings = state.reminderSettings,
                     themePreference = state.themePreference,
+                    verifiedOnly = state.filter.verifiedOnly,
                     onEnabledChange = onRemindersEnabledChange,
                     onTimeChange = onReminderTimeChange,
                     onThemePreferenceChange = onThemePreferenceChange,
+                    onVerifiedOnlyChange = { verifiedOnly ->
+                        viewModel.setQuestionFilter(state.filter.copy(verifiedOnly = verifiedOnly))
+                    },
                 )
             }
         }
-    }
-}
-
-@Composable
-private fun HomeScreen() {
-    LazyColumn(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(horizontal = 20.dp),
-        verticalArrangement = Arrangement.spacedBy(14.dp),
-        contentPadding = PaddingValues(bottom = 20.dp),
-    ) {
-        item {
-            Surface(
-                color = MaterialTheme.colorScheme.primaryContainer,
-                contentColor = MaterialTheme.colorScheme.onPrimaryContainer,
-                shape = MaterialTheme.shapes.large,
-            ) {
-                Column(modifier = Modifier.padding(20.dp)) {
-                    Text(
-                        text = stringResource(R.string.home_title),
-                        style = MaterialTheme.typography.headlineMedium,
-                    )
-                    Spacer(Modifier.height(8.dp))
-                    Text(
-                        text = stringResource(R.string.home_description),
-                        style = MaterialTheme.typography.bodyLarge,
-                    )
-                }
-            }
-        }
-        item {
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = MaterialTheme.shapes.medium,
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.surface,
-                ),
-                elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
-            ) {
-                Column(modifier = Modifier.padding(18.dp)) {
-                    Text(
-                        text = stringResource(R.string.home_empty_title),
-                        style = MaterialTheme.typography.titleMedium,
-                    )
-                    Spacer(Modifier.height(4.dp))
-                    Text(
-                        text = stringResource(R.string.home_empty_description),
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.secondary,
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-private fun HomeScreenPreview() {
-    AppTheme(themePreference = ThemePreference.LIGHT) {
-        HomeScreen()
     }
 }

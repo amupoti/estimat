@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
@@ -48,9 +49,11 @@ import kotlinx.coroutines.launch
 fun SettingsScreen(
     settings: ReminderSettings,
     themePreference: ThemePreference,
+    verifiedOnly: Boolean,
     onEnabledChange: (Boolean) -> Unit,
     onTimeChange: (Int, LocalTime) -> Unit,
     onThemePreferenceChange: (ThemePreference) -> Unit,
+    onVerifiedOnlyChange: (Boolean) -> Unit,
 ) {
     val context = LocalContext.current
     val updateInstaller = remember(context) {
@@ -81,6 +84,36 @@ fun SettingsScreen(
                 text = stringResource(R.string.navigation_settings),
                 style = MaterialTheme.typography.titleLarge,
             )
+        }
+        item {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = MaterialTheme.shapes.medium,
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                ),
+                elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
+            ) {
+                Row(
+                    modifier = Modifier.padding(18.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = stringResource(R.string.verified_only),
+                            style = MaterialTheme.typography.titleMedium,
+                        )
+                        Spacer(Modifier.height(4.dp))
+                        Text(
+                            text = stringResource(R.string.verified_only_description),
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.secondary,
+                        )
+                    }
+                    Spacer(Modifier.width(12.dp))
+                    Switch(checked = verifiedOnly, onCheckedChange = onVerifiedOnlyChange)
+                }
+            }
         }
         item {
             Card(

@@ -1,0 +1,3771 @@
+[
+  {
+    "id": "cat-001",
+    "pregunta": {
+      "ca": "Quants quilòmetres de costa té Catalunya?",
+      "es": "¿Cuántos kilómetros de costa tiene Cataluña?"
+    },
+    "resposta": 580,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "De Portbou fins a la desembocadura del riu Sénia, a Alcanar.",
+      "es": "Desde Portbou hasta la desembocadura del río Sénia, en Alcanar."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Catalunya",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-002",
+    "pregunta": {
+      "ca": "Quants municipis té Catalunya?",
+      "es": "¿Cuántos municipios tiene Cataluña?"
+    },
+    "resposta": 947,
+    "unitat": {
+      "ca": "municipis",
+      "es": "municipios"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "L'últim a néixer va ser Medinyà, que es va separar de Sant Julià de Ramis el 2018.",
+      "es": "El último en nacer fue Medinyà, que se separó de Sant Julià de Ramis en 2018."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Llista_de_municipis_de_Catalunya",
+    "any_referencia": 2024,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-003",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa la Pica d'Estats, el cim més alt de Catalunya?",
+      "es": "¿Cuántos metros de altura tiene la Pica d'Estats, la cima más alta de Cataluña?"
+    },
+    "resposta": 3143,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia",
+      "natura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Fa frontera amb França, i el cim està partit entre els dos països.",
+      "es": "Hace frontera con Francia y la cima está repartida entre los dos países."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Pica_d%27Estats",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-004",
+    "pregunta": {
+      "ca": "Quants metres fa la torre de Jesucrist, la més alta de la Sagrada Família?",
+      "es": "¿Cuántos metros mide la torre de Jesucristo, la más alta de la Sagrada Família?"
+    },
+    "resposta": 172.5,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Gaudí la va voler una mica més baixa que Montjuïc: l'obra de l'home no havia de superar la de Déu. És l'església més alta del món.",
+      "es": "Gaudí la quiso un poco más baja que Montjuïc: la obra del hombre no debía superar a la de Dios. Es la iglesia más alta del mundo."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Temple_Expiatori_de_la_Sagrada_Fam%C3%ADlia",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-005",
+    "pregunta": {
+      "ca": "Quants espectadors hi cabien al Camp Nou abans de les obres de remodelació?",
+      "es": "¿Cuántos espectadores cabían en el Camp Nou antes de las obras de remodelación?"
+    },
+    "resposta": 99354,
+    "unitat": {
+      "ca": "espectadors",
+      "es": "espectadores"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "Era l'estadi de futbol més gran d'Europa. Amb la remodelació ha de superar els 100.000.",
+      "es": "Era el estadio de fútbol más grande de Europa. Con la remodelación debe superar los 100.000."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Camp_Nou",
+    "any_referencia": 2023,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-006",
+    "pregunta": {
+      "ca": "Quants metres fa la Rambla de Barcelona, de plaça de Catalunya a Colom?",
+      "es": "¿Cuántos metros mide la Rambla de Barcelona, de plaza de Cataluña a Colón?"
+    },
+    "resposta": 1200,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "Uns 1,2 km dividits en trams amb noms propis: Canaletes, Estudis, Sant Josep, Caputxins i Santa Mònica.",
+      "es": "Unos 1,2 km divididos en tramos con nombre propio: Canaletes, Estudis, Sant Josep, Caputxins y Santa Mònica."
+    },
+    "font": "https://ca.wikipedia.org/wiki/La_Rambla",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-007",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa Sant Jeroni, el cim de Montserrat?",
+      "es": "¿Cuántos metros de altura tiene Sant Jeroni, la cima de Montserrat?"
+    },
+    "resposta": 1236,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": null,
+    "font": "https://ca.wikipedia.org/wiki/Muntanya_de_Montserrat",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-008",
+    "pregunta": {
+      "ca": "Quants quilòmetres quadrats ocupa el Delta de l'Ebre?",
+      "es": "¿Cuántos kilómetros cuadrados ocupa el Delta del Ebro?"
+    },
+    "resposta": 320,
+    "unitat": {
+      "ca": "km²",
+      "es": "km²"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "És la zona humida més gran de Catalunya i un dels deltes més importants de la Mediterrània occidental.",
+      "es": "Es la zona húmeda más grande de Cataluña y uno de los deltas más importantes del Mediterráneo occidental."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Delta_de_l%27Ebre",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-009",
+    "pregunta": {
+      "ca": "Quantes comarques té Catalunya?",
+      "es": "¿Cuántas comarcas tiene Cataluña?"
+    },
+    "resposta": 43,
+    "unitat": {
+      "ca": "comarques",
+      "es": "comarcas"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Molta gent diu 41: el Moianès (2015) i el Lluçanès (2023) són les dues últimes.",
+      "es": "Mucha gente dice 41: el Moianès (2015) y el Lluçanès (2023) son las dos últimas."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Comarques_de_Catalunya",
+    "any_referencia": 2023,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-010",
+    "pregunta": {
+      "ca": "Quantes medalles d'or va guanyar Espanya als Jocs de Barcelona 92?",
+      "es": "¿Cuántas medallas de oro ganó España en los Juegos de Barcelona 92?"
+    },
+    "resposta": 13,
+    "unitat": {
+      "ca": "medalles d'or",
+      "es": "medallas de oro"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "esport",
+      "historia"
+    ],
+    "explicacio": {
+      "ca": "En total en van ser 22. Abans de Barcelona, Espanya només n'havia guanyat 4 d'or en tota la història.",
+      "es": "En total fueron 22. Antes de Barcelona, España solo había ganado 4 de oro en toda su historia."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Jocs_Ol%C3%ADmpics_d%27Estiu_de_1992",
+    "any_referencia": 1992,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-011",
+    "pregunta": {
+      "ca": "Quants països van participar als Jocs Olímpics de Barcelona 92?",
+      "es": "¿Cuántos países participaron en los Juegos Olímpicos de Barcelona 92?"
+    },
+    "resposta": 169,
+    "unitat": {
+      "ca": "països",
+      "es": "países"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "esport",
+      "historia"
+    ],
+    "explicacio": {
+      "ca": "Van ser els primers Jocs sense boicots des de 1972, amb l'Equip Unificat de l'antiga URSS i Alemanya ja reunificada.",
+      "es": "Fueron los primeros Juegos sin boicots desde 1972, con el Equipo Unificado de la antigua URSS y Alemania ya reunificada."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Jocs_Ol%C3%ADmpics_d%27Estiu_de_1992",
+    "any_referencia": 1992,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-012",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa la Torre Glòries (antiga Torre Agbar)?",
+      "es": "¿Cuántos metros de altura tiene la Torre Glòries (antigua Torre Agbar)?"
+    },
+    "resposta": 144,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Jean Nouvel s'hi va inspirar en Montserrat i en un guèiser. Té gairebé 4.500 finestres.",
+      "es": "Jean Nouvel se inspiró en Montserrat y en un géiser. Tiene casi 4.500 ventanas."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Torre_Gl%C3%B2ries",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-013",
+    "pregunta": {
+      "ca": "Quants metres fan les torres bessones del Port Olímpic (Hotel Arts i Torre Mapfre)?",
+      "es": "¿Cuántos metros miden las torres gemelas del Puerto Olímpico (Hotel Arts y Torre Mapfre)?"
+    },
+    "resposta": 154,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Són els edificis més alts de Barcelona, empatats.",
+      "es": "Son los edificios más altos de Barcelona, empatados."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Torre_Mapfre",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-014",
+    "pregunta": {
+      "ca": "Quants metres fa de costat una illa de cases de l'Eixample de Barcelona?",
+      "es": "¿Cuántos metros mide de lado una manzana del Eixample de Barcelona?"
+    },
+    "resposta": 113,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "arquitectura",
+      "historia",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "113,3 m, amb xamfrans de 20 m perquè els tramvies de vapor que imaginava Cerdà poguessin girar.",
+      "es": "113,3 m, con chaflanes de 20 m para que los tranvías de vapor que imaginaba Cerdà pudieran girar."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Eixample_de_Barcelona",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-015",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa el Tibidabo?",
+      "es": "¿Cuántos metros de altura tiene el Tibidabo?"
+    },
+    "resposta": 512,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "És el punt més alt de Collserola.",
+      "es": "Es el punto más alto de Collserola."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Tibidabo",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-016",
+    "pregunta": {
+      "ca": "Quantes Copes d'Europa / Champions ha guanyat el FC Barcelona masculí?",
+      "es": "¿Cuántas Copas de Europa / Champions ha ganado el FC Barcelona masculino?"
+    },
+    "resposta": 5,
+    "unitat": {
+      "ca": "títols",
+      "es": "títulos"
+    },
+    "tags": [
+      "catalunya",
+      "facil",
+      "esport",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "1992, 2006, 2009, 2011 i 2015.",
+      "es": "1992, 2006, 2009, 2011 y 2015."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Futbol_Club_Barcelona",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-017",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa el monument a Colom de Barcelona?",
+      "es": "¿Cuántos metros de altura tiene el monumento a Colón de Barcelona?"
+    },
+    "resposta": 60,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "arquitectura",
+      "historia"
+    ],
+    "explicacio": {
+      "ca": "Colom no apunta cap a Amèrica, sinó cap al mar... en direcció a Mallorca, aproximadament.",
+      "es": "Colón no apunta hacia América, sino hacia el mar... más o menos en dirección a Mallorca."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Monument_a_Colom",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-018",
+    "pregunta": {
+      "ca": "Quants quilòmetres quadrats té Catalunya?",
+      "es": "¿Cuántos kilómetros cuadrados tiene Cataluña?"
+    },
+    "resposta": 32108,
+    "unitat": {
+      "ca": "km²",
+      "es": "km²"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "Una mica més que Bèlgica (30.689 km²).",
+      "es": "Un poco más que Bélgica (30.689 km²)."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Catalunya",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-019",
+    "pregunta": {
+      "ca": "Quants quilòmetres de platja té la ciutat de Barcelona?",
+      "es": "¿Cuántos kilómetros de playa tiene la ciudad de Barcelona?"
+    },
+    "resposta": 4.5,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "Moltes de les platges són artificials i es van crear o regenerar per als Jocs del 92.",
+      "es": "Muchas de las playas son artificiales y se crearon o regeneraron para los Juegos del 92."
+    },
+    "font": "https://ajuntament.barcelona.cat/platges/ca",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-020",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa la Torre de Collserola?",
+      "es": "¿Cuántos metros de altura tiene la Torre de Collserola?"
+    },
+    "resposta": 288,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "arquitectura",
+      "tecnologia"
+    ],
+    "explicacio": {
+      "ca": "Obra de Norman Foster per als Jocs del 92; com que és sobre una muntanya, el seu punt més alt supera els 700 m sobre el nivell del mar.",
+      "es": "Obra de Norman Foster para los Juegos del 92; como está sobre una montaña, su punto más alto supera los 700 m sobre el nivel del mar."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Torre_de_Collserola",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-021",
+    "pregunta": {
+      "ca": "Quants centímetres d'altura fa la Moreneta de Montserrat?",
+      "es": "¿Cuántos centímetros de altura tiene la Moreneta de Montserrat?"
+    },
+    "resposta": 95,
+    "unitat": {
+      "ca": "cm",
+      "es": "cm"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "art",
+      "tradicions",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "És una talla romànica del segle XII, més petita del que molta gent s'imagina.",
+      "es": "Es una talla románica del siglo XII, más pequeña de lo que mucha gente imagina."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Mare_de_D%C3%A9u_de_Montserrat",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-022",
+    "pregunta": {
+      "ca": "Quants gols va marcar Messi amb el FC Barcelona en partits oficials?",
+      "es": "¿Cuántos goles marcó Messi con el FC Barcelona en partidos oficiales?"
+    },
+    "resposta": 672,
+    "unitat": {
+      "ca": "gols",
+      "es": "goles"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "En 778 partits, entre 2004 i 2021.",
+      "es": "En 778 partidos, entre 2004 y 2021."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Lionel_Messi",
+    "any_referencia": 2021,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-023",
+    "pregunta": {
+      "ca": "Quants milions de passatgers va tenir l'aeroport del Prat el 2024?",
+      "es": "¿Cuántos millones de pasajeros tuvo el aeropuerto de El Prat en 2024?"
+    },
+    "resposta": 55,
+    "unitat": {
+      "ca": "milions de passatgers",
+      "es": "millones de pasajeros"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "transport"
+    ],
+    "explicacio": {
+      "ca": "Rècord històric de l'aeroport.",
+      "es": "Récord histórico del aeropuerto."
+    },
+    "font": "https://www.aena.es/es/estadisticas/inicio.html",
+    "any_referencia": 2024,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-024",
+    "pregunta": {
+      "ca": "Quants anys tenia Antoni Gaudí quan el va atropellar un tramvia?",
+      "es": "¿Cuántos años tenía Antoni Gaudí cuando le atropelló un tranvía?"
+    },
+    "resposta": 73,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "historia",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "El 1926. Anava tan mal vestit que el van confondre amb un captaire i el van portar a l'hospital de pobres.",
+      "es": "En 1926. Iba tan mal vestido que lo confundieron con un mendigo y lo llevaron al hospital de pobres."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Antoni_Gaud%C3%AD",
+    "any_referencia": 1926,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-025",
+    "pregunta": {
+      "ca": "Quants anys va viure Salvador Dalí?",
+      "es": "¿Cuántos años vivió Salvador Dalí?"
+    },
+    "resposta": 84,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "art",
+      "historia"
+    ],
+    "explicacio": {
+      "ca": "Figueres 1904 – Figueres 1989.",
+      "es": "Figueres 1904 – Figueres 1989."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Salvador_Dal%C3%AD",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-026",
+    "pregunta": {
+      "ca": "Quants milions de viatges es fan cada any al metro de Barcelona?",
+      "es": "¿Cuántos millones de viajes se hacen cada año en el metro de Barcelona?"
+    },
+    "resposta": 415,
+    "unitat": {
+      "ca": "milions de viatges",
+      "es": "millones de viajes"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "transport",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "Més d'un milió de viatges cada dia feiner.",
+      "es": "Más de un millón de viajes cada día laborable."
+    },
+    "font": "https://www.tmb.cat/ca/sobre-tmb/coneix-tmb/dades-de-gestio",
+    "any_referencia": 2023,
+    "confianca": "baixa",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-027",
+    "pregunta": {
+      "ca": "Quants milions de roses es venen a Catalunya per Sant Jordi?",
+      "es": "¿Cuántos millones de rosas se venden en Cataluña por Sant Jordi?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "milions de roses",
+      "es": "millones de rosas"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "tradicions",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "La gran majoria venen de fora, sobretot de Colòmbia, l'Equador i Holanda.",
+      "es": "La gran mayoría vienen de fuera, sobre todo de Colombia, Ecuador y Holanda."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Diada_de_Sant_Jordi",
+    "any_referencia": 2024,
+    "confianca": "baixa",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-028",
+    "pregunta": {
+      "ca": "Quantes butaques té el Gran Teatre del Liceu?",
+      "es": "¿Cuántas butacas tiene el Gran Teatre del Liceu?"
+    },
+    "resposta": 2292,
+    "unitat": {
+      "ca": "butaques",
+      "es": "butacas"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "musica",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "És un dels teatres d'òpera més grans d'Europa. Es va cremar el 1994 i es va reobrir el 1999.",
+      "es": "Es uno de los teatros de ópera más grandes de Europa. Se quemó en 1994 y reabrió en 1999."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Gran_Teatre_del_Liceu",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-029",
+    "pregunta": {
+      "ca": "Quantes torres tindrà la Sagrada Família quan estigui acabada?",
+      "es": "¿Cuántas torres tendrá la Sagrada Família cuando esté terminada?"
+    },
+    "resposta": 18,
+    "unitat": {
+      "ca": "torres",
+      "es": "torres"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "arquitectura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "12 apòstols, 4 evangelistes, la Mare de Déu i Jesucrist.",
+      "es": "12 apóstoles, 4 evangelistas, la Virgen y Jesucristo."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Temple_Expiatori_de_la_Sagrada_Fam%C3%ADlia",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-030",
+    "pregunta": {
+      "ca": "Quants metres fa el banc ondulat de trencadís de la plaça del Park Güell?",
+      "es": "¿Cuántos metros mide el banco ondulado de trencadís de la plaza del Park Güell?"
+    },
+    "resposta": 110,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "arquitectura",
+      "art"
+    ],
+    "explicacio": {
+      "ca": "El trencadís és en gran part obra de Josep Maria Jujol, col·laborador de Gaudí.",
+      "es": "El trencadís es en gran parte obra de Josep Maria Jujol, colaborador de Gaudí."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Park_G%C3%BCell",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-031",
+    "pregunta": {
+      "ca": "Quants milions d'ampolles de cava es venen cada any?",
+      "es": "¿Cuántos millones de botellas de cava se venden cada año?"
+    },
+    "resposta": 250,
+    "unitat": {
+      "ca": "milions d'ampolles",
+      "es": "millones de botellas"
+    },
+    "tags": [
+      "catalunya",
+      "dificil",
+      "gastronomia",
+      "adults"
+    ],
+    "explicacio": {
+      "ca": "Més de la meitat s'exporten, sobretot a Alemanya, Bèlgica i el Regne Unit.",
+      "es": "Más de la mitad se exporta, sobre todo a Alemania, Bélgica y Reino Unido."
+    },
+    "font": "https://www.cava.wine/ca/",
+    "any_referencia": 2023,
+    "confianca": "baixa",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-001",
+    "pregunta": {
+      "ca": "Quants municipis té Espanya?",
+      "es": "¿Cuántos municipios tiene España?"
+    },
+    "resposta": 8132,
+    "unitat": {
+      "ca": "municipis",
+      "es": "municipios"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "Castella i Lleó sola en té més de 2.200.",
+      "es": "Castilla y León sola tiene más de 2.200."
+    },
+    "font": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177031",
+    "any_referencia": 2024,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-002",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa el Teide?",
+      "es": "¿Cuántos metros de altura tiene el Teide?"
+    },
+    "resposta": 3715,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia",
+      "natura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Comptat des del fons de l'oceà fa uns 7.500 m: és un dels volcans més grans del món.",
+      "es": "Contado desde el fondo del océano mide unos 7.500 m: es uno de los volcanes más grandes del mundo."
+    },
+    "font": "https://es.wikipedia.org/wiki/Teide",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-003",
+    "pregunta": {
+      "ca": "Quants quilòmetres quadrats té Espanya?",
+      "es": "¿Cuántos kilómetros cuadrados tiene España?"
+    },
+    "resposta": 505990,
+    "unitat": {
+      "ca": "km²",
+      "es": "km²"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "És el quart país més gran d'Europa, després de Rússia, Ucraïna i França.",
+      "es": "Es el cuarto país más grande de Europa, tras Rusia, Ucrania y Francia."
+    },
+    "font": "https://es.wikipedia.org/wiki/Espa%C3%B1a",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-004",
+    "pregunta": {
+      "ca": "Quants quilòmetres fa el Tajo, el riu més llarg de la península Ibèrica?",
+      "es": "¿Cuántos kilómetros mide el Tajo, el río más largo de la península ibérica?"
+    },
+    "resposta": 1007,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "Desemboca a Lisboa. L'Ebre, en canvi, en fa uns 910.",
+      "es": "Desemboca en Lisboa. El Ebro, en cambio, mide unos 910."
+    },
+    "font": "https://es.wikipedia.org/wiki/R%C3%ADo_Tajo",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-005",
+    "pregunta": {
+      "ca": "Quantes tones de tomàquets es llancen a la Tomatina de Bunyol?",
+      "es": "¿Cuántas toneladas de tomates se lanzan en la Tomatina de Buñol?"
+    },
+    "resposta": 120,
+    "unitat": {
+      "ca": "tones",
+      "es": "toneladas"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "tradicions",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "La batalla dura només una hora. Des del 2013 cal entrada i l'aforament és limitat.",
+      "es": "La batalla dura solo una hora. Desde 2013 hace falta entrada y el aforo es limitado."
+    },
+    "font": "https://es.wikipedia.org/wiki/La_Tomatina",
+    "any_referencia": 2024,
+    "confianca": "baixa",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-006",
+    "pregunta": {
+      "ca": "Quantes Eurocopes ha guanyat la selecció espanyola masculina?",
+      "es": "¿Cuántas Eurocopas ha ganado la selección española masculina?"
+    },
+    "resposta": 4,
+    "unitat": {
+      "ca": "Eurocopes",
+      "es": "Eurocopas"
+    },
+    "tags": [
+      "espanya",
+      "facil",
+      "esport",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "1964, 2008, 2012 i 2024. És la selecció amb més Eurocopes.",
+      "es": "1964, 2008, 2012 y 2024. Es la selección con más Eurocopas."
+    },
+    "font": "https://es.wikipedia.org/wiki/Eurocopa",
+    "any_referencia": 2024,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-007",
+    "pregunta": {
+      "ca": "Quants Roland Garros va guanyar Rafa Nadal?",
+      "es": "¿Cuántos Roland Garros ganó Rafa Nadal?"
+    },
+    "resposta": 14,
+    "unitat": {
+      "ca": "títols",
+      "es": "títulos"
+    },
+    "tags": [
+      "espanya",
+      "facil",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "Hi va jugar 116 partits i només en va perdre 4.",
+      "es": "Jugó 116 partidos allí y solo perdió 4."
+    },
+    "font": "https://es.wikipedia.org/wiki/Rafael_Nadal",
+    "any_referencia": 2024,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-008",
+    "pregunta": {
+      "ca": "Quants Grand Slams va guanyar Rafa Nadal en total?",
+      "es": "¿Cuántos Grand Slams ganó Rafa Nadal en total?"
+    },
+    "resposta": 22,
+    "unitat": {
+      "ca": "Grand Slams",
+      "es": "Grand Slams"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "14 Roland Garros, 4 US Open, 2 Open d'Austràlia i 2 Wimbledon.",
+      "es": "14 Roland Garros, 4 US Open, 2 Open de Australia y 2 Wimbledon."
+    },
+    "font": "https://es.wikipedia.org/wiki/Rafael_Nadal",
+    "any_referencia": 2024,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-009",
+    "pregunta": {
+      "ca": "Quants capítols té el Quixot, sumant les dues parts?",
+      "es": "¿Cuántos capítulos tiene el Quijote, sumando las dos partes?"
+    },
+    "resposta": 126,
+    "unitat": {
+      "ca": "capítols",
+      "es": "capítulos"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "art"
+    ],
+    "explicacio": {
+      "ca": "52 a la primera part (1605) i 74 a la segona (1615). A la segona, Don Quixot arriba a Barcelona.",
+      "es": "52 en la primera parte (1605) y 74 en la segunda (1615). En la segunda, Don Quijote llega a Barcelona."
+    },
+    "font": "https://es.wikipedia.org/wiki/Don_Quijote_de_la_Mancha",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-010",
+    "pregunta": {
+      "ca": "Quants centímetres d'alçada fa el quadre de Les Menines de Velázquez?",
+      "es": "¿Cuántos centímetros de alto mide el cuadro de Las Meninas de Velázquez?"
+    },
+    "resposta": 318,
+    "unitat": {
+      "ca": "cm",
+      "es": "cm"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "art",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Fa 318 × 276 cm: les figures són gairebé a mida real.",
+      "es": "Mide 318 × 276 cm: las figuras están casi a tamaño real."
+    },
+    "font": "https://es.wikipedia.org/wiki/Las_meninas",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-011",
+    "pregunta": {
+      "ca": "Quants centímetres d'amplada fa el Guernica de Picasso?",
+      "es": "¿Cuántos centímetros de ancho mide el Guernica de Picasso?"
+    },
+    "resposta": 776,
+    "unitat": {
+      "ca": "cm",
+      "es": "cm"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "art",
+      "historia"
+    ],
+    "explicacio": {
+      "ca": "349 × 776 cm. Picasso el va pintar en poc més d'un mes, el 1937.",
+      "es": "349 × 776 cm. Picasso lo pintó en poco más de un mes, en 1937."
+    },
+    "font": "https://es.wikipedia.org/wiki/Guernica_(cuadro)",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-012",
+    "pregunta": {
+      "ca": "Quants arcs té l'aqüeducte romà de Segòvia?",
+      "es": "¿Cuántos arcos tiene el acueducto romano de Segovia?"
+    },
+    "resposta": 167,
+    "unitat": {
+      "ca": "arcs",
+      "es": "arcos"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "historia",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Els blocs de granit s'aguanten sense morter des de fa uns 1.900 anys.",
+      "es": "Los bloques de granito se sostienen sin argamasa desde hace unos 1.900 años."
+    },
+    "font": "https://es.wikipedia.org/wiki/Acueducto_de_Segovia",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-013",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa el Mulhacén, el cim més alt de la Península?",
+      "es": "¿Cuántos metros de altura tiene el Mulhacén, la cima más alta de la Península?"
+    },
+    "resposta": 3479,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "És a Sierra Nevada; l'Aneto, al Pirineu, en fa 3.404.",
+      "es": "Está en Sierra Nevada; el Aneto, en el Pirineo, mide 3.404."
+    },
+    "font": "https://es.wikipedia.org/wiki/Mulhac%C3%A9n",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-014",
+    "pregunta": {
+      "ca": "Quants metres fa el recorregut de l'encierro de San Fermín?",
+      "es": "¿Cuántos metros tiene el recorrido del encierro de San Fermín?"
+    },
+    "resposta": 875,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "tradicions",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Els toros el fan en uns 2-3 minuts, de mitjana.",
+      "es": "Los toros lo recorren en unos 2-3 minutos, de media."
+    },
+    "font": "https://es.wikipedia.org/wiki/Sanfermines",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-015",
+    "pregunta": {
+      "ca": "Quants quilòmetres fa el Camí de Sant Jaume francès, des de Saint-Jean-Pied-de-Port?",
+      "es": "¿Cuántos kilómetros tiene el Camino de Santiago francés, desde Saint-Jean-Pied-de-Port?"
+    },
+    "resposta": 780,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia",
+      "tradicions"
+    ],
+    "explicacio": {
+      "ca": "Per obtenir la Compostel·la n'hi ha prou de fer-ne els últims 100 km a peu.",
+      "es": "Para conseguir la Compostela basta con hacer a pie los últimos 100 km."
+    },
+    "font": "https://es.wikipedia.org/wiki/Camino_franc%C3%A9s",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-016",
+    "pregunta": {
+      "ca": "Quants euros (abans d'impostos) guanya un dècim de la Grossa de Nadal?",
+      "es": "¿Cuántos euros (antes de impuestos) gana un décimo del Gordo de Navidad?"
+    },
+    "resposta": 400000,
+    "unitat": {
+      "ca": "€",
+      "es": "€"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "tradicions",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "Hisenda se'n queda el 20% de la part que supera els 40.000 €.",
+      "es": "Hacienda se queda el 20% de la parte que supera los 40.000 €."
+    },
+    "font": "https://es.wikipedia.org/wiki/Sorteo_Extraordinario_de_Navidad",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-017",
+    "pregunta": {
+      "ca": "Quants números diferents hi ha al sorteig de la Loteria de Nadal?",
+      "es": "¿Cuántos números diferentes hay en el sorteo de la Lotería de Navidad?"
+    },
+    "resposta": 100000,
+    "unitat": {
+      "ca": "números",
+      "es": "números"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "tradicions",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Del 00000 al 99999. Els nens de San Ildefonso canten els premis des del segle XVIII.",
+      "es": "Del 00000 al 99999. Los niños de San Ildefonso cantan los premios desde el siglo XVIII."
+    },
+    "font": "https://es.wikipedia.org/wiki/Sorteo_Extraordinario_de_Navidad",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-018",
+    "pregunta": {
+      "ca": "Quants metres fa la Torre de Cristal de Madrid, l'edifici més alt d'Espanya?",
+      "es": "¿Cuántos metros mide la Torre de Cristal de Madrid, el edificio más alto de España?"
+    },
+    "resposta": 249,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Supera per pocs centímetres la Torre Cepsa, al costat. Totes dues formen part de les Cuatro Torres.",
+      "es": "Supera por pocos centímetros a la Torre Cepsa, a su lado. Ambas forman parte de las Cuatro Torres."
+    },
+    "font": "https://es.wikipedia.org/wiki/Torre_de_Cristal",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-019",
+    "pregunta": {
+      "ca": "Quantes hectàrees té el parc del Retiro de Madrid?",
+      "es": "¿Cuántas hectáreas tiene el parque del Retiro de Madrid?"
+    },
+    "resposta": 118,
+    "unitat": {
+      "ca": "ha",
+      "es": "ha"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "És Patrimoni de la Humanitat des del 2021 juntament amb el Paseo del Prado.",
+      "es": "Es Patrimonio de la Humanidad desde 2021 junto con el Paseo del Prado."
+    },
+    "font": "https://es.wikipedia.org/wiki/Parque_del_Buen_Retiro",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-020",
+    "pregunta": {
+      "ca": "Quants quilòmetres separen Espanya i el Marroc en el punt més estret de l'estret de Gibraltar?",
+      "es": "¿Cuántos kilómetros separan España y Marruecos en el punto más estrecho del estrecho de Gibraltar?"
+    },
+    "resposta": 14.4,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "Entre Punta de Tarifa i Punta Cires. En dies clars es veu l'altra costa.",
+      "es": "Entre Punta de Tarifa y Punta Cires. En días claros se ve la otra costa."
+    },
+    "font": "https://es.wikipedia.org/wiki/Estrecho_de_Gibraltar",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-021",
+    "pregunta": {
+      "ca": "Quants gols va marcar Espanya en tot el Mundial 2010, que va guanyar?",
+      "es": "¿Cuántos goles marcó España en todo el Mundial 2010, que ganó?"
+    },
+    "resposta": 8,
+    "unitat": {
+      "ca": "gols",
+      "es": "goles"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "esport",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "En 7 partits. Cap campió del món n'ha marcat tan pocs. Els quatre últims partits els va guanyar per 1-0.",
+      "es": "En 7 partidos. Ningún campeón del mundo ha marcado tan pocos. Ganó los cuatro últimos partidos por 1-0."
+    },
+    "font": "https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol_de_2010",
+    "any_referencia": 2010,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-022",
+    "pregunta": {
+      "ca": "En quin minut va marcar Iniesta el gol de la final del Mundial 2010?",
+      "es": "¿En qué minuto marcó Iniesta el gol de la final del Mundial 2010?"
+    },
+    "resposta": 116,
+    "unitat": {
+      "ca": "minut",
+      "es": "minuto"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "A la pròrroga, contra els Països Baixos.",
+      "es": "En la prórroga, contra Países Bajos."
+    },
+    "font": "https://es.wikipedia.org/wiki/Final_de_la_Copa_Mundial_de_F%C3%BAtbol_de_2010",
+    "any_referencia": 2010,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-023",
+    "pregunta": {
+      "ca": "Quantes curses de Fórmula 1 ha guanyat Fernando Alonso?",
+      "es": "¿Cuántas carreras de Fórmula 1 ha ganado Fernando Alonso?"
+    },
+    "resposta": 32,
+    "unitat": {
+      "ca": "victòries",
+      "es": "victorias"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "L'última, el GP d'Espanya del 2013 a Montmeló.",
+      "es": "La última, el GP de España de 2013 en Montmeló."
+    },
+    "font": "https://es.wikipedia.org/wiki/Fernando_Alonso",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-024",
+    "pregunta": {
+      "ca": "Quants títols mundials de motociclisme té Marc Márquez, sumant totes les categories?",
+      "es": "¿Cuántos títulos mundiales de motociclismo tiene Marc Márquez, sumando todas las categorías?"
+    },
+    "resposta": 9,
+    "unitat": {
+      "ca": "títols",
+      "es": "títulos"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "125cc (2010), Moto2 (2012) i 7 de MotoGP, l'últim el 2025 després de quatre anys de lesions.",
+      "es": "125cc (2010), Moto2 (2012) y 7 de MotoGP, el último en 2025 tras cuatro años de lesiones."
+    },
+    "font": "https://es.wikipedia.org/wiki/Marc_M%C3%A1rquez",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-025",
+    "pregunta": {
+      "ca": "Quantes habitacions té el Palau Reial de Madrid?",
+      "es": "¿Cuántas habitaciones tiene el Palacio Real de Madrid?"
+    },
+    "resposta": 3418,
+    "unitat": {
+      "ca": "habitacions",
+      "es": "habitaciones"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "arquitectura",
+      "historia",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "És el palau reial més gran d'Europa occidental per superfície; el rei no hi viu.",
+      "es": "Es el palacio real más grande de Europa occidental por superficie; el rey no vive allí."
+    },
+    "font": "https://es.wikipedia.org/wiki/Palacio_Real_de_Madrid",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-026",
+    "pregunta": {
+      "ca": "Quants episodis té la sèrie Verano Azul?",
+      "es": "¿Cuántos episodios tiene la serie Verano Azul?"
+    },
+    "resposta": 19,
+    "unitat": {
+      "ca": "episodis",
+      "es": "episodios"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "cinema-tv",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Es va emetre el 1981-82 i s'ha reemès desenes de vegades. La mort d'en Chanquete és a l'episodi 17.",
+      "es": "Se emitió en 1981-82 y se ha reemitido decenas de veces. La muerte de Chanquete es en el episodio 17."
+    },
+    "font": "https://es.wikipedia.org/wiki/Verano_azul",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-027",
+    "pregunta": {
+      "ca": "Quants episodis té en total La casa de papel (versió Netflix)?",
+      "es": "¿Cuántos episodios tiene en total La casa de papel (versión Netflix)?"
+    },
+    "resposta": 41,
+    "unitat": {
+      "ca": "episodis",
+      "es": "episodios"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "És la sèrie de parla no anglesa més vista de Netflix fins a l'arribada de Squid Game.",
+      "es": "Fue la serie de habla no inglesa más vista de Netflix hasta la llegada de El juego del calamar."
+    },
+    "font": "https://es.wikipedia.org/wiki/La_casa_de_papel",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-028",
+    "pregunta": {
+      "ca": "Quants Òscars ha guanyat Pedro Almodóvar?",
+      "es": "¿Cuántos Óscar ha ganado Pedro Almodóvar?"
+    },
+    "resposta": 2,
+    "unitat": {
+      "ca": "Òscars",
+      "es": "Óscar"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "Millor pel·lícula estrangera per Todo sobre mi madre (2000) i millor guió original per Hable con ella (2003).",
+      "es": "Mejor película extranjera por Todo sobre mi madre (2000) y mejor guion original por Hable con ella (2003)."
+    },
+    "font": "https://es.wikipedia.org/wiki/Pedro_Almod%C3%B3var",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-029",
+    "pregunta": {
+      "ca": "Quants anys tenen aproximadament les pintures més antigues de la cova d'Altamira?",
+      "es": "¿Cuántos años tienen aproximadamente las pinturas más antiguas de la cueva de Altamira?"
+    },
+    "resposta": 36000,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "historia",
+      "art"
+    ],
+    "explicacio": {
+      "ca": "Els famosos bisons són més recents, d'uns 14.000-15.000 anys.",
+      "es": "Los famosos bisontes son más recientes, de unos 14.000-15.000 años."
+    },
+    "font": "https://es.wikipedia.org/wiki/Cueva_de_Altamira",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-030",
+    "pregunta": {
+      "ca": "Quants Tours de França va guanyar Miguel Induráin?",
+      "es": "¿Cuántos Tours de Francia ganó Miguel Induráin?"
+    },
+    "resposta": 5,
+    "unitat": {
+      "ca": "Tours",
+      "es": "Tours"
+    },
+    "tags": [
+      "espanya",
+      "facil",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "Seguits, del 1991 al 1995.",
+      "es": "Seguidos, de 1991 a 1995."
+    },
+    "font": "https://es.wikipedia.org/wiki/Miguel_Indur%C3%A1in",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "esp-031",
+    "pregunta": {
+      "ca": "Quants quilòmetres fa l'Ebre?",
+      "es": "¿Cuántos kilómetros mide el Ebro?"
+    },
+    "resposta": 910,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "espanya",
+      "mitja",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "Neix a Fontibre (Cantàbria) i desemboca al Delta, a Catalunya. És el riu més cabalós d'Espanya.",
+      "es": "Nace en Fontibre (Cantabria) y desemboca en el Delta, en Cataluña. Es el río más caudaloso de España."
+    },
+    "font": "https://ca.wikipedia.org/wiki/Ebre",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-001",
+    "pregunta": {
+      "ca": "Quants litres d'aigua té una piscina olímpica?",
+      "es": "¿Cuántos litros de agua tiene una piscina olímpica?"
+    },
+    "resposta": 2500000,
+    "unitat": {
+      "ca": "litres",
+      "es": "litros"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "esport",
+      "ciencia",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "50 × 25 × 2 m de profunditat mínima = 2.500 m³.",
+      "es": "50 × 25 × 2 m de profundidad mínima = 2.500 m³."
+    },
+    "font": "https://en.wikipedia.org/wiki/Olympic-size_swimming_pool",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-002",
+    "pregunta": {
+      "ca": "Quants ossos té el cos d'una persona adulta?",
+      "es": "¿Cuántos huesos tiene el cuerpo de una persona adulta?"
+    },
+    "resposta": 206,
+    "unitat": {
+      "ca": "ossos",
+      "es": "huesos"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Més de la meitat són a les mans i els peus.",
+      "es": "Más de la mitad están en las manos y los pies."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_bones_of_the_human_skeleton",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-003",
+    "pregunta": {
+      "ca": "Quants ossos té aproximadament un nadó en néixer?",
+      "es": "¿Cuántos huesos tiene aproximadamente un bebé al nacer?"
+    },
+    "resposta": 300,
+    "unitat": {
+      "ca": "ossos",
+      "es": "huesos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cos-huma",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "En créixer, molts es fusionen fins a quedar-ne 206.",
+      "es": "Al crecer, muchos se fusionan hasta quedar 206."
+    },
+    "font": "https://en.wikipedia.org/wiki/Human_skeleton",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-004",
+    "pregunta": {
+      "ca": "Quantes vegades batega el cor humà en un dia?",
+      "es": "¿Cuántas veces late el corazón humano en un día?"
+    },
+    "resposta": 100000,
+    "unitat": {
+      "ca": "batecs",
+      "es": "latidos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Uns 70 per minut × 1.440 minuts. En tota una vida, uns 2.500-3.000 milions.",
+      "es": "Unos 70 por minuto × 1.440 minutos. En toda una vida, unos 2.500-3.000 millones."
+    },
+    "font": "https://en.wikipedia.org/wiki/Heart_rate",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-005",
+    "pregunta": {
+      "ca": "Quants litres de sang té una persona adulta?",
+      "es": "¿Cuántos litros de sangre tiene una persona adulta?"
+    },
+    "resposta": 5,
+    "unitat": {
+      "ca": "litres",
+      "es": "litros"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Aproximadament el 7-8% del pes corporal.",
+      "es": "Aproximadamente el 7-8% del peso corporal."
+    },
+    "font": "https://en.wikipedia.org/wiki/Blood_volume",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-006",
+    "pregunta": {
+      "ca": "Quants quilòmetres de vasos sanguinis té un adult, si els posem en fila?",
+      "es": "¿Cuántos kilómetros de vasos sanguíneos tiene un adulto, si los ponemos en fila?"
+    },
+    "resposta": 100000,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Prou per fer dues voltes i mitja a la Terra. La gran majoria són capil·lars.",
+      "es": "Suficiente para dar dos vueltas y media a la Tierra. La gran mayoría son capilares."
+    },
+    "font": "https://en.wikipedia.org/wiki/Blood_vessel",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-007",
+    "pregunta": {
+      "ca": "Quants cabells té de mitjana un cap humà?",
+      "es": "¿Cuántos pelos tiene de media una cabeza humana?"
+    },
+    "resposta": 100000,
+    "unitat": {
+      "ca": "cabells",
+      "es": "pelos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Els pèl-rojos en solen tenir menys (uns 90.000) i els rossos més (uns 140.000).",
+      "es": "Los pelirrojos suelen tener menos (unos 90.000) y los rubios más (unos 140.000)."
+    },
+    "font": "https://en.wikipedia.org/wiki/Hair",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-008",
+    "pregunta": {
+      "ca": "Quantes dents de llet té un infant?",
+      "es": "¿Cuántos dientes de leche tiene un niño?"
+    },
+    "resposta": 20,
+    "unitat": {
+      "ca": "dents",
+      "es": "dientes"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Després en surten 32 de definitives (comptant els queixals del seny).",
+      "es": "Después salen 32 definitivos (contando las muelas del juicio)."
+    },
+    "font": "https://en.wikipedia.org/wiki/Deciduous_teeth",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-009",
+    "pregunta": {
+      "ca": "Quants litres de pipí fa un adult al dia?",
+      "es": "¿Cuántos litros de pipí hace un adulto al día?"
+    },
+    "resposta": 1.5,
+    "unitat": {
+      "ca": "litres",
+      "es": "litros"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cos-huma",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Entre 0,8 i 2 litres segons el que beguis. En una vida, prou per omplir unes quantes piscines petites.",
+      "es": "Entre 0,8 y 2 litros según lo que bebas. En una vida, suficiente para llenar unas cuantas piscinas pequeñas."
+    },
+    "font": "https://en.wikipedia.org/wiki/Urine",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-010",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa l'Everest?",
+      "es": "¿Cuántos metros de altura tiene el Everest?"
+    },
+    "resposta": 8849,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "geografia",
+      "natura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Mesura oficial conjunta de la Xina i el Nepal del 2020. Abans es deia 8.848.",
+      "es": "Medición oficial conjunta de China y Nepal de 2020. Antes se decía 8.848."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mount_Everest",
+    "any_referencia": 2020,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-011",
+    "pregunta": {
+      "ca": "Quants metres d'altura fa el Kilimanjaro?",
+      "es": "¿Cuántos metros de altura tiene el Kilimanjaro?"
+    },
+    "resposta": 5895,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "És la muntanya aïllada més alta del món i el sostre d'Àfrica.",
+      "es": "Es la montaña aislada más alta del mundo y el techo de África."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-012",
+    "pregunta": {
+      "ca": "Quants quilòmetres hi ha de mitjana entre la Terra i la Lluna?",
+      "es": "¿Cuántos kilómetros hay de media entre la Tierra y la Luna?"
+    },
+    "resposta": 384400,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "ciencia"
+    ],
+    "explicacio": {
+      "ca": "Hi cabrien tots els planetes del sistema solar posats en fila. I s'allunya uns 3,8 cm cada any.",
+      "es": "Cabrían todos los planetas del sistema solar puestos en fila. Y se aleja unos 3,8 cm cada año."
+    },
+    "font": "https://en.wikipedia.org/wiki/Lunar_distance",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-013",
+    "pregunta": {
+      "ca": "Quants segons triga la llum del Sol a arribar a la Terra?",
+      "es": "¿Cuántos segundos tarda la luz del Sol en llegar a la Tierra?"
+    },
+    "resposta": 499,
+    "unitat": {
+      "ca": "segons",
+      "es": "segundos"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "ciencia",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Uns 8 minuts i 20 segons: quan mires el Sol, el veus tal com era fa 8 minuts.",
+      "es": "Unos 8 minutos y 20 segundos: cuando miras el Sol, lo ves como era hace 8 minutos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Light-second",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-014",
+    "pregunta": {
+      "ca": "Quantes Terres cabrien dins del Sol?",
+      "es": "¿Cuántas Tierras cabrían dentro del Sol?"
+    },
+    "resposta": 1300000,
+    "unitat": {
+      "ca": "Terres",
+      "es": "Tierras"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "ciencia",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Per volum, unes 1,3 milions.",
+      "es": "Por volumen, unos 1,3 millones."
+    },
+    "font": "https://en.wikipedia.org/wiki/Sun",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-015",
+    "pregunta": {
+      "ca": "Quants dies terrestres dura un any a Mart?",
+      "es": "¿Cuántos días terrestres dura un año en Marte?"
+    },
+    "resposta": 687,
+    "unitat": {
+      "ca": "dies",
+      "es": "días"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "ciencia",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Gairebé dos anys nostres. Un dia marcià dura 24 h 37 min.",
+      "es": "Casi dos años nuestros. Un día marciano dura 24 h 37 min."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mars",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-016",
+    "pregunta": {
+      "ca": "Quantes persones han caminat per la Lluna?",
+      "es": "¿Cuántas personas han caminado por la Luna?"
+    },
+    "resposta": 12,
+    "unitat": {
+      "ca": "persones",
+      "es": "personas"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "ciencia",
+      "historia",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Tots nord-americans, entre 1969 i 1972, en sis missions Apollo.",
+      "es": "Todos estadounidenses, entre 1969 y 1972, en seis misiones Apolo."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_Apollo_astronauts",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-017",
+    "pregunta": {
+      "ca": "Quants graus fa la superfície del Sol?",
+      "es": "¿Cuántos grados tiene la superficie del Sol?"
+    },
+    "resposta": 5500,
+    "unitat": {
+      "ca": "°C",
+      "es": "°C"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "ciencia"
+    ],
+    "explicacio": {
+      "ca": "Paradoxalment, la corona que l'envolta supera el milió de graus.",
+      "es": "Paradójicamente, la corona que lo rodea supera el millón de grados."
+    },
+    "font": "https://en.wikipedia.org/wiki/Photosphere",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-018",
+    "pregunta": {
+      "ca": "Quants quilòmetres fa la circumferència de la Terra a l'equador?",
+      "es": "¿Cuántos kilómetros mide la circunferencia de la Tierra en el ecuador?"
+    },
+    "resposta": 40075,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "geografia",
+      "ciencia"
+    ],
+    "explicacio": {
+      "ca": "El metre es va definir originalment com una deumilionèsima part de la distància del pol a l'equador.",
+      "es": "El metro se definió originalmente como una diezmillonésima parte de la distancia del polo al ecuador."
+    },
+    "font": "https://en.wikipedia.org/wiki/Earth%27s_circumference",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-019",
+    "pregunta": {
+      "ca": "Quants metres de profunditat té el punt més profund de l'oceà (fossa de les Marianes)?",
+      "es": "¿Cuántos metros de profundidad tiene el punto más profundo del océano (fosa de las Marianas)?"
+    },
+    "resposta": 10935,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "Si hi posessis l'Everest, encara quedarien 2 km d'aigua per sobre.",
+      "es": "Si metieras el Everest, aún quedarían 2 km de agua por encima."
+    },
+    "font": "https://en.wikipedia.org/wiki/Challenger_Deep",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-020",
+    "pregunta": {
+      "ca": "Quants milions de km² ocupa el desert del Sàhara?",
+      "es": "¿Cuántos millones de km² ocupa el desierto del Sáhara?"
+    },
+    "resposta": 9.2,
+    "unitat": {
+      "ca": "milions de km²",
+      "es": "millones de km²"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "geografia",
+      "natura"
+    ],
+    "explicacio": {
+      "ca": "Gairebé com els Estats Units o la Xina sencers.",
+      "es": "Casi como Estados Unidos o China enteros."
+    },
+    "font": "https://en.wikipedia.org/wiki/Sahara",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-021",
+    "pregunta": {
+      "ca": "Quantes hectàrees fa la Ciutat del Vaticà?",
+      "es": "¿Cuántas hectáreas mide la Ciudad del Vaticano?"
+    },
+    "resposta": 44,
+    "unitat": {
+      "ca": "ha",
+      "es": "ha"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "geografia",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "0,44 km²: el Retiro de Madrid és gairebé tres vegades més gran. És el país més petit del món.",
+      "es": "0,44 km²: el Retiro de Madrid es casi tres veces más grande. Es el país más pequeño del mundo."
+    },
+    "font": "https://en.wikipedia.org/wiki/Vatican_City",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-022",
+    "pregunta": {
+      "ca": "Quantes zones horàries té Rússia?",
+      "es": "¿Cuántas zonas horarias tiene Rusia?"
+    },
+    "resposta": 11,
+    "unitat": {
+      "ca": "zones horàries",
+      "es": "zonas horarias"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "En canvi, la Xina, gairebé igual d'ampla, en fa servir una de sola.",
+      "es": "En cambio, China, casi igual de ancha, usa una sola."
+    },
+    "font": "https://en.wikipedia.org/wiki/Time_in_Russia",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-023",
+    "pregunta": {
+      "ca": "Amb quants països fa frontera terrestre la Xina?",
+      "es": "¿Con cuántos países tiene frontera terrestre China?"
+    },
+    "resposta": 14,
+    "unitat": {
+      "ca": "països",
+      "es": "países"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "geografia"
+    ],
+    "explicacio": {
+      "ca": "Empatada amb Rússia com el país amb més veïns.",
+      "es": "Empatada con Rusia como el país con más vecinos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Borders_of_China",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-024",
+    "pregunta": {
+      "ca": "Quants països són membres de l'ONU?",
+      "es": "¿Cuántos países son miembros de la ONU?"
+    },
+    "resposta": 193,
+    "unitat": {
+      "ca": "països",
+      "es": "países"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "geografia",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "L'últim a entrar va ser el Sudan del Sud, el 2011.",
+      "es": "El último en entrar fue Sudán del Sur, en 2011."
+    },
+    "font": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-025",
+    "pregunta": {
+      "ca": "Quantes llengües es parlen aproximadament al món?",
+      "es": "¿Cuántas lenguas se hablan aproximadamente en el mundo?"
+    },
+    "resposta": 7000,
+    "unitat": {
+      "ca": "llengües",
+      "es": "lenguas"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "Unes 840 només a Papua Nova Guinea. Gairebé la meitat estan en perill de desaparèixer.",
+      "es": "Unas 840 solo en Papúa Nueva Guinea. Casi la mitad están en peligro de desaparecer."
+    },
+    "font": "https://www.ethnologue.com/insights/how-many-languages/",
+    "any_referencia": 2024,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-026",
+    "pregunta": {
+      "ca": "Quants metres fa la Torre Eiffel?",
+      "es": "¿Cuántos metros mide la Torre Eiffel?"
+    },
+    "resposta": 330,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "arquitectura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "A l'estiu creix uns 15 cm per la dilatació del ferro.",
+      "es": "En verano crece unos 15 cm por la dilatación del hierro."
+    },
+    "font": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+    "any_referencia": 2022,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-027",
+    "pregunta": {
+      "ca": "Quants esglaons té la Torre Eiffel des de terra fins a dalt de tot?",
+      "es": "¿Cuántos escalones tiene la Torre Eiffel desde el suelo hasta lo más alto?"
+    },
+    "resposta": 1665,
+    "unitat": {
+      "ca": "esglaons",
+      "es": "escalones"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "arquitectura",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "El públic només en pot pujar 674, fins al segon pis.",
+      "es": "El público solo puede subir 674, hasta el segundo piso."
+    },
+    "font": "https://www.toureiffel.paris/en/the-monument/key-figures",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-028",
+    "pregunta": {
+      "ca": "Quants metres fa d'alt l'Estàtua de la Llibertat, del taló a la torxa (sense pedestal)?",
+      "es": "¿Cuántos metros mide la Estatua de la Libertad, del talón a la antorcha (sin pedestal)?"
+    },
+    "resposta": 46,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "arquitectura",
+      "art"
+    ],
+    "explicacio": {
+      "ca": "Amb el pedestal arriba a 93 m. L'estructura interior és de Gustave Eiffel.",
+      "es": "Con el pedestal llega a 93 m. La estructura interior es de Gustave Eiffel."
+    },
+    "font": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-029",
+    "pregunta": {
+      "ca": "Quants metres feia originalment la Gran Piràmide de Gizeh?",
+      "es": "¿Cuántos metros medía originalmente la Gran Pirámide de Guiza?"
+    },
+    "resposta": 146,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "historia",
+      "arquitectura"
+    ],
+    "explicacio": {
+      "ca": "Va ser l'estructura més alta feta per humans durant gairebé 3.800 anys. Avui en fa uns 138.",
+      "es": "Fue la estructura más alta hecha por humanos durante casi 3.800 años. Hoy mide unos 138."
+    },
+    "font": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-030",
+    "pregunta": {
+      "ca": "Quants milions de blocs de pedra té la Gran Piràmide de Gizeh?",
+      "es": "¿Cuántos millones de bloques de piedra tiene la Gran Pirámide de Guiza?"
+    },
+    "resposta": 2.3,
+    "unitat": {
+      "ca": "milions de blocs",
+      "es": "millones de bloques"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "historia",
+      "arquitectura",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Per acabar-la en uns 20 anys, calia col·locar un bloc cada pocs minuts, dia i nit.",
+      "es": "Para acabarla en unos 20 años, había que colocar un bloque cada pocos minutos, día y noche."
+    },
+    "font": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-031",
+    "pregunta": {
+      "ca": "Quants quilòmetres fa la Gran Muralla xinesa, comptant tots els trams?",
+      "es": "¿Cuántos kilómetros mide la Gran Muralla china, contando todos los tramos?"
+    },
+    "resposta": 21196,
+    "unitat": {
+      "ca": "km",
+      "es": "km"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "historia",
+      "arquitectura",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Mesura oficial del 2012. I no, no es veu a ull nu des de l'espai.",
+      "es": "Medición oficial de 2012. Y no, no se ve a simple vista desde el espacio."
+    },
+    "font": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
+    "any_referencia": 2012,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-032",
+    "pregunta": {
+      "ca": "Quants moais hi ha a l'illa de Pasqua?",
+      "es": "¿Cuántos moáis hay en la isla de Pascua?"
+    },
+    "resposta": 887,
+    "unitat": {
+      "ca": "moais",
+      "es": "moáis"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "historia",
+      "art"
+    ],
+    "explicacio": {
+      "ca": "Gairebé la meitat no van sortir mai de la pedrera on es tallaven.",
+      "es": "Casi la mitad nunca salió de la cantera donde se tallaban."
+    },
+    "font": "https://en.wikipedia.org/wiki/Moai",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-033",
+    "pregunta": {
+      "ca": "Quants metres d'eslora feia el Titanic?",
+      "es": "¿Cuántos metros de eslora tenía el Titanic?"
+    },
+    "resposta": 269,
+    "unitat": {
+      "ca": "m",
+      "es": "m"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "historia",
+      "transport"
+    ],
+    "explicacio": {
+      "ca": "Gairebé com tres camps de futbol seguits.",
+      "es": "Casi como tres campos de fútbol seguidos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Titanic",
+    "any_referencia": 1912,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-034",
+    "pregunta": {
+      "ca": "Quants minuts dura la pel·lícula Titanic de James Cameron?",
+      "es": "¿Cuántos minutos dura la película Titanic de James Cameron?"
+    },
+    "resposta": 194,
+    "unitat": {
+      "ca": "minuts",
+      "es": "minutos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "3 h 14 min. El vaixell real va trigar 2 h 40 min a enfonsar-se.",
+      "es": "3 h 14 min. El barco real tardó 2 h 40 min en hundirse."
+    },
+    "font": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+    "any_referencia": 1997,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-035",
+    "pregunta": {
+      "ca": "Quin és el màxim d'Òscars que ha guanyat una sola pel·lícula?",
+      "es": "¿Cuál es el máximo de Óscar que ha ganado una sola película?"
+    },
+    "resposta": 11,
+    "unitat": {
+      "ca": "Òscars",
+      "es": "Óscar"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "Empat a tres: Ben-Hur, Titanic i El retorn del rei.",
+      "es": "Empate a tres: Ben-Hur, Titanic y El retorno del rey."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_Academy_Award%E2%80%93winning_films",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-036",
+    "pregunta": {
+      "ca": "Quants episodis té la sèrie Friends?",
+      "es": "¿Cuántos episodios tiene la serie Friends?"
+    },
+    "resposta": 236,
+    "unitat": {
+      "ca": "episodis",
+      "es": "episodios"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "10 temporades, del 1994 al 2004.",
+      "es": "10 temporadas, de 1994 a 2004."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_Friends_episodes",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-037",
+    "pregunta": {
+      "ca": "Quants episodis té Joc de Trons?",
+      "es": "¿Cuántos episodios tiene Juego de Tronos?"
+    },
+    "resposta": 73,
+    "unitat": {
+      "ca": "episodis",
+      "es": "episodios"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cinema-tv"
+    ],
+    "explicacio": {
+      "ca": "8 temporades. Algunes escenes es van rodar a Girona i a Peníscola.",
+      "es": "8 temporadas. Algunas escenas se rodaron en Girona y en Peñíscola."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-038",
+    "pregunta": {
+      "ca": "Quantes escales hi ha a Hogwarts, segons el primer llibre de Harry Potter?",
+      "es": "¿Cuántas escaleras hay en Hogwarts, según el primer libro de Harry Potter?"
+    },
+    "resposta": 142,
+    "unitat": {
+      "ca": "escales",
+      "es": "escaleras"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "art",
+      "cinema-tv",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "I algunes canvien de lloc els divendres.",
+      "es": "Y algunas cambian de sitio los viernes."
+    },
+    "font": "https://harrypotter.fandom.com/wiki/Grand_Staircase",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-039",
+    "pregunta": {
+      "ca": "Quants Pokémon hi havia a la primera generació?",
+      "es": "¿Cuántos Pokémon había en la primera generación?"
+    },
+    "resposta": 151,
+    "unitat": {
+      "ca": "Pokémon",
+      "es": "Pokémon"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "jocs",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "El número 151 és Mew, que en un principi no es podia aconseguir jugant normalment.",
+      "es": "El número 151 es Mew, que en un principio no se podía conseguir jugando normalmente."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_generation_I_Pok%C3%A9mon",
+    "any_referencia": 1996,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-040",
+    "pregunta": {
+      "ca": "De quantes maneres diferents es poden combinar sis peces de LEGO 2×4 del mateix color?",
+      "es": "¿De cuántas maneras distintas se pueden combinar seis piezas de LEGO 2×4 del mismo color?"
+    },
+    "resposta": 915103765,
+    "unitat": {
+      "ca": "combinacions",
+      "es": "combinaciones"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "jocs",
+      "ciencia",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Calculat el 2005 pel matemàtic Søren Eilers: més de 915 milions.",
+      "es": "Calculado en 2005 por el matemático Søren Eilers: más de 915 millones."
+    },
+    "font": "https://en.wikipedia.org/wiki/Lego",
+    "any_referencia": 2005,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-041",
+    "pregunta": {
+      "ca": "Quantes primeres jugades diferents poden fer les blanques en una partida d'escacs?",
+      "es": "¿Cuántas primeras jugadas distintas pueden hacer las blancas en una partida de ajedrez?"
+    },
+    "resposta": 20,
+    "unitat": {
+      "ca": "jugades",
+      "es": "jugadas"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "jocs",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "16 de peons (dues per peó) i 4 de cavalls.",
+      "es": "16 de peones (dos por peón) y 4 de caballos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Chess_opening",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-042",
+    "pregunta": {
+      "ca": "Quantes tecles té un piano estàndard?",
+      "es": "¿Cuántas teclas tiene un piano estándar?"
+    },
+    "resposta": 88,
+    "unitat": {
+      "ca": "tecles",
+      "es": "teclas"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "musica",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "52 de blanques i 36 de negres.",
+      "es": "52 blancas y 36 negras."
+    },
+    "font": "https://en.wikipedia.org/wiki/Piano",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-043",
+    "pregunta": {
+      "ca": "Quants segons dura Bohemian Rhapsody de Queen?",
+      "es": "¿Cuántos segundos dura Bohemian Rhapsody de Queen?"
+    },
+    "resposta": 355,
+    "unitat": {
+      "ca": "segons",
+      "es": "segundos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "musica",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "5:55. La discogràfica la volia escurçar perquè era massa llarga per a la ràdio.",
+      "es": "5:55. La discográfica quería acortarla porque era demasiado larga para la radio."
+    },
+    "font": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+    "any_referencia": 1975,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-044",
+    "pregunta": {
+      "ca": "Quants números 1 van aconseguir els Beatles a les llistes de singles del Regne Unit?",
+      "es": "¿Cuántos números 1 consiguieron los Beatles en las listas de singles del Reino Unido?"
+    },
+    "resposta": 17,
+    "unitat": {
+      "ca": "números 1",
+      "es": "números 1"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "musica"
+    ],
+    "explicacio": null,
+    "font": "https://en.wikipedia.org/wiki/The_Beatles_discography",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-045",
+    "pregunta": {
+      "ca": "Quin és el número més alt del catàleg Köchel, que ordena les obres de Mozart?",
+      "es": "¿Cuál es el número más alto del catálogo Köchel, que ordena las obras de Mozart?"
+    },
+    "resposta": 626,
+    "unitat": {
+      "ca": "",
+      "es": ""
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "musica"
+    ],
+    "explicacio": {
+      "ca": "El K. 626 és el Rèquiem, que va deixar inacabat en morir als 35 anys.",
+      "es": "El K. 626 es el Réquiem, que dejó inacabado al morir con 35 años."
+    },
+    "font": "https://en.wikipedia.org/wiki/K%C3%B6chel_catalogue",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-046",
+    "pregunta": {
+      "ca": "Quants centímetres d'alçada fa la Gioconda?",
+      "es": "¿Cuántos centímetros de alto mide la Gioconda?"
+    },
+    "resposta": 77,
+    "unitat": {
+      "ca": "cm",
+      "es": "cm"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "art",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "77 × 53 cm: molta gent es decep en veure-la tan petita al Louvre.",
+      "es": "77 × 53 cm: mucha gente se decepciona al verla tan pequeña en el Louvre."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mona_Lisa",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-047",
+    "pregunta": {
+      "ca": "Quin número de papa és Lleó XIV?",
+      "es": "¿Qué número de papa es León XIV?"
+    },
+    "resposta": 267,
+    "unitat": {
+      "ca": "",
+      "es": ""
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "historia",
+      "societat"
+    ],
+    "explicacio": {
+      "ca": "Elegit el maig del 2025, és el primer papa nascut als Estats Units.",
+      "es": "Elegido en mayo de 2025, es el primer papa nacido en Estados Unidos."
+    },
+    "font": "https://en.wikipedia.org/wiki/List_of_popes",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-048",
+    "pregunta": {
+      "ca": "Quantes Pilotes d'Or ha guanyat Leo Messi?",
+      "es": "¿Cuántos Balones de Oro ha ganado Leo Messi?"
+    },
+    "resposta": 8,
+    "unitat": {
+      "ca": "Pilotes d'Or",
+      "es": "Balones de Oro"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "És el rècord absolut; Cristiano Ronaldo en té 5.",
+      "es": "Es el récord absoluto; Cristiano Ronaldo tiene 5."
+    },
+    "font": "https://en.wikipedia.org/wiki/Ballon_d%27Or",
+    "any_referencia": 2025,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-049",
+    "pregunta": {
+      "ca": "Quants anells de campió de l'NBA va guanyar Michael Jordan?",
+      "es": "¿Cuántos anillos de campeón de la NBA ganó Michael Jordan?"
+    },
+    "resposta": 6,
+    "unitat": {
+      "ca": "anells",
+      "es": "anillos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "En dos tripletes: 1991-93 i 1996-98. Va perdre 0 finals.",
+      "es": "En dos tripletes: 1991-93 y 1996-98. Perdió 0 finales."
+    },
+    "font": "https://en.wikipedia.org/wiki/Michael_Jordan",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-050",
+    "pregunta": {
+      "ca": "Quants centímetres d'alçada té una cistella de bàsquet reglamentària?",
+      "es": "¿Cuántos centímetros de altura tiene una canasta de baloncesto reglamentaria?"
+    },
+    "resposta": 305,
+    "unitat": {
+      "ca": "cm",
+      "es": "cm"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "esport",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "10 peus exactes: la mida que va triar l'inventor del bàsquet, James Naismith, el 1891.",
+      "es": "10 pies exactos: la medida que eligió el inventor del baloncesto, James Naismith, en 1891."
+    },
+    "font": "https://en.wikipedia.org/wiki/Backboard_(basketball)",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-051",
+    "pregunta": {
+      "ca": "Quants segons va trigar Usain Bolt a fer el rècord del món dels 100 metres?",
+      "es": "¿Cuántos segundos tardó Usain Bolt en batir el récord del mundo de los 100 metros?"
+    },
+    "resposta": 9.58,
+    "unitat": {
+      "ca": "segons",
+      "es": "segundos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "esport"
+    ],
+    "explicacio": {
+      "ca": "Berlín 2009. Velocitat punta: uns 44,7 km/h.",
+      "es": "Berlín 2009. Velocidad punta: unos 44,7 km/h."
+    },
+    "font": "https://en.wikipedia.org/wiki/Men%27s_100_metres_world_record_progression",
+    "any_referencia": 2009,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-052",
+    "pregunta": {
+      "ca": "Quantes vèrtebres té el coll d'una girafa?",
+      "es": "¿Cuántas vértebras tiene el cuello de una jirafa?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "vèrtebres",
+      "es": "vértebras"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "natura",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Les mateixes que nosaltres! Però cadascuna pot fer més de 25 cm.",
+      "es": "¡Las mismas que nosotros! Pero cada una puede medir más de 25 cm."
+    },
+    "font": "https://en.wikipedia.org/wiki/Giraffe",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-053",
+    "pregunta": {
+      "ca": "Quants cors té un pop?",
+      "es": "¿Cuántos corazones tiene un pulpo?"
+    },
+    "resposta": 3,
+    "unitat": {
+      "ca": "cors",
+      "es": "corazones"
+    },
+    "tags": [
+      "internacional",
+      "facil",
+      "natura",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "I la sang és blava.",
+      "es": "Y su sangre es azul."
+    },
+    "font": "https://en.wikipedia.org/wiki/Octopus",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-054",
+    "pregunta": {
+      "ca": "Quants mesos dura l'embaràs d'una elefanta?",
+      "es": "¿Cuántos meses dura el embarazo de una elefanta?"
+    },
+    "resposta": 22,
+    "unitat": {
+      "ca": "mesos",
+      "es": "meses"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "natura",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "És la gestació més llarga de tots els mamífers terrestres.",
+      "es": "Es la gestación más larga de todos los mamíferos terrestres."
+    },
+    "font": "https://en.wikipedia.org/wiki/Elephant",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-055",
+    "pregunta": {
+      "ca": "A quants km/h pot córrer un guepard?",
+      "es": "¿A cuántos km/h puede correr un guepardo?"
+    },
+    "resposta": 110,
+    "unitat": {
+      "ca": "km/h",
+      "es": "km/h"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "natura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Però només aguanta aquesta velocitat uns 20-30 segons.",
+      "es": "Pero solo aguanta esa velocidad unos 20-30 segundos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Cheetah",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-056",
+    "pregunta": {
+      "ca": "Quantes vegades per minut batega el cor d'un colibrí en activitat?",
+      "es": "¿Cuántas veces por minuto late el corazón de un colibrí en actividad?"
+    },
+    "resposta": 1200,
+    "unitat": {
+      "ca": "batecs/minut",
+      "es": "latidos/minuto"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Unes 20 vegades per segon. De nit el baixa moltíssim per estalviar energia.",
+      "es": "Unas 20 veces por segundo. De noche lo baja muchísimo para ahorrar energía."
+    },
+    "font": "https://en.wikipedia.org/wiki/Hummingbird",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-057",
+    "pregunta": {
+      "ca": "Quants quilos pesa el cor d'una balena blava?",
+      "es": "¿Cuántos kilos pesa el corazón de una ballena azul?"
+    },
+    "resposta": 180,
+    "unitat": {
+      "ca": "kg",
+      "es": "kg"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "nens",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Mesurat el 2014 al Canadà: com una moto gran. Es diu que un nen podria arrossegar-se per les seves artèries.",
+      "es": "Medido en 2014 en Canadá: como una moto grande. Se dice que un niño podría arrastrarse por sus arterias."
+    },
+    "font": "https://en.wikipedia.org/wiki/Blue_whale",
+    "any_referencia": 2014,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-058",
+    "pregunta": {
+      "ca": "Quants ous pon a l'any una gallina ponedora?",
+      "es": "¿Cuántos huevos pone al año una gallina ponedora?"
+    },
+    "resposta": 300,
+    "unitat": {
+      "ca": "ous",
+      "es": "huevos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "natura",
+      "gastronomia",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Les gallines salvatges de les quals provenen en ponien uns 10-15.",
+      "es": "Las gallinas salvajes de las que provienen ponían unos 10-15."
+    },
+    "font": "https://en.wikipedia.org/wiki/Chicken",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-059",
+    "pregunta": {
+      "ca": "Quants grams de sucre té una llauna de Coca-Cola normal (33 cl)?",
+      "es": "¿Cuántos gramos de azúcar tiene una lata de Coca-Cola normal (33 cl)?"
+    },
+    "resposta": 35,
+    "unitat": {
+      "ca": "g",
+      "es": "g"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "gastronomia",
+      "cos-huma",
+      "nens"
+    ],
+    "explicacio": {
+      "ca": "Uns 7 terrossos. L'OMS recomana no passar de 25 g de sucre afegit al dia.",
+      "es": "Unos 7 terrones. La OMS recomienda no pasar de 25 g de azúcar añadido al día."
+    },
+    "font": "https://www.coca-cola.com/es/es/brands/coca-cola",
+    "any_referencia": 2024,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-060",
+    "pregunta": {
+      "ca": "Quants milions de bitcoins podran existir com a màxim?",
+      "es": "¿Cuántos millones de bitcoins podrán existir como máximo?"
+    },
+    "resposta": 21,
+    "unitat": {
+      "ca": "milions",
+      "es": "millones"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "tecnologia"
+    ],
+    "explicacio": {
+      "ca": "L'últim es minarà cap a l'any 2140.",
+      "es": "El último se minará hacia el año 2140."
+    },
+    "font": "https://en.wikipedia.org/wiki/Bitcoin",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-061",
+    "pregunta": {
+      "ca": "Quant sumen tots els números d'una ruleta de casino?",
+      "es": "¿Cuánto suman todos los números de una ruleta de casino?"
+    },
+    "resposta": 666,
+    "unitat": {
+      "ca": "",
+      "es": ""
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "jocs",
+      "adults",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Del 0 al 36 sumen 666, el 'número de la bèstia'. Per això se l'anomena la roda del diable.",
+      "es": "Del 0 al 36 suman 666, el 'número de la bestia'. Por eso la llaman la rueda del diablo."
+    },
+    "font": "https://en.wikipedia.org/wiki/Roulette",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-062",
+    "pregunta": {
+      "ca": "Quantes caselles té una ruleta europea?",
+      "es": "¿Cuántas casillas tiene una ruleta europea?"
+    },
+    "resposta": 37,
+    "unitat": {
+      "ca": "caselles",
+      "es": "casillas"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "jocs",
+      "adults"
+    ],
+    "explicacio": {
+      "ca": "Del 0 al 36. L'americana en té 38 (afegeix el 00), i per això el casino hi guanya més.",
+      "es": "Del 0 al 36. La americana tiene 38 (añade el 00), y por eso el casino gana más."
+    },
+    "font": "https://en.wikipedia.org/wiki/Roulette",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-063",
+    "pregunta": {
+      "ca": "Segons un estudi internacional, quants minuts dura de mitjana una relació sexual (des de la penetració)?",
+      "es": "Según un estudio internacional, ¿cuántos minutos dura de media una relación sexual (desde la penetración)?"
+    },
+    "resposta": 5.4,
+    "unitat": {
+      "ca": "minuts",
+      "es": "minutos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cos-huma",
+      "adults",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Mediana d'un estudi amb 500 parelles de 5 països (Waldinger et al., 2005). La majoria de gent s'imagina molt més.",
+      "es": "Mediana de un estudio con 500 parejas de 5 países (Waldinger et al., 2005). La mayoría de la gente imagina mucho más."
+    },
+    "font": "https://doi.org/10.1111/j.1743-6109.2005.00070.x",
+    "any_referencia": 2005,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-064",
+    "pregunta": {
+      "ca": "Quants milions de litres de cervesa es beuen a l'Oktoberfest de Munic?",
+      "es": "¿Cuántos millones de litros de cerveza se beben en el Oktoberfest de Múnich?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "milions de litres",
+      "es": "millones de litros"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "gastronomia",
+      "tradicions",
+      "adults",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "En uns 16-18 dies i amb uns 6-7 milions de visitants. La gerra estàndard és d'un litre.",
+      "es": "En unos 16-18 días y con unos 6-7 millones de visitantes. La jarra estándar es de un litro."
+    },
+    "font": "https://en.wikipedia.org/wiki/Oktoberfest",
+    "any_referencia": 2024,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-065",
+    "pregunta": {
+      "ca": "Quantes atmosferes de pressió hi ha dins d'una ampolla de cava o xampany?",
+      "es": "¿Cuántas atmósferas de presión hay dentro de una botella de cava o champán?"
+    },
+    "resposta": 6,
+    "unitat": {
+      "ca": "atmosferes",
+      "es": "atmósferas"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "gastronomia",
+      "ciencia",
+      "adults",
+      "sorprenent"
+    ],
+    "explicacio": {
+      "ca": "Unes tres vegades la pressió d'un pneumàtic de cotxe. El tap pot sortir a més de 40 km/h.",
+      "es": "Unas tres veces la presión de un neumático de coche. El corcho puede salir a más de 40 km/h."
+    },
+    "font": "https://en.wikipedia.org/wiki/Champagne",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "cat-032",
+    "pregunta": {
+      "ca": "Quants calçots es va menjar d'una tirada el rècord del concurs de menjar calçots de Valls?",
+      "es": "¿Cuántos calçots se comió de una sentada el récord del concurso de comer calçots de Valls?"
+    },
+    "resposta": 310,
+    "unitat": {
+      "ca": "calçots",
+      "es": "calçots"
+    },
+    "tags": [
+      "catalunya",
+      "mitja",
+      "gastronomia",
+      "tradicions",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Adrià Wegrzyn: 310 calçots, uns 5,8 kg. Ha guanyat el concurs 13 vegades. El guanyador del 2026 se'n va menjar 3,9 kg.",
+      "es": "Adrià Wegrzyn: 310 calçots, unos 5,8 kg. Ha ganado el concurso 13 veces. El ganador de 2026 se comió 3,9 kg."
+    },
+    "font": "https://www.diaridetarragona.com/camp/182658/ningu-menja-mes-calcots-que-l-adria-wegrzyn-dc13665710.html",
+    "any_referencia": 2026,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "esp-032",
+    "pregunta": {
+      "ca": "Quants quilos pesava la paella més gran del món segons el Guinness?",
+      "es": "¿Cuántos kilos pesaba la paella más grande del mundo según el Guinness?"
+    },
+    "resposta": 27215,
+    "unitat": {
+      "ca": "kg",
+      "es": "kg"
+    },
+    "tags": [
+      "espanya",
+      "dificil",
+      "gastronomia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "València, 1992, de Juan Carlos Galbis. Van menjar-ne més de 100.000 persones i la paella feia uns 20 m de diàmetre.",
+      "es": "Valencia, 1992, de Juan Carlos Galbis. Comieron más de 100.000 personas y la paellera medía unos 20 m de diámetro."
+    },
+    "font": "https://www.guinnessworldrecords.com/world-records/68405-largest-paella",
+    "any_referencia": 1992,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-066",
+    "pregunta": {
+      "ca": "Segons un estudi amb calçotets intel·ligents, quants pets es tira de mitjana una persona al dia?",
+      "es": "Según un estudio con calzoncillos inteligentes, ¿cuántos pedos se tira de media una persona al día?"
+    },
+    "resposta": 32,
+    "unitat": {
+      "ca": "pets",
+      "es": "pedos"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Universitat de Maryland, 2025, amb 19 voluntaris (entre 4 i 59 al dia). Estudis anteriors, basats en el que la gent apuntava, en comptaven només 5-15.",
+      "es": "Universidad de Maryland, 2025, con 19 voluntarios (entre 4 y 59 al día). Estudios anteriores, basados en lo que la gente apuntaba, contaban solo 5-15."
+    },
+    "font": "https://www.sciencefocus.com/future-technology/fart-detecting-underwear",
+    "any_referencia": 2025,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-067",
+    "pregunta": {
+      "ca": "Quants quilos de metà expulsa una vaca lletera en un any, entre rots i pets?",
+      "es": "¿Cuántos kilos de metano expulsa una vaca lechera en un año, entre eructos y pedos?"
+    },
+    "resposta": 100,
+    "unitat": {
+      "ca": "kg",
+      "es": "kg"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "ciencia",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Uns 100 kg (segons la font, entre 80 i 140). I sorpresa: la gran majoria surt pels rots, no pels pets.",
+      "es": "Unos 100 kg (según la fuente, entre 80 y 140). Y sorpresa: la gran mayoría sale por los eructos, no por los pedos."
+    },
+    "font": "https://modernfarmer.com/2023/06/cows-have-a-methane-problem/",
+    "any_referencia": 2023,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-068",
+    "pregunta": {
+      "ca": "Quantes caquetes en forma de cub fa un wombat cada nit?",
+      "es": "¿Cuántas cacas en forma de cubo hace un wómbat cada noche?"
+    },
+    "resposta": 100,
+    "unitat": {
+      "ca": "cubs",
+      "es": "cubos"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Entre 80 i 100. Les fa quadrades per marcar territori sobre roques sense que rodolin. Un estudi sobre el tema va guanyar un premi Ig Nobel.",
+      "es": "Entre 80 y 100. Las hace cuadradas para marcar territorio sobre rocas sin que rueden. Un estudio sobre el tema ganó un premio Ig Nobel."
+    },
+    "font": "https://www.smithsonianmag.com/smart-news/why-wombats-make-cube-shaped-poos-180970847/",
+    "any_referencia": 2018,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-069",
+    "pregunta": {
+      "ca": "Cada quants dies baixa de l'arbre a fer caca un peresós?",
+      "es": "¿Cada cuántos días baja del árbol a hacer caca un perezoso?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "dies",
+      "es": "días"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "natura",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Un cop per setmana, i pot perdre fins a un terç del pes en una sola visita al 'lavabo'.",
+      "es": "Una vez por semana, y puede perder hasta un tercio de su peso en una sola visita al 'baño'."
+    },
+    "font": "https://en.wikipedia.org/wiki/Sloth",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-070",
+    "pregunta": {
+      "ca": "Quants dies seguits va estar esternudant Donna Griffiths, rècord Guinness?",
+      "es": "¿Cuántos días seguidos estuvo estornudando Donna Griffiths, récord Guinness?"
+    },
+    "resposta": 976,
+    "unitat": {
+      "ca": "dies",
+      "es": "días"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Del gener del 1981 al setembre del 1983. Només el primer any va fer aproximadament un milió d'esternuts.",
+      "es": "De enero de 1981 a septiembre de 1983. Solo el primer año hizo aproximadamente un millón de estornudos."
+    },
+    "font": "https://www.guinnessworldrecords.com/world-records/67595-longest-sneezing-fit",
+    "any_referencia": 1983,
+    "confianca": "alta",
+    "estat": "verificat"
+  },
+  {
+    "id": "int-071",
+    "pregunta": {
+      "ca": "Quants anys seguits va tenir singlot Charles Osborne?",
+      "es": "¿Cuántos años seguidos tuvo hipo Charles Osborne?"
+    },
+    "resposta": 68,
+    "unitat": {
+      "ca": "anys",
+      "es": "años"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Del 1922 al 1990. Tot i així es va casar dues vegades i va tenir vuit fills. Li va començar mentre aixecava un porc.",
+      "es": "De 1922 a 1990. Aun así se casó dos veces y tuvo ocho hijos. Le empezó mientras levantaba un cerdo."
+    },
+    "font": "https://www.guinnessworldrecords.com/world-records/longest-attack-of-hiccups",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-072",
+    "pregunta": {
+      "ca": "Quants frankfurts es va menjar Joey Chestnut en 10 minuts per fer el rècord del concurs de Nathan's?",
+      "es": "¿Cuántos perritos calientes se comió Joey Chestnut en 10 minutos para batir el récord del concurso de Nathan's?"
+    },
+    "resposta": 76,
+    "unitat": {
+      "ca": "frankfurts",
+      "es": "perritos"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "gastronomia",
+      "esport",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "El 2021, a Coney Island (Nova York), amb pa inclòs. Uns 7,6 per minut.",
+      "es": "En 2021, en Coney Island (Nueva York), con pan incluido. Unos 7,6 por minuto."
+    },
+    "font": "https://en.wikipedia.org/wiki/Nathan%27s_Hot_Dog_Eating_Contest",
+    "any_referencia": 2021,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-073",
+    "pregunta": {
+      "ca": "Quants mesos va viure Mike, el pollastre que va sobreviure sense cap?",
+      "es": "¿Cuántos meses vivió Mike, el pollo que sobrevivió sin cabeza?"
+    },
+    "resposta": 18,
+    "unitat": {
+      "ca": "mesos",
+      "es": "meses"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Colorado, 1945. El granger el va decapitar per sopar però li va quedar el tronc encefàlic. El van alimentar amb un comptagotes i el van passejar per fires.",
+      "es": "Colorado, 1945. El granjero lo decapitó para cenar pero le quedó el tronco encefálico. Lo alimentaron con un cuentagotas y lo pasearon por ferias."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mike_the_Headless_Chicken",
+    "any_referencia": 1945,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-074",
+    "pregunta": {
+      "ca": "Quantes hores seguides va estar sense dormir Randy Gardner, en el famós experiment de 1964?",
+      "es": "¿Cuántas horas seguidas estuvo sin dormir Randy Gardner, en el famoso experimento de 1964?"
+    },
+    "resposta": 264,
+    "unitat": {
+      "ca": "hores",
+      "es": "horas"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "ciencia",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Uns 11 dies. Tenia 17 anys i ho va fer per a una fira de ciència de l'institut. Després va dormir 14 hores.",
+      "es": "Unos 11 días. Tenía 17 años y lo hizo para una feria de ciencias del instituto. Después durmió 14 horas."
+    },
+    "font": "https://en.wikipedia.org/wiki/Randy_Gardner_sleep_deprivation_experiment",
+    "any_referencia": 1964,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-075",
+    "pregunta": {
+      "ca": "Quants mocs (en mil·lilitres) produeix el nas d'un adult en un dia?",
+      "es": "¿Cuántos mocos (en mililitros) produce la nariz de un adulto en un día?"
+    },
+    "resposta": 1000,
+    "unitat": {
+      "ca": "ml",
+      "es": "ml"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "cos-huma",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Aproximadament un litre! La majoria se l'empassa sense adonar-se'n.",
+      "es": "¡Aproximadamente un litro! La mayoría se lo traga sin darse cuenta."
+    },
+    "font": "https://en.wikipedia.org/wiki/Mucus",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-076",
+    "pregunta": {
+      "ca": "Quantes paraules diu de mitjana una persona en un dia?",
+      "es": "¿Cuántas palabras dice de media una persona en un día?"
+    },
+    "resposta": 16000,
+    "unitat": {
+      "ca": "paraules",
+      "es": "palabras"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Estudi publicat a Science (2007): dones 16.215 i homes 15.669. El mite que les dones parlen tres vegades més és fals.",
+      "es": "Estudio publicado en Science (2007): mujeres 16.215 y hombres 15.669. El mito de que las mujeres hablan tres veces más es falso."
+    },
+    "font": "https://doi.org/10.1126/science.1139940",
+    "any_referencia": 2007,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-077",
+    "pregunta": {
+      "ca": "Quantes vegades es va casar Elizabeth Taylor?",
+      "es": "¿Cuántas veces se casó Elizabeth Taylor?"
+    },
+    "resposta": 8,
+    "unitat": {
+      "ca": "vegades",
+      "es": "veces"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "cinema-tv",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Amb set homes diferents: amb Richard Burton s'hi va casar dues vegades.",
+      "es": "Con siete hombres distintos: con Richard Burton se casó dos veces."
+    },
+    "font": "https://en.wikipedia.org/wiki/Elizabeth_Taylor",
+    "any_referencia": null,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-078",
+    "pregunta": {
+      "ca": "Quants fills va tenir la dona amb més fills de la història, segons el Guinness?",
+      "es": "¿Cuántos hijos tuvo la mujer con más hijos de la historia, según el Guinness?"
+    },
+    "resposta": 69,
+    "unitat": {
+      "ca": "fills",
+      "es": "hijos"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "societat",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Una pagesa russa del segle XVIII, esposa de Feodor Vassilyev: 16 parts de bessons, 7 de trigèmins i 4 de quadrigèmins.",
+      "es": "Una campesina rusa del siglo XVIII, esposa de Feodor Vassilyev: 16 partos de gemelos, 7 de trillizos y 4 de cuatrillizos."
+    },
+    "font": "https://en.wikipedia.org/wiki/Feodor_Vassilyev",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-079",
+    "pregunta": {
+      "ca": "Quantes vegades seguides es pot doblegar per la meitat un full de paper (rècord)?",
+      "es": "¿Cuántas veces seguidas se puede doblar por la mitad una hoja de papel (récord)?"
+    },
+    "resposta": 12,
+    "unitat": {
+      "ca": "vegades",
+      "es": "veces"
+    },
+    "tags": [
+      "internacional",
+      "mitja",
+      "ciencia",
+      "jocs",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Es deia que era impossible passar de 7, fins que Britney Gallivan, una estudiant, ho va aconseguir 12 vegades el 2002 amb un rotlle de paper de 1,2 km.",
+      "es": "Se decía que era imposible pasar de 7, hasta que Britney Gallivan, una estudiante, lo logró 12 veces en 2002 con un rollo de papel de 1,2 km."
+    },
+    "font": "https://en.wikipedia.org/wiki/Britney_Gallivan",
+    "any_referencia": 2002,
+    "confianca": "alta",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-080",
+    "pregunta": {
+      "ca": "Quants preservatius es van repartir a la Vila Olímpica de Rio 2016?",
+      "es": "¿Cuántos preservativos se repartieron en la Villa Olímpica de Río 2016?"
+    },
+    "resposta": 450000,
+    "unitat": {
+      "ca": "preservatius",
+      "es": "preservativos"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "esport",
+      "adults",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Uns 42 per atleta. És el rècord olímpic; a París 2024 se'n van preveure uns 200.000-300.000.",
+      "es": "Unos 42 por atleta. Es el récord olímpico; en París 2024 se previeron unos 200.000-300.000."
+    },
+    "font": "https://en.wikipedia.org/wiki/2016_Summer_Olympics",
+    "any_referencia": 2016,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  },
+  {
+    "id": "int-081",
+    "pregunta": {
+      "ca": "Quants dies pot sobreviure una panerola sense cap?",
+      "es": "¿Cuántos días puede sobrevivir una cucaracha sin cabeza?"
+    },
+    "resposta": 7,
+    "unitat": {
+      "ca": "dies",
+      "es": "días"
+    },
+    "tags": [
+      "internacional",
+      "dificil",
+      "natura",
+      "nens",
+      "divertit"
+    ],
+    "explicacio": {
+      "ca": "Respira pels porus del cos i no perd gaire sang. Al final mor de set perquè no té boca per beure.",
+      "es": "Respira por los poros del cuerpo y no pierde mucha sangre. Al final muere de sed porque no tiene boca para beber."
+    },
+    "font": "https://www.scientificamerican.com/article/fact-or-fiction-cockroach-can-live-without-head/",
+    "any_referencia": null,
+    "confianca": "mitjana",
+    "estat": "pendent"
+  }
+]

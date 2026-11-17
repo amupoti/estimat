@@ -62,4 +62,6 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
 
     testImplementation(libs.junit)
+    // Android's org.json is a stub in local unit tests; use the real implementation.
+    testImplementation(libs.org.json)
 }

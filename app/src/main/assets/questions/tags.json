@@ -1,0 +1,68 @@
+{
+  "_comentari": "Taxonomia de tags. Cada pregunta té exactament 1 tag d'ambit i 1 de dificultat, almenys 1 de tema, i opcionalment tags de public i de to. Els tags són plans (sense prefix) perquè l'app pugui filtrar amb una simple intersecció.",
+  "grups": {
+    "ambit": {
+      "obligatori": true,
+      "multiple": false,
+      "tags": {
+        "catalunya":     { "ca": "Catalunya",     "es": "Cataluña" },
+        "espanya":       { "ca": "Espanya",       "es": "España" },
+        "internacional": { "ca": "Internacional", "es": "Internacional" }
+      }
+    },
+    "dificultat": {
+      "obligatori": true,
+      "multiple": false,
+      "tags": {
+        "facil":   { "ca": "Fàcil",   "es": "Fácil" },
+        "mitja":   { "ca": "Mitjà",   "es": "Media" },
+        "dificil": { "ca": "Difícil", "es": "Difícil" }
+      }
+    },
+    "tema": {
+      "obligatori": true,
+      "multiple": true,
+      "tags": {
+        "geografia":    { "ca": "Geografia",          "es": "Geografía" },
+        "natura":       { "ca": "Natura i animals",   "es": "Naturaleza y animales" },
+        "cos-huma":     { "ca": "Cos humà",           "es": "Cuerpo humano" },
+        "ciencia":      { "ca": "Ciència i espai",    "es": "Ciencia y espacio" },
+        "historia":     { "ca": "Història",           "es": "Historia" },
+        "arquitectura": { "ca": "Arquitectura",       "es": "Arquitectura" },
+        "art":          { "ca": "Art i literatura",   "es": "Arte y literatura" },
+        "musica":       { "ca": "Música",             "es": "Música" },
+        "cinema-tv":    { "ca": "Cinema i TV",        "es": "Cine y TV" },
+        "esport":       { "ca": "Esport",             "es": "Deporte" },
+        "gastronomia":  { "ca": "Menjar i beure",     "es": "Comida y bebida" },
+        "tradicions":   { "ca": "Tradicions i festes","es": "Tradiciones y fiestas" },
+        "transport":    { "ca": "Transport",          "es": "Transporte" },
+        "tecnologia":   { "ca": "Tecnologia",         "es": "Tecnología" },
+        "jocs":         { "ca": "Jocs i joguines",    "es": "Juegos y juguetes" },
+        "societat":     { "ca": "Societat",           "es": "Sociedad" }
+      }
+    },
+    "public": {
+      "obligatori": false,
+      "multiple": false,
+      "_comentari": "Sense tag de public = apta per a adults en general. 'nens' = pensada i adequada per a infants (~8+). 'adults' = només +18 (alcohol, joc, sexe).",
+      "tags": {
+        "nens":   { "ca": "Per a nens",   "es": "Para niños" },
+        "adults": { "ca": "+18",          "es": "+18" }
+      }
+    },
+    "to": {
+      "obligatori": false,
+      "multiple": false,
+      "_comentari": "'divertit' = tema de riure o absurd (pets, caca, rècords de menjar, Guinness estrambòtics). 'sorprenent' = dada seriosa però amb resposta inesperada (la girafa té 7 vèrtebres al coll). Si una pregunta és totes dues coses, guanya 'divertit'.",
+      "tags": {
+        "divertit":   { "ca": "Divertida",   "es": "Divertida" },
+        "sorprenent": { "ca": "Sorprenent",  "es": "Sorprendente" }
+      }
+    }
+  },
+  "criteris_dificultat": {
+    "facil":   "Molta gent coneix la xifra o la pot deduir gairebé exacta. Útil per a nens o per escalfar.",
+    "mitja":   "Quasi ningú la sap exacta, però amb cultura general s'hi arriba a un ordre de magnitud correcte i les respostes queden repartides.",
+    "dificil": "Ningú la sap; cal raonar o intuir i les respostes poden variar en un factor 2-10x. Continua sent estimable (no obscura)."
+  }
+}
