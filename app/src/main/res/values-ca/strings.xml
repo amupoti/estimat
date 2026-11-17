@@ -58,6 +58,25 @@
     <string name="close">Tanca</string>
     <string name="changelog_item">- %1$s</string>
     <string name="changelog_v100_initial_release">Primera versió: preguntes de resposta numèrica en català i castellà, amb filtres i sense repeticions.</string>
+    <string name="session_label">Sessió: %1$s</string>
+    <string name="session_unnamed">Sessió principal</string>
+    <string name="sessions_change">Canvia</string>
+    <string name="sessions_title">Sessions</string>
+    <string name="sessions_description">Cada sessió recorda les preguntes que ja han sortit, i així podeu continuar jugant amb el mateix grup un altre dia sense repeticions.</string>
+    <string name="session_new">Nova sessió</string>
+    <string name="session_create">Crea</string>
+    <string name="session_rename">Canvia el nom</string>
+    <string name="session_name">Nom</string>
+    <string name="session_default_name">Sessió %1$d</string>
+    <string name="session_delete_title">Vols esborrar la sessió?</string>
+    <string name="session_delete_description">S\'esborrarà «%1$s» i la llista de preguntes que hi han sortit.</string>
+    <string name="save">Desa</string>
+    <string name="delete">Esborra</string>
+    <string name="cancel">Cancel·la</string>
+    <plurals name="session_played_count">
+        <item quantity="one">Ha sortit %d pregunta</item>
+        <item quantity="other">Han sortit %d preguntes</item>
+    </plurals>
     <plurals name="remaining_questions">
         <item quantity="one">Queda %d pregunta</item>
         <item quantity="other">Queden %d preguntes</item>

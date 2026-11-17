@@ -216,6 +216,12 @@ private fun EstimatApp(
                             ),
                         )
                     },
+                    sessionActions = SessionActions(
+                        onCreate = viewModel::createSession,
+                        onSelect = viewModel::selectSession,
+                        onRename = viewModel::renameSession,
+                        onDelete = viewModel::deleteSession,
+                    ),
                 )
                 1 -> FiltersScreen(
                     state = state,
