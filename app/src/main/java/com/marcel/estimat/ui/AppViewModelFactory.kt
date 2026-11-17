@@ -1,9 +1,9 @@
-package com.example.appshell.ui
+package com.marcel.estimat.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.appshell.ReminderScheduler
-import com.example.appshell.data.SettingsRepository
+import com.marcel.estimat.ReminderScheduler
+import com.marcel.estimat.data.SettingsRepository
 
 class AppViewModelFactory(
     private val repository: SettingsRepository,

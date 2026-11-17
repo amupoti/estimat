@@ -1,4 +1,4 @@
-package com.example.appshell
+package com.marcel.estimat
 
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

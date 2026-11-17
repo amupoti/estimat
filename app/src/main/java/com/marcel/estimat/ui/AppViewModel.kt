@@ -1,10 +1,10 @@
-package com.example.appshell.ui
+package com.marcel.estimat.ui
 
 import androidx.lifecycle.ViewModel
-import com.example.appshell.ReminderScheduler
-import com.example.appshell.data.SettingsRepository
-import com.example.appshell.model.ReminderSettings
-import com.example.appshell.model.ThemePreference
+import com.marcel.estimat.ReminderScheduler
+import com.marcel.estimat.data.SettingsRepository
+import com.marcel.estimat.model.ReminderSettings
+import com.marcel.estimat.model.ThemePreference
 import java.time.LocalTime
 
 data class AppUiState(

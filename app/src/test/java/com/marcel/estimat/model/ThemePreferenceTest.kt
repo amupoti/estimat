@@ -1,4 +1,4 @@
-package com.example.appshell.model
+package com.marcel.estimat.model
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

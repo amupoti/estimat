@@ -1,8 +1,8 @@
-package com.example.appshell.data
+package com.marcel.estimat.data
 
 import android.content.Context
-import com.example.appshell.model.ReminderSettings
-import com.example.appshell.model.ThemePreference
+import com.marcel.estimat.model.ReminderSettings
+import com.marcel.estimat.model.ThemePreference
 import java.time.LocalTime
 
 class SettingsRepository(context: Context) {

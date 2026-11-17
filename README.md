@@ -1,33 +1,7 @@
-# Android App Template
+# Estimat
 
-A reusable starting point for offline-first Android apps built with Kotlin and
-Jetpack Compose. It already includes:
-
-- A main tab ready for the app's own feature.
-- A settings tab with light, dark, and system themes.
-- Two configurable daily reminder notifications.
-- A changelog dialog.
-- In-app updates from GitHub Releases, plus a workflow that publishes signed
-  APKs when a `v*` tag is pushed.
-- English and Catalan strings.
-
-## Start a new app
-
-Copy this repository (or use it as a GitHub template), then run:
-
-```shell
-scripts/new-app.sh \
-  --package com.yourname.notes \
-  --name "Notes" \
-  --name-ca "Notes" \
-  --repo your-github-user/notes
-```
-
-The script renames the Kotlin package and application id, the app name, the
-Gradle project name, and the GitHub repository used by the update checker
-(`appGithubRepository` in `gradle.properties`). Afterwards, update this README,
-`docs/project-map.md`, the app icon in `app/src/main/res/drawable/app_icon.xml`,
-and the changelog in `SettingsScreen.kt`.
+A trivia game where every answer is a number. Nobody needs to know the exact
+value: the closest guess wins.
 
 ## Requirements
 

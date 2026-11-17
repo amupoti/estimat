@@ -1,4 +1,4 @@
-package com.example.appshell.model
+package com.marcel.estimat.model
 
 enum class ThemePreference {
     LIGHT,

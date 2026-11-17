@@ -1,4 +1,4 @@
-package com.example.appshell
+package com.marcel.estimat
 
 import android.Manifest
 import android.app.NotificationChannel
@@ -16,9 +16,9 @@ import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.example.appshell.data.SettingsRepository
-import com.example.appshell.model.ReminderSettings
-import com.example.appshell.model.delayUntilReminder
+import com.marcel.estimat.data.SettingsRepository
+import com.marcel.estimat.model.ReminderSettings
+import com.marcel.estimat.model.delayUntilReminder
 import java.time.LocalTime
 import java.util.concurrent.TimeUnit
 

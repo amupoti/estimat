@@ -1,4 +1,4 @@
-package com.example.appshell
+package com.marcel.estimat
 
 import android.app.TimePickerDialog
 import android.net.Uri
@@ -38,8 +38,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.appshell.model.ReminderSettings
-import com.example.appshell.model.ThemePreference
+import com.marcel.estimat.model.ReminderSettings
+import com.marcel.estimat.model.ThemePreference
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import kotlinx.coroutines.launch

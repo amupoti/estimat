@@ -2,10 +2,10 @@
 
 ## Purpose
 
-This repository is a reusable template for offline-first Android apps. It
-provides a main tab, settings, daily reminders, and the GitHub Releases
-update/install flow. The template package/application id is
-`com.example.appshell`; `scripts/new-app.sh` renames it for a new app.
+Estimat is an offline-first Android trivia game where every question has a
+numeric answer and the closest guess wins. It was created from the
+`android-app-template` repository. The package/application id is
+`com.marcel.estimat`.
 
 ## Stack
 
@@ -39,20 +39,20 @@ update/install flow. The template package/application id is
 
 ## Main Structure
 
-- `app/src/main/java/com/example/appshell/MainActivity.kt` is the Compose
+- `app/src/main/java/com/marcel/estimat/MainActivity.kt` is the Compose
   entry point, theme setup, navigation shell, and notification permission handoff.
-- `app/src/main/java/com/example/appshell/ui/AppViewModel.kt`
+- `app/src/main/java/com/marcel/estimat/ui/AppViewModel.kt`
   coordinates reminder settings and theme preference state.
-- `app/src/main/java/com/example/appshell/data/SettingsRepository.kt`
+- `app/src/main/java/com/marcel/estimat/data/SettingsRepository.kt`
   stores reminder settings and theme preference in `SharedPreferences`.
-- `app/src/main/java/com/example/appshell/SettingsScreen.kt` contains
+- `app/src/main/java/com/marcel/estimat/SettingsScreen.kt` contains
   appearance, reminders, changelog, and update/install UI.
-- `app/src/main/java/com/example/appshell/ReminderScheduler.kt` schedules
+- `app/src/main/java/com/marcel/estimat/ReminderScheduler.kt` schedules
   two daily reminder notifications with WorkManager.
-- `app/src/main/java/com/example/appshell/AppUpdateChecker.kt` and
+- `app/src/main/java/com/marcel/estimat/AppUpdateChecker.kt` and
   `ApkUpdateInstaller.kt` implement the GitHub Releases update check and APK
   install flow.
-- `app/src/main/java/com/example/appshell/model/` contains reminder and
+- `app/src/main/java/com/marcel/estimat/model/` contains reminder and
   theme preference model code.
 - `app/src/main/res/values/strings.xml` and `app/src/main/res/values-ca/strings.xml`
   hold localized strings.

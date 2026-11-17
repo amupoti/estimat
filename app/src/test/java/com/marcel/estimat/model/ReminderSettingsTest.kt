@@ -1,4 +1,4 @@
-package com.example.appshell.model
+package com.marcel.estimat.model
 
 import java.time.LocalTime
 import java.time.ZoneId

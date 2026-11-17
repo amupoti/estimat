@@ -1,4 +1,4 @@
-package com.example.appshell
+package com.marcel.estimat
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -54,11 +54,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.appshell.data.SettingsRepository
-import com.example.appshell.model.ThemePreference
-import com.example.appshell.ui.AppUiState
-import com.example.appshell.ui.AppViewModel
-import com.example.appshell.ui.AppViewModelFactory
+import com.marcel.estimat.data.SettingsRepository
+import com.marcel.estimat.model.ThemePreference
+import com.marcel.estimat.ui.AppUiState
+import com.marcel.estimat.ui.AppViewModel
+import com.marcel.estimat.ui.AppViewModelFactory
 import java.time.LocalTime
 
 class MainActivity : ComponentActivity() {

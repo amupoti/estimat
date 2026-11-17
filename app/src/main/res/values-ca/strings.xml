@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">La meva app</string>
+    <string name="app_name">Estimat</string>
     <string name="app_subtitle">Una base Android neta</string>
     <string name="navigation_home">Inici</string>
     <string name="navigation_settings">Opcions</string>

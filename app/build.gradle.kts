@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.appshell"
+    namespace = "com.marcel.estimat"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.appshell"
+        applicationId = "com.marcel.estimat"
         minSdk = 26
         targetSdk = 36
         versionCode = System.getenv("RELEASE_VERSION_CODE")?.toIntOrNull() ?: 1

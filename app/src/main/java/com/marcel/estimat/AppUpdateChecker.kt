@@ -1,4 +1,4 @@
-package com.example.appshell
+package com.marcel.estimat
 
 import java.net.HttpURLConnection
 import java.net.URL
