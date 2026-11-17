@@ -57,6 +57,7 @@
     <string name="view_changelog">Ver el registro de cambios</string>
     <string name="close">Cerrar</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v111_no_answer_spoiler">Ya no se ve de golpe la respuesta de la siguiente pregunta al pasar de pregunta con la respuesta abierta.</string>
     <string name="changelog_v110_sessions">Sesiones de juego: cada grupo guarda las preguntas que ya han salido, así podéis jugar varios días sin repeticiones.</string>
     <string name="changelog_v110_more_questions">Muchas más preguntas y un botón para jugar solo con preguntas divertidas.</string>
     <string name="changelog_v100_initial_release">Primera versión: preguntas de respuesta numérica en catalán y castellano, con filtros y sin repeticiones.</string>

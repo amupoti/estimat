@@ -30,6 +30,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.key
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalUriHandler
@@ -91,15 +92,19 @@ private fun QuestionContent(
         bank == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             CircularProgressIndicator()
         }
-        state.current != null -> QuestionCard(
-            question = state.current,
-            bank = bank,
-            language = state.language,
-            answerRevealed = state.answerRevealed,
-            remainingCount = state.remainingCount,
-            onRevealAnswer = onRevealAnswer,
-            onNextQuestion = onDrawQuestion,
-        )
+        // Keyed by question so the answer of the next question never shows while
+        // the previous answer box animates closed.
+        state.current != null -> key(state.current.id) {
+            QuestionCard(
+                question = state.current,
+                bank = bank,
+                language = state.language,
+                answerRevealed = state.answerRevealed,
+                remainingCount = state.remainingCount,
+                onRevealAnswer = onRevealAnswer,
+                onNextQuestion = onDrawQuestion,
+            )
+        }
         state.available.isEmpty() -> MessageCard(
             title = stringResource(R.string.no_matching_questions),
             description = stringResource(R.string.no_matching_questions_hint),
