@@ -57,6 +57,8 @@
     <string name="view_changelog">View changelog</string>
     <string name="close">Close</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v110_sessions">Game sessions: each group keeps its own played questions, so you can play over several days without repeats.</string>
+    <string name="changelog_v110_more_questions">Many more questions, and an “only funny questions” chip on the question tab.</string>
     <string name="changelog_v100_initial_release">First version: numeric trivia questions in Catalan and Spanish, with filters and no repeats.</string>
     <string name="session_label">Session: %1$s</string>
     <string name="session_unnamed">Main session</string>
