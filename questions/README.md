@@ -25,7 +25,7 @@ Les dades són dins de l'app, perquè s'empaqueten a l'APK:
 
 | Camp | Notes |
 |---|---|
-| `id` | `cat-NNN`, `esp-NNN` o `int-NNN`. No es reutilitzen mai, encara que la pregunta s'esborri. |
+| `id` | `cat-NNN`, `esp-NNN`, `eur-NNN` o `int-NNN`. No es reutilitzen mai, encara que la pregunta s'esborri. Les preguntes europees antigues conserven l'id `int-NNN`. |
 | `resposta` | Sempre un número (enter o decimal). Si la xifra és gran, és millor posar-la en milions a la unitat (`55` + "milions de passatgers") que escriure `55000000`. |
 | `unitat` | Pot ser `""` quan la pregunta ja diu la unitat ("Quin número de papa…"). |
 | `explicacio` | Opcional (`null`). És la curiositat que es mostra en revelar la resposta. |
@@ -36,7 +36,7 @@ Les dades són dins de l'app, perquè s'empaqueten a l'APK:
 ## Tags
 
 Cada pregunta té:
-- **1 àmbit**: `catalunya`, `espanya`, `internacional`
+- **1 àmbit**: `catalunya`, `espanya`, `europa`, `internacional` (a l'app es mostra com a "Món")
 - **1 dificultat**: `facil`, `mitja`, `dificil`
 - **1 tema o més**: `geografia`, `natura`, `cos-huma`, `ciencia`, `historia`, `arquitectura`, `art`, `musica`, `cinema-tv`, `esport`, `gastronomia`, `tradicions`, `transport`, `tecnologia`, `jocs`, `societat`
 - **públic (opcional)**: `nens` (pensada per a infants) o `adults` (+18). Sense cap tag de públic, la pregunta és per a adults en general.
@@ -67,13 +67,13 @@ Depèn de **com de probable és saber la xifra exacta** i de **com de fàcil és
 
 ## Estat actual
 
-458 preguntes (96 de Catalunya, 109 d'Espanya i 253 internacionals), repartides de manera gairebé uniforme pels 16 temes: cada tema té entre 22 i 31 preguntes com a tema principal (el primer tag de tema). Hi ha 70 preguntes `facil`, 245 `mitja` i 143 `dificil`; 67 són `divertit` i 87 són per a `nens`.
+685 preguntes: 112 de Catalunya, 141 d'Espanya, 123 d'Europa i 309 de la resta del món. Hi ha 91 preguntes `facil`, 372 `mitja` i 222 `dificil`; 294 són `divertit`, 63 `sorprenent` i 105 són per a `nens`.
 
-26 preguntes estan `verificat`. La resta són `pendent`: s'han escrit a partir de dades conegudes i amb una font, però encara no s'han contrastat una per una. Prioritat de verificació: primer les de `confianca: baixa`, després les de `mitjana`.
+38 preguntes estan `verificat`. La resta són `pendent`: s'han escrit a partir de dades conegudes i amb una font, però encara no s'han contrastat una per una. Prioritat de verificació: primer les de `confianca: baixa`, després les de `mitjana`.
 
 Què es podria millorar:
-- **Àmbit:** més de la meitat són internacionals. Caldrien més preguntes de Catalunya i d'Espanya.
-- **Fàcils:** n'hi ha 70; es podrien afegir més per jugar amb nens.
+- **Catalunya:** és l'àmbit amb menys preguntes divertides, perquè costa trobar-ne amb una xifra fiable. Cal buscar-ne amb font abans d'afegir-les.
+- **Equilibri de temes:** els temes ja no estan tan igualats com abans de la tanda de preguntes divertides (n'hi ha moltes d'`historia`, `natura` i `societat`).
 
 ### Idees divertides pendents de dada
 Encara no hi ha una xifra fiable per a aquestes idees, i per això no són al JSON. No hi posis un número fins que trobis la font.

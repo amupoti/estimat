@@ -7,7 +7,8 @@
       "tags": {
         "catalunya":     { "ca": "Catalunya",     "es": "Cataluña" },
         "espanya":       { "ca": "Espanya",       "es": "España" },
-        "internacional": { "ca": "Internacional", "es": "Internacional" }
+        "europa":        { "ca": "Europa",        "es": "Europa" },
+        "internacional": { "ca": "Món",           "es": "Mundo" }
       }
     },
     "dificultat": {
