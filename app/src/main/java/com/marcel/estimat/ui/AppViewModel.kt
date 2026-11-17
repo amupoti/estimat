@@ -2,7 +2,6 @@ package com.marcel.estimat.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.marcel.estimat.ReminderScheduler
 import com.marcel.estimat.data.QuestionRepository
 import com.marcel.estimat.data.SettingsRepository
 import com.marcel.estimat.model.Question
@@ -10,16 +9,13 @@ import com.marcel.estimat.model.QuestionBank
 import com.marcel.estimat.model.QuestionDeck
 import com.marcel.estimat.model.QuestionFilter
 import com.marcel.estimat.model.QuestionLanguage
-import com.marcel.estimat.model.ReminderSettings
 import com.marcel.estimat.model.ThemePreference
-import java.time.LocalTime
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 data class AppUiState(
-    val reminderSettings: ReminderSettings = ReminderSettings(),
     val themePreference: ThemePreference = ThemePreference.SYSTEM,
     val bank: QuestionBank? = null,
     val loadFailed: Boolean = false,
@@ -38,11 +34,9 @@ data class AppUiState(
 class AppViewModel(
     private val repository: SettingsRepository,
     private val questionRepository: QuestionRepository,
-    private val reminderScheduler: ReminderScheduler,
 ) : ViewModel() {
     private val _uiState = MutableStateFlow(
         AppUiState(
-            reminderSettings = repository.reminderSettings(),
             themePreference = repository.themePreference(),
             language = repository.questionLanguage(),
             filter = repository.questionFilter(),
@@ -52,7 +46,6 @@ class AppViewModel(
     val uiState: StateFlow<AppUiState> = _uiState
 
     init {
-        reminderScheduler.sync(repository.reminderSettings())
         viewModelScope.launch {
             runCatching { questionRepository.load() }
                 .onSuccess { bank -> _uiState.update { it.copy(bank = bank) } }
@@ -101,29 +94,8 @@ class AppViewModel(
         }
     }
 
-    fun setRemindersEnabled(enabled: Boolean) {
-        updateReminderSettings(_uiState.value.reminderSettings.copy(enabled = enabled))
-    }
-
-    fun setReminderTime(index: Int, time: LocalTime) {
-        val current = _uiState.value.reminderSettings
-        updateReminderSettings(
-            if (index == 0) {
-                current.copy(firstTime = time)
-            } else {
-                current.copy(secondTime = time)
-            },
-        )
-    }
-
     fun setThemePreference(themePreference: ThemePreference) {
         repository.saveThemePreference(themePreference)
         _uiState.update { it.copy(themePreference = themePreference) }
-    }
-
-    private fun updateReminderSettings(settings: ReminderSettings) {
-        repository.saveReminderSettings(settings)
-        reminderScheduler.sync(settings)
-        _uiState.update { it.copy(reminderSettings = settings) }
     }
 }

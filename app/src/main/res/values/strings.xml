@@ -37,14 +37,6 @@
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
     <string name="theme_system">System</string>
-    <string name="daily_reminders">Daily reminders</string>
-    <string name="daily_reminders_description">Get two daily reminder notifications.</string>
-    <string name="first_reminder">First reminder</string>
-    <string name="second_reminder">Second reminder</string>
-    <string name="reminder_channel_name">App reminders</string>
-    <string name="reminder_channel_description">Daily app reminders</string>
-    <string name="reminder_notification_title">Reminder</string>
-    <string name="reminder_general_message">Open the app when you have a moment</string>
     <string name="app_updates">App updates</string>
     <string name="current_version">Current version: %1$s</string>
     <string name="check_for_updates">Check for updates</string>

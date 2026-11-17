@@ -1,14 +1,10 @@
 package com.marcel.estimat
 
-import android.Manifest
-import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
-import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
@@ -43,7 +39,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.marcel.estimat.data.QuestionRepository
 import com.marcel.estimat.data.SettingsRepository
@@ -51,14 +46,12 @@ import com.marcel.estimat.model.ThemePreference
 import com.marcel.estimat.ui.AppUiState
 import com.marcel.estimat.ui.AppViewModel
 import com.marcel.estimat.ui.AppViewModelFactory
-import java.time.LocalTime
 
 class MainActivity : ComponentActivity() {
     private val viewModel: AppViewModel by viewModels {
         AppViewModelFactory(
             repository = SettingsRepository(applicationContext),
             questionRepository = QuestionRepository(applicationContext),
-            reminderScheduler = ReminderScheduler(applicationContext),
         )
     }
 
@@ -68,33 +61,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             val state by viewModel.uiState.collectAsStateWithLifecycle()
             AppTheme(themePreference = state.themePreference) {
-                val notificationPermissionLauncher = rememberLauncherForActivityResult(
-                    contract = ActivityResultContracts.RequestPermission(),
-                ) { granted ->
-                    if (granted) {
-                        viewModel.setRemindersEnabled(true)
-                    }
-                }
                 EstimatApp(
                     state = state,
                     viewModel = viewModel,
-                    onRemindersEnabledChange = { enabled ->
-                        if (
-                            !enabled ||
-                            android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.TIRAMISU ||
-                            ContextCompat.checkSelfPermission(
-                                this,
-                                Manifest.permission.POST_NOTIFICATIONS,
-                            ) == PackageManager.PERMISSION_GRANTED
-                        ) {
-                            viewModel.setRemindersEnabled(enabled)
-                        } else {
-                            notificationPermissionLauncher.launch(
-                                Manifest.permission.POST_NOTIFICATIONS,
-                            )
-                        }
-                    },
-                    onReminderTimeChange = viewModel::setReminderTime,
                     onThemePreferenceChange = viewModel::setThemePreference,
                 )
             }
@@ -186,8 +155,6 @@ private fun AppTheme(
 private fun EstimatApp(
     state: AppUiState,
     viewModel: AppViewModel,
-    onRemindersEnabledChange: (Boolean) -> Unit,
-    onReminderTimeChange: (Int, LocalTime) -> Unit,
     onThemePreferenceChange: (ThemePreference) -> Unit,
 ) {
     var selectedView by rememberSaveable { mutableIntStateOf(0) }
@@ -248,11 +215,8 @@ private fun EstimatApp(
                     onFilterChange = viewModel::setQuestionFilter,
                 )
                 else -> SettingsScreen(
-                    settings = state.reminderSettings,
                     themePreference = state.themePreference,
                     verifiedOnly = state.filter.verifiedOnly,
-                    onEnabledChange = onRemindersEnabledChange,
-                    onTimeChange = onReminderTimeChange,
                     onThemePreferenceChange = onThemePreferenceChange,
                     onVerifiedOnlyChange = { verifiedOnly ->
                         viewModel.setQuestionFilter(state.filter.copy(verifiedOnly = verifiedOnly))

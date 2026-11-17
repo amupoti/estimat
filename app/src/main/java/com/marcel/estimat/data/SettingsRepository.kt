@@ -4,28 +4,12 @@ import android.content.Context
 import com.marcel.estimat.model.Audience
 import com.marcel.estimat.model.QuestionFilter
 import com.marcel.estimat.model.QuestionLanguage
-import com.marcel.estimat.model.ReminderSettings
 import com.marcel.estimat.model.ThemePreference
 import java.util.Locale
-import java.time.LocalTime
 
 class SettingsRepository(context: Context) {
     private val preferences =
         context.applicationContext.getSharedPreferences("app_settings", Context.MODE_PRIVATE)
-
-    fun reminderSettings(): ReminderSettings = ReminderSettings(
-        enabled = preferences.getBoolean(REMINDERS_ENABLED_KEY, false),
-        firstTime = storedTime(FIRST_REMINDER_TIME_KEY, ReminderSettings().firstTime),
-        secondTime = storedTime(SECOND_REMINDER_TIME_KEY, ReminderSettings().secondTime),
-    )
-
-    fun saveReminderSettings(settings: ReminderSettings) {
-        preferences.edit()
-            .putBoolean(REMINDERS_ENABLED_KEY, settings.enabled)
-            .putString(FIRST_REMINDER_TIME_KEY, settings.firstTime.toString())
-            .putString(SECOND_REMINDER_TIME_KEY, settings.secondTime.toString())
-            .apply()
-    }
 
     fun themePreference(): ThemePreference =
         ThemePreference.fromStoredValue(preferences.getString(THEME_PREFERENCE_KEY, null))
@@ -73,15 +57,7 @@ class SettingsRepository(context: Context) {
     private fun stringSet(key: String): Set<String> =
         preferences.getStringSet(key, null)?.toSet() ?: emptySet()
 
-    private fun storedTime(key: String, default: LocalTime): LocalTime =
-        preferences.getString(key, null)
-            ?.let { value -> runCatching { LocalTime.parse(value) }.getOrNull() }
-            ?: default
-
     private companion object {
-        const val REMINDERS_ENABLED_KEY = "reminders_enabled"
-        const val FIRST_REMINDER_TIME_KEY = "first_reminder_time"
-        const val SECOND_REMINDER_TIME_KEY = "second_reminder_time"
         const val THEME_PREFERENCE_KEY = "theme_preference"
         const val QUESTION_LANGUAGE_KEY = "question_language"
         const val FILTER_SCOPES_KEY = "filter_scopes"

@@ -4,9 +4,9 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Blue rounded background -->
+    <!-- Teal rounded background (theme primary) -->
     <path
-        android:fillColor="#156CFF"
+        android:fillColor="#006B5F"
         android:pathData="
             M24,4
             L84,4
@@ -19,75 +19,27 @@
             Q4,4 24,4
             Z" />
 
-    <!-- Dumbbell handle -->
+    <!-- Question mark curve -->
     <path
-        android:fillColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
         android:pathData="
-            M35,49
-            L73,49
-            Q75,49 75,51
-            L75,57
-            Q75,59 73,59
-            L35,59
-            Q33,59 33,57
-            L33,51
-            Q33,49 35,49
-            Z" />
+            M37,41
+            C37,29 45,22 54,22
+            C64,22 71,29 71,38
+            C71,47 64,50 59,54
+            C55,57 54,60 54,65" />
 
-    <!-- Left inner plate -->
+    <!-- Question mark dot -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="
-            M22,34
-            Q22,30 26,30
-            L34,30
-            Q38,30 38,34
-            L38,74
-            Q38,78 34,78
-            L26,78
-            Q22,78 22,74
-            Z" />
-
-    <!-- Left outer plate -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="
-            M11,42
-            Q11,38 15,38
-            L19,38
-            Q23,38 23,42
-            L23,66
-            Q23,70 19,70
-            L15,70
-            Q11,70 11,66
-            Z" />
-
-    <!-- Right inner plate -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="
-            M70,34
-            Q70,30 74,30
-            L82,30
-            Q86,30 86,34
-            L86,74
-            Q86,78 82,78
-            L74,78
-            Q70,78 70,74
-            Z" />
-
-    <!-- Right outer plate -->
-    <path
-        android:fillColor="#FFFFFF"
-        android:pathData="
-            M85,42
-            Q85,38 89,38
-            L93,38
-            Q97,38 97,42
-            L97,66
-            Q97,70 93,70
-            L89,70
-            Q85,70 85,66
+            M54,74
+            A8,8 0 1,1 54,90
+            A8,8 0 1,1 54,74
             Z" />
 
 </vector>

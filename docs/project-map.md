@@ -13,7 +13,6 @@ numeric answer and the closest guess wins. It was created from the
 - Kotlin, Jetpack Compose, Material 3
 - Gradle Kotlin DSL with version catalog in `gradle/libs.versions.toml`
 - JDK 17, compile/target SDK 36, min SDK 26
-- AndroidX WorkManager for daily reminders
 - JUnit unit tests under `app/src/test`
 
 ## Build And Test
@@ -49,17 +48,17 @@ numeric answer and the closest guess wins. It was created from the
   the next one.
 - `app/src/main/java/com/marcel/estimat/FiltersScreen.kt` selects question language, audience, and tag filters.
 - `app/src/main/java/com/marcel/estimat/ui/AppViewModel.kt` holds the game state (bank, filters, played
-  questions, current question) plus reminder and theme settings.
+  questions, current question) plus the theme preference.
 - `app/src/main/java/com/marcel/estimat/data/QuestionRepository.kt` loads the bank from assets;
   `data/QuestionParser.kt` parses the JSON.
 - `app/src/main/java/com/marcel/estimat/data/SettingsRepository.kt` stores settings, filters, question
   language, and played question ids in `SharedPreferences`.
 - `app/src/main/java/com/marcel/estimat/model/` contains the question model, `QuestionFilter` (OR inside a
-  tag group, AND across groups), `QuestionDeck` (no repeats), and reminder and
-  theme preference code.
+  tag group, AND across groups), `QuestionDeck` (no repeats), and theme
+  preference code.
 - `app/src/main/java/com/marcel/estimat/SettingsScreen.kt` contains the "only verified questions" switch,
-  appearance, reminders, changelog, and update/install UI.
-- `app/src/main/java/com/marcel/estimat/ReminderScheduler.kt`, `AppUpdateChecker.kt`, and
+  appearance, changelog, and update/install UI.
+- `app/src/main/java/com/marcel/estimat/AppUpdateChecker.kt` and
   `ApkUpdateInstaller.kt` come from the app template.
 - `app/src/main/res/values*/strings.xml` hold English, Catalan, and Spanish
   strings.
@@ -73,8 +72,7 @@ numeric answer and the closest guess wins. It was created from the
   player starts over for the current filters.
 - Filters tab: question language, audience (everyone hides +18, kids shows only
   `nens`, +18 shows all), scope, difficulty, tone, and topics.
-- Settings: only verified questions (off by default), theme, reminders,
-  changelog, and GitHub Releases update/install flow.
+- Settings: only verified questions (off by default), theme, changelog, and GitHub Releases update/install flow.
 - Works fully offline.
 
 ## Notes For Future Changes

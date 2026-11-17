@@ -37,14 +37,6 @@
     <string name="theme_light">Clar</string>
     <string name="theme_dark">Fosc</string>
     <string name="theme_system">Sistema</string>
-    <string name="daily_reminders">Recordatoris diaris</string>
-    <string name="daily_reminders_description">Rep dues notificacions diàries.</string>
-    <string name="first_reminder">Primer recordatori</string>
-    <string name="second_reminder">Segon recordatori</string>
-    <string name="reminder_channel_name">Recordatoris de l\'aplicació</string>
-    <string name="reminder_channel_description">Recordatoris diaris de l\'aplicació</string>
-    <string name="reminder_notification_title">Recordatori</string>
-    <string name="reminder_general_message">Obre l\'aplicació quan tinguis un moment</string>
     <string name="app_updates">Actualitzacions de l\'aplicació</string>
     <string name="current_version">Versió actual: %1$s</string>
     <string name="check_for_updates">Cerca actualitzacions</string>

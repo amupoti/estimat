@@ -37,14 +37,6 @@
     <string name="theme_light">Claro</string>
     <string name="theme_dark">Oscuro</string>
     <string name="theme_system">Sistema</string>
-    <string name="daily_reminders">Recordatorios diarios</string>
-    <string name="daily_reminders_description">Recibe dos notificaciones diarias.</string>
-    <string name="first_reminder">Primer recordatorio</string>
-    <string name="second_reminder">Segundo recordatorio</string>
-    <string name="reminder_channel_name">Recordatorios de la aplicación</string>
-    <string name="reminder_channel_description">Recordatorios diarios de la aplicación</string>
-    <string name="reminder_notification_title">Recordatorio</string>
-    <string name="reminder_general_message">Abre la aplicación cuando tengas un momento</string>
     <string name="app_updates">Actualizaciones de la aplicación</string>
     <string name="current_version">Versión actual: %1$s</string>
     <string name="check_for_updates">Buscar actualizaciones</string>
