@@ -70,6 +70,7 @@
     <string name="view_changelog">Mostra el registre de canvis</string>
     <string name="close">Tanca</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v120_funny_europe">227 preguntes divertides noves de Catalunya, Espanya, Europa i el món, i un nou filtre d\'àmbit Europa.</string>
     <string name="changelog_v111_no_answer_spoiler">Ja no es veu de cop la resposta de la pregunta següent en passar de pregunta amb la resposta oberta.</string>
     <string name="changelog_v110_sessions">Sessions de joc: cada grup guarda les preguntes que ja han sortit, i així podeu jugar diversos dies sense repeticions.</string>
     <string name="changelog_v110_more_questions">Moltes més preguntes i un botó per jugar només amb preguntes divertides.</string>

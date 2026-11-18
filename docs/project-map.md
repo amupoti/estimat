@@ -85,8 +85,8 @@ numeric answer and the closest guess wins. It was created from the
   as soon as they are drawn, until the player starts over for the current
   filters (which only affects the active session).
 - Filters tab: match count (fixed at the top), clear button in the top bar,
-  audience (everyone hides +18, kids shows only
-  `nens`, +18 shows all), scope, difficulty, tone, and topics.
+  audience (everyone hides +18, kids shows only `nens`, +18 shows all), scope
+  (Catalunya, Espanya, Europa, Món), difficulty, tone, and topics.
 - Filters tab also holds "only verified questions" (off by default).
 - Settings: question language, theme, changelog, and GitHub Releases update/install flow.
 - Works fully offline.
