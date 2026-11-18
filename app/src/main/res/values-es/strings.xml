@@ -1,8 +1,22 @@
 <resources>
     <string name="app_name">Estimat</string>
-    <string name="app_subtitle">Gana quien más se acerca</string>
+    <string name="navigation_game">Juego</string>
+    <string name="navigation_sessions">Sesiones</string>
+    <string name="skip_question">Salta la pregunta</string>
+    <string name="game_progress">%1$d/%2$d</string>
     <string name="funny_only">Solo preguntas divertidas</string>
-    <string name="navigation_question">Pregunta</string>
+    <string name="filters_edit">Editar</string>
+    <string name="filters_summary_all">Todos los temas</string>
+    <string name="filters_summary_verified">Verificadas</string>
+    <string name="session_active">En juego</string>
+    <string name="session_play">Jugar con esta sesión</string>
+    <string name="session_reset">Reiniciar preguntas jugadas</string>
+    <string name="session_reset_title">¿Reiniciar la sesión?</string>
+    <string name="session_reset_description">Todas las preguntas volverán a estar disponibles en «%1$s».</string>
+    <string name="session_reset_confirm">Reiniciar</string>
+    <string name="session_last_played">Última partida: %1$s</string>
+    <string name="session_never_played">Todavía no se ha jugado</string>
+    <string name="session_options">Opciones de la sesión</string>
     <string name="navigation_filters">Filtros</string>
     <string name="navigation_settings">Ajustes</string>
     <string name="loading_questions">Cargando las preguntas…</string>
@@ -29,8 +43,7 @@
     <string name="filter_tone">Tono</string>
     <string name="filter_theme">Temas</string>
     <string name="filter_any_hint">Si no eliges ninguna, se incluyen todas.</string>
-    <string name="clear_filters">Quitar los filtros</string>
-    <string name="questions_section">Preguntas</string>
+    <string name="filters_clear">Borrar</string>
     <string name="verified_only">Solo preguntas verificadas</string>
     <string name="verified_only_description">Oculta las preguntas que aún no se han comprobado con la fuente.</string>
     <string name="appearance">Apariencia</string>
@@ -61,7 +74,6 @@
     <string name="changelog_v110_sessions">Sesiones de juego: cada grupo guarda las preguntas que ya han salido, así podéis jugar varios días sin repeticiones.</string>
     <string name="changelog_v110_more_questions">Muchas más preguntas y un botón para jugar solo con preguntas divertidas.</string>
     <string name="changelog_v100_initial_release">Primera versión: preguntas de respuesta numérica en catalán y castellano, con filtros y sin repeticiones.</string>
-    <string name="session_label">Sesión: %1$s</string>
     <string name="session_unnamed">Sesión principal</string>
     <string name="sessions_change">Cambiar</string>
     <string name="sessions_title">Sesiones</string>
@@ -79,10 +91,6 @@
     <plurals name="session_played_count">
         <item quantity="one">Ha salido %d pregunta</item>
         <item quantity="other">Han salido %d preguntas</item>
-    </plurals>
-    <plurals name="remaining_questions">
-        <item quantity="one">Queda %d pregunta</item>
-        <item quantity="other">Quedan %d preguntas</item>
     </plurals>
     <plurals name="questions_ready">
         <item quantity="one">%d pregunta lista para jugar</item>

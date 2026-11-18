@@ -1,8 +1,22 @@
 <resources>
     <string name="app_name">Estimat</string>
-    <string name="app_subtitle">Qui s\'hi acosta més, guanya</string>
+    <string name="navigation_game">Joc</string>
+    <string name="navigation_sessions">Sessions</string>
+    <string name="skip_question">Salta la pregunta</string>
+    <string name="game_progress">%1$d/%2$d</string>
     <string name="funny_only">Només preguntes divertides</string>
-    <string name="navigation_question">Pregunta</string>
+    <string name="filters_edit">Edita</string>
+    <string name="filters_summary_all">Tots els temes</string>
+    <string name="filters_summary_verified">Verificades</string>
+    <string name="session_active">En joc</string>
+    <string name="session_play">Juga amb aquesta sessió</string>
+    <string name="session_reset">Reinicia les preguntes jugades</string>
+    <string name="session_reset_title">Vols reiniciar la sessió?</string>
+    <string name="session_reset_description">Totes les preguntes tornaran a estar disponibles a «%1$s».</string>
+    <string name="session_reset_confirm">Reinicia</string>
+    <string name="session_last_played">Última partida: %1$s</string>
+    <string name="session_never_played">Encara no s\'hi ha jugat</string>
+    <string name="session_options">Opcions de la sessió</string>
     <string name="navigation_filters">Filtres</string>
     <string name="navigation_settings">Opcions</string>
     <string name="loading_questions">Carregant les preguntes…</string>
@@ -29,8 +43,7 @@
     <string name="filter_tone">To</string>
     <string name="filter_theme">Temes</string>
     <string name="filter_any_hint">Si no en tries cap, s\'inclouen totes.</string>
-    <string name="clear_filters">Treu els filtres</string>
-    <string name="questions_section">Preguntes</string>
+    <string name="filters_clear">Esborra</string>
     <string name="verified_only">Només preguntes verificades</string>
     <string name="verified_only_description">Amaga les preguntes que encara no s\'han comprovat amb la font.</string>
     <string name="appearance">Aparença</string>
@@ -61,7 +74,6 @@
     <string name="changelog_v110_sessions">Sessions de joc: cada grup guarda les preguntes que ja han sortit, i així podeu jugar diversos dies sense repeticions.</string>
     <string name="changelog_v110_more_questions">Moltes més preguntes i un botó per jugar només amb preguntes divertides.</string>
     <string name="changelog_v100_initial_release">Primera versió: preguntes de resposta numèrica en català i castellà, amb filtres i sense repeticions.</string>
-    <string name="session_label">Sessió: %1$s</string>
     <string name="session_unnamed">Sessió principal</string>
     <string name="sessions_change">Canvia</string>
     <string name="sessions_title">Sessions</string>
@@ -79,10 +91,6 @@
     <plurals name="session_played_count">
         <item quantity="one">Ha sortit %d pregunta</item>
         <item quantity="other">Han sortit %d preguntes</item>
-    </plurals>
-    <plurals name="remaining_questions">
-        <item quantity="one">Queda %d pregunta</item>
-        <item quantity="other">Queden %d preguntes</item>
     </plurals>
     <plurals name="questions_ready">
         <item quantity="one">%d pregunta a punt per jugar</item>

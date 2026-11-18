@@ -69,7 +69,14 @@ class AppViewModel(
         val state = _uiState.value
         val question = QuestionDeck.next(state.available, state.playedIds)
         if (question != null) {
-            saveSessions(gameSessions.updateActive { it.copy(playedIds = it.playedIds + question.id) })
+            saveSessions(
+                gameSessions.updateActive {
+                    it.copy(
+                        playedIds = it.playedIds + question.id,
+                        lastPlayedAt = System.currentTimeMillis(),
+                    )
+                },
+            )
         }
         _uiState.update { it.copy(current = question, answerRevealed = false) }
     }
@@ -97,6 +104,11 @@ class AppViewModel(
 
     fun renameSession(id: String, name: String) {
         saveSessions(gameSessions.rename(id, name))
+    }
+
+    /** Makes every question available again in the session [id]. */
+    fun resetSession(id: String) {
+        saveSessions(gameSessions.clearPlayed(id), clearQuestion = id == gameSessions.activeId)
     }
 
     /** Deletes a session; deleting the last one leaves a fresh, empty session. */

@@ -7,14 +7,13 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.rounded.List
-import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -22,19 +21,25 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Shapes
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.Typography
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.graphics.vector.rememberVectorPainter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -43,6 +48,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.marcel.estimat.data.QuestionRepository
 import com.marcel.estimat.data.SettingsRepository
 import com.marcel.estimat.model.QuestionBank
+import com.marcel.estimat.model.QuestionFilter
 import com.marcel.estimat.model.ThemePreference
 import com.marcel.estimat.ui.AppUiState
 import com.marcel.estimat.ui.AppViewModel
@@ -152,89 +158,117 @@ private fun AppTheme(
     )
 }
 
+
+private enum class Destination(val titleRes: Int, val labelRes: Int) {
+    GAME(R.string.app_name, R.string.navigation_game),
+    SESSIONS(R.string.navigation_sessions, R.string.navigation_sessions),
+    FILTERS(R.string.navigation_filters, R.string.navigation_filters),
+    SETTINGS(R.string.navigation_settings, R.string.navigation_settings),
+}
+
+@Composable
+private fun Destination.icon(): Painter = when (this) {
+    Destination.GAME -> painterResource(R.drawable.ic_nav_question)
+    Destination.SESSIONS -> painterResource(R.drawable.ic_nav_sessions)
+    Destination.FILTERS -> painterResource(R.drawable.ic_nav_filters)
+    Destination.SETTINGS -> rememberVectorPainter(Icons.Rounded.Settings)
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun EstimatApp(
     state: AppUiState,
     viewModel: AppViewModel,
     onThemePreferenceChange: (ThemePreference) -> Unit,
 ) {
-    var selectedView by rememberSaveable { mutableIntStateOf(0) }
-    val destinations = listOf(
-        Pair(stringResource(R.string.navigation_question), Icons.Rounded.PlayArrow),
-        Pair(stringResource(R.string.navigation_filters), Icons.AutoMirrored.Rounded.List),
-        Pair(stringResource(R.string.navigation_settings), Icons.Rounded.Settings),
-    )
+    var selected by rememberSaveable { mutableStateOf(Destination.GAME) }
+    // Filters reset to defaults but keep the "only verified" choice.
+    val clearedFilter = QuestionFilter(verifiedOnly = state.filter.verifiedOnly)
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = stringResource(selected.titleRes),
+                        style = MaterialTheme.typography.headlineMedium,
+                    )
+                },
+                actions = {
+                    if (selected == Destination.FILTERS) {
+                        TextButton(
+                            onClick = { viewModel.setQuestionFilter(clearedFilter) },
+                            enabled = state.filter != clearedFilter,
+                        ) {
+                            Text(stringResource(R.string.filters_clear))
+                        }
+                    }
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.background,
+                ),
+            )
+        },
         bottomBar = {
             NavigationBar(
                 containerColor = MaterialTheme.colorScheme.surface,
                 tonalElevation = 2.dp,
             ) {
-                destinations.forEachIndexed { index, destination ->
+                Destination.entries.forEach { destination ->
+                    val label = stringResource(destination.labelRes)
                     NavigationBarItem(
-                        selected = selectedView == index,
-                        onClick = { selectedView = index },
-                        icon = {
-                            Icon(
-                                imageVector = destination.second,
-                                contentDescription = destination.first,
-                            )
-                        },
-                        label = { Text(destination.first) },
+                        selected = selected == destination,
+                        onClick = { selected = destination },
+                        icon = { Icon(painter = destination.icon(), contentDescription = label) },
+                        label = { Text(label) },
                     )
                 }
             }
         },
     ) { padding ->
-        Column(
+        Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding),
         ) {
-            Column(modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp)) {
-                Text(
-                    text = stringResource(R.string.app_name),
-                    style = MaterialTheme.typography.headlineLarge,
-                )
-                Text(
-                    text = stringResource(R.string.app_subtitle),
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = MaterialTheme.colorScheme.secondary,
-                )
-            }
-            when (selectedView) {
-                0 -> QuestionScreen(
+            when (selected) {
+                Destination.GAME -> QuestionScreen(
                     state = state,
                     onDrawQuestion = viewModel::nextQuestion,
                     onRevealAnswer = viewModel::revealAnswer,
                     onRestartDeck = viewModel::restartDeck,
+                    onOpenSessions = { selected = Destination.SESSIONS },
+                    onOpenFilters = { selected = Destination.FILTERS },
                     onFunnyOnlyChange = { funnyOnly ->
+                        val tones = state.filter.tones
                         viewModel.setQuestionFilter(
                             state.filter.copy(
-                                tones = if (funnyOnly) setOf(QuestionBank.TAG_FUNNY) else emptySet(),
+                                // Off only drops "funny", so other tone choices survive.
+                                tones = if (funnyOnly) setOf(QuestionBank.TAG_FUNNY) else tones - QuestionBank.TAG_FUNNY,
                             ),
                         )
                     },
-                    sessionActions = SessionActions(
+                )
+                Destination.SESSIONS -> SessionsScreen(
+                    state = state,
+                    actions = SessionActions(
                         onCreate = viewModel::createSession,
                         onSelect = viewModel::selectSession,
                         onRename = viewModel::renameSession,
+                        onReset = viewModel::resetSession,
                         onDelete = viewModel::deleteSession,
                     ),
+                    onPlay = { selected = Destination.GAME },
                 )
-                1 -> FiltersScreen(
+                Destination.FILTERS -> FiltersScreen(
                     state = state,
-                    onLanguageChange = viewModel::setQuestionLanguage,
                     onFilterChange = viewModel::setQuestionFilter,
                 )
-                else -> SettingsScreen(
+                Destination.SETTINGS -> SettingsScreen(
                     themePreference = state.themePreference,
-                    verifiedOnly = state.filter.verifiedOnly,
+                    language = state.language,
                     onThemePreferenceChange = onThemePreferenceChange,
-                    onVerifiedOnlyChange = { verifiedOnly ->
-                        viewModel.setQuestionFilter(state.filter.copy(verifiedOnly = verifiedOnly))
-                    },
+                    onLanguageChange = viewModel::setQuestionLanguage,
                 )
             }
         }

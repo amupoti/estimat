@@ -65,6 +65,7 @@ class SettingsRepository(private val preferences: SharedPreferences) {
                 name = preferences.getString(sessionKey(id, SESSION_NAME), null).orEmpty(),
                 createdAt = preferences.getLong(sessionKey(id, SESSION_CREATED_AT), 0L),
                 playedIds = stringSet(sessionKey(id, SESSION_PLAYED)),
+                lastPlayedAt = preferences.getLong(sessionKey(id, SESSION_LAST_PLAYED_AT), 0L),
             )
         }
         if (sessions.isNotEmpty()) {
@@ -91,11 +92,13 @@ class SettingsRepository(private val preferences: SharedPreferences) {
             editor.remove(sessionKey(id, SESSION_NAME))
                 .remove(sessionKey(id, SESSION_CREATED_AT))
                 .remove(sessionKey(id, SESSION_PLAYED))
+                .remove(sessionKey(id, SESSION_LAST_PLAYED_AT))
         }
         gameSessions.sessions.forEach { session ->
             editor.putString(sessionKey(session.id, SESSION_NAME), session.name)
                 .putLong(sessionKey(session.id, SESSION_CREATED_AT), session.createdAt)
                 .putStringSet(sessionKey(session.id, SESSION_PLAYED), session.playedIds.toSet())
+                .putLong(sessionKey(session.id, SESSION_LAST_PLAYED_AT), session.lastPlayedAt)
         }
         editor.putString(SESSION_IDS_KEY, currentIds.joinToString(SESSION_ID_SEPARATOR))
             .putString(ACTIVE_SESSION_KEY, gameSessions.activeId)
@@ -123,6 +126,7 @@ class SettingsRepository(private val preferences: SharedPreferences) {
         const val SESSION_ID_SEPARATOR = ","
         const val SESSION_NAME = "name"
         const val SESSION_CREATED_AT = "created_at"
+        const val SESSION_LAST_PLAYED_AT = "last_played_at"
         const val SESSION_PLAYED = "played"
     }
 }

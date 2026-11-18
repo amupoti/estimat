@@ -7,13 +7,11 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
@@ -24,7 +22,6 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
-import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -33,20 +30,20 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.marcel.estimat.model.QuestionLanguage
 import com.marcel.estimat.model.ThemePreference
 import kotlinx.coroutines.launch
 
 @Composable
 fun SettingsScreen(
     themePreference: ThemePreference,
-    verifiedOnly: Boolean,
+    language: QuestionLanguage,
     onThemePreferenceChange: (ThemePreference) -> Unit,
-    onVerifiedOnlyChange: (Boolean) -> Unit,
+    onLanguageChange: (QuestionLanguage) -> Unit,
 ) {
     val context = LocalContext.current
     val updateInstaller = remember(context) {
@@ -70,14 +67,8 @@ fun SettingsScreen(
             .fillMaxSize()
             .padding(horizontal = 20.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
-        contentPadding = PaddingValues(bottom = 20.dp),
+        contentPadding = PaddingValues(top = 4.dp, bottom = 20.dp),
     ) {
-        item {
-            Text(
-                text = stringResource(R.string.navigation_settings),
-                style = MaterialTheme.typography.titleLarge,
-            )
-        }
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -87,24 +78,25 @@ fun SettingsScreen(
                 ),
                 elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
             ) {
-                Row(
-                    modifier = Modifier.padding(18.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(
-                            text = stringResource(R.string.verified_only),
-                            style = MaterialTheme.typography.titleMedium,
-                        )
-                        Spacer(Modifier.height(4.dp))
-                        Text(
-                            text = stringResource(R.string.verified_only_description),
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.secondary,
-                        )
+                Column(modifier = Modifier.padding(18.dp)) {
+                    Text(
+                        text = stringResource(R.string.question_language),
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    Spacer(Modifier.height(12.dp))
+                    SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth()) {
+                        QuestionLanguage.entries.forEachIndexed { index, entry ->
+                            SegmentedButton(
+                                selected = language == entry,
+                                onClick = { onLanguageChange(entry) },
+                                shape = SegmentedButtonDefaults.itemShape(
+                                    index = index,
+                                    count = QuestionLanguage.entries.size,
+                                ),
+                                label = { Text(entry.displayName()) },
+                            )
+                        }
                     }
-                    Spacer(Modifier.width(12.dp))
-                    Switch(checked = verifiedOnly, onCheckedChange = onVerifiedOnlyChange)
                 }
             }
         }

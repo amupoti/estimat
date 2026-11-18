@@ -1,23 +1,110 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Teal rounded background (theme primary) -->
-    <path
-        android:fillColor="#006B5F"
-        android:pathData="
-            M24,4
-            L84,4
-            Q104,4 104,24
-            L104,84
-            Q104,104 84,104
-            L24,104
-            Q4,104 4,84
-            L4,24
-            Q4,4 24,4
-            Z" />
+    <group>
+        <!-- Clip everything to the rounded square -->
+        <clip-path
+            android:pathData="
+                M24,4 L84,4 Q104,4 104,24 L104,84 Q104,104 84,104
+                L24,104 Q4,104 4,84 L4,24 Q4,4 24,4 Z" />
+
+        <!-- Teal diagonal gradient background (theme primary) -->
+        <path android:pathData="M0,0 L108,0 L108,108 L0,108 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="4"
+                    android:startY="4"
+                    android:endX="104"
+                    android:endY="104"
+                    android:startColor="#FF00897B"
+                    android:endColor="#FF004D43" />
+            </aapt:attr>
+        </path>
+
+        <!-- Soft light glow behind the question mark -->
+        <path android:pathData="M54,8 A46,46 0 1,1 53.99,8 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="radial"
+                    android:centerX="54"
+                    android:centerY="54"
+                    android:gradientRadius="46"
+                    android:startColor="#33FFFFFF"
+                    android:endColor="#00FFFFFF" />
+            </aapt:attr>
+        </path>
+
+        <!-- Scattered math symbols: the numeric-answer theme -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#FFFFFF"
+            android:strokeAlpha="0.22"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="
+                M14,22 L26,22 M20,16 L20,28
+                M78,17 Q82,13 86,17 T94,17
+                M78,25 Q82,21 86,25 T94,25
+                M12,50 L24,50 L16,66
+                M80,64 L96,48
+                M16,84 L28,96 M28,84 L16,96
+                M77,90 L91,90" />
+
+        <!-- Symbol dots (% and ÷) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:fillAlpha="0.22"
+            android:pathData="
+                M82,47 A3,3 0 1,1 82,53 A3,3 0 1,1 82,47 Z
+                M94,59 A3,3 0 1,1 94,65 A3,3 0 1,1 94,59 Z
+                M84,82 A2.2,2.2 0 1,1 84,86.4 A2.2,2.2 0 1,1 84,82 Z
+                M84,93.6 A2.2,2.2 0 1,1 84,98 A2.2,2.2 0 1,1 84,93.6 Z" />
+
+        <!-- Confetti -->
+        <path
+            android:fillColor="#FFB74D"
+            android:fillAlpha="0.85"
+            android:pathData="
+                M40,9 A3,3 0 1,1 40,15 A3,3 0 1,1 40,9 Z
+                M70,94 A3,3 0 1,1 70,100 A3,3 0 1,1 70,94 Z
+                M96,36 A2.5,2.5 0 1,1 96,41 A2.5,2.5 0 1,1 96,36 Z" />
+        <path
+            android:fillColor="#9EF2E2"
+            android:fillAlpha="0.8"
+            android:pathData="
+                M64,8 L70,10 L68,14 L62,12 Z
+                M9,72 L13,68 L16,71 L12,75 Z
+                M36,96 L42,95 L42.5,99 L36.5,100 Z" />
+    </group>
+
+    <!-- Question mark shadow -->
+    <group
+        android:translateX="2"
+        android:translateY="3">
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#003730"
+            android:strokeAlpha="0.45"
+            android:strokeWidth="12"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:pathData="
+                M37,41
+                C37,29 45,22 54,22
+                C64,22 71,29 71,38
+                C71,47 64,50 59,54
+                C55,57 54,60 54,65" />
+        <path
+            android:fillColor="#003730"
+            android:fillAlpha="0.45"
+            android:pathData="M54,74 A8,8 0 1,1 54,90 A8,8 0 1,1 54,74 Z" />
+    </group>
 
     <!-- Question mark curve -->
     <path

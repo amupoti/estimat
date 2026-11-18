@@ -1,6 +1,19 @@
 package com.marcel.estimat
 
 import android.net.Uri
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.selection.toggleable
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.Switch
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.style.TextOverflow
+import com.marcel.estimat.model.Audience
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -16,16 +29,12 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.Check
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -37,7 +46,6 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.marcel.estimat.model.Question
 import com.marcel.estimat.model.QuestionBank
@@ -51,32 +59,178 @@ fun QuestionScreen(
     onDrawQuestion: () -> Unit,
     onRevealAnswer: () -> Unit,
     onRestartDeck: () -> Unit,
+    onOpenSessions: () -> Unit,
+    onOpenFilters: () -> Unit,
     onFunnyOnlyChange: (Boolean) -> Unit,
-    sessionActions: SessionActions,
 ) {
     val bank = state.bank
+    // Opening the game always shows a question, without an extra "draw" tap.
+    LaunchedEffect(bank != null, state.current == null, state.remainingCount, state.activeSessionId) {
+        if (bank != null && state.current == null && state.remainingCount > 0) onDrawQuestion()
+    }
     Column(modifier = Modifier.fillMaxSize()) {
         if (bank != null) {
-            SessionBar(
+            GameHeader(
                 state = state,
-                actions = sessionActions,
-                modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 8.dp),
-            )
-            val funnyOnly = state.filter.tones == setOf(QuestionBank.TAG_FUNNY)
-            FilterChip(
-                selected = funnyOnly,
-                onClick = { onFunnyOnlyChange(!funnyOnly) },
-                label = { Text(stringResource(R.string.funny_only)) },
-                leadingIcon = if (funnyOnly) {
-                    { Icon(Icons.Rounded.Check, contentDescription = null) }
-                } else {
-                    null
-                },
-                modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 8.dp),
+                bank = bank,
+                onOpenSessions = onOpenSessions,
+                onOpenFilters = onOpenFilters,
+                onFunnyOnlyChange = onFunnyOnlyChange,
+                modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 16.dp),
             )
         }
         QuestionContent(state, bank, onDrawQuestion, onRevealAnswer, onRestartDeck)
     }
+}
+
+/** Who is playing, how far along they are, and which filters are on. */
+@Composable
+private fun GameHeader(
+    state: AppUiState,
+    bank: QuestionBank,
+    onOpenSessions: () -> Unit,
+    onOpenFilters: () -> Unit,
+    onFunnyOnlyChange: (Boolean) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val funnyOnly = state.filter.tones == setOf(QuestionBank.TAG_FUNNY)
+    val total = state.available.size
+    val played = total - state.remainingCount
+    Surface(
+        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+        shape = MaterialTheme.shapes.medium,
+        modifier = modifier.fillMaxWidth(),
+    ) {
+        Column {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable(
+                        onClickLabel = stringResource(R.string.sessions_change),
+                        onClick = onOpenSessions,
+                    )
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+            ) {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        painter = painterResource(R.drawable.ic_nav_sessions),
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp),
+                        tint = MaterialTheme.colorScheme.primary,
+                    )
+                    Spacer(Modifier.width(8.dp))
+                    Text(
+                        text = state.activeSession?.displayName().orEmpty(),
+                        style = MaterialTheme.typography.titleSmall,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f),
+                    )
+                    Text(
+                        text = stringResource(R.string.game_progress, played, total),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.secondary,
+                    )
+                }
+                Spacer(Modifier.height(8.dp))
+                LinearProgressIndicator(
+                    progress = { if (total == 0) 0f else played.toFloat() / total },
+                    modifier = Modifier.fillMaxWidth(),
+                    drawStopIndicator = {},
+                )
+            }
+            HorizontalDivider(color = MaterialTheme.colorScheme.background)
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable(
+                        onClickLabel = stringResource(R.string.filters_edit),
+                        onClick = onOpenFilters,
+                    )
+                    .padding(horizontal = 16.dp, vertical = 10.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Icon(
+                    painter = painterResource(R.drawable.ic_nav_filters),
+                    contentDescription = null,
+                    modifier = Modifier.size(18.dp),
+                    tint = MaterialTheme.colorScheme.secondary,
+                )
+                Spacer(Modifier.width(8.dp))
+                Text(
+                    text = filterSummary(state, bank),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.secondary,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f),
+                )
+                Spacer(Modifier.width(8.dp))
+                Text(
+                    text = stringResource(R.string.filters_edit),
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary,
+                )
+            }
+            HorizontalDivider(color = MaterialTheme.colorScheme.background)
+            // Quick switch between serious and funny rounds, without opening Filters.
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .toggleable(
+                        value = funnyOnly,
+                        role = Role.Switch,
+                        onValueChange = onFunnyOnlyChange,
+                    )
+                    .padding(start = 16.dp, end = 12.dp, top = 4.dp, bottom = 4.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(
+                    text = "😄",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                Spacer(Modifier.width(8.dp))
+                Text(
+                    text = stringResource(R.string.funny_only),
+                    style = MaterialTheme.typography.bodyMedium,
+                    modifier = Modifier.weight(1f),
+                )
+                Switch(checked = funnyOnly, onCheckedChange = null)
+            }
+        }
+    }
+}
+
+@Composable
+private fun filterSummary(state: AppUiState, bank: QuestionBank): String {
+    val filter = state.filter
+    val tagLabels = listOf(
+        QuestionBank.GROUP_SCOPE to filter.scopes,
+        QuestionBank.GROUP_DIFFICULTY to filter.difficulties,
+        QuestionBank.GROUP_TONE to filter.tones,
+        QuestionBank.GROUP_THEME to filter.themes,
+    ).flatMap { (groupId, selected) ->
+        bank.group(groupId)?.tags.orEmpty().filter { it.id in selected }.map { it.label[state.language] }
+    }
+    val parts = buildList {
+        add(state.language.displayName())
+        if (filter.audience != Audience.GENERAL) add(stringResource(filter.audience.labelRes()))
+        if (tagLabels.isEmpty()) add(stringResource(R.string.filters_summary_all)) else addAll(tagLabels)
+        if (filter.verifiedOnly) add(stringResource(R.string.filters_summary_verified))
+    }
+    return parts.joinToString(" · ")
+}
+
+/** Language names are shown in their own language. */
+fun QuestionLanguage.displayName(): String = when (this) {
+    QuestionLanguage.CA -> "Català"
+    QuestionLanguage.ES -> "Castellano"
+}
+
+fun Audience.labelRes(): Int = when (this) {
+    Audience.GENERAL -> R.string.audience_general
+    Audience.KIDS -> R.string.audience_kids
+    Audience.ADULTS -> R.string.audience_adults
 }
 
 @Composable
@@ -100,7 +254,6 @@ private fun QuestionContent(
                 bank = bank,
                 language = state.language,
                 answerRevealed = state.answerRevealed,
-                remainingCount = state.remainingCount,
                 onRevealAnswer = onRevealAnswer,
                 onNextQuestion = onDrawQuestion,
             )
@@ -134,7 +287,6 @@ private fun QuestionCard(
     bank: QuestionBank,
     language: QuestionLanguage,
     answerRevealed: Boolean,
-    remainingCount: Int,
     onRevealAnswer: () -> Unit,
     onNextQuestion: () -> Unit,
 ) {
@@ -228,17 +380,13 @@ private fun QuestionCard(
             Button(onClick = onRevealAnswer, modifier = Modifier.fillMaxWidth().height(56.dp)) {
                 Text(stringResource(R.string.reveal_answer))
             }
-            OutlinedButton(onClick = onNextQuestion, modifier = Modifier.fillMaxWidth()) {
-                Text(stringResource(R.string.next_question))
+            TextButton(
+                onClick = onNextQuestion,
+                modifier = Modifier.align(Alignment.CenterHorizontally),
+            ) {
+                Text(stringResource(R.string.skip_question))
             }
         }
-        Text(
-            text = pluralStringResource(R.plurals.remaining_questions, remainingCount, remainingCount),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.secondary,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth(),
-        )
     }
 }
 

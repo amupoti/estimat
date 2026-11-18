@@ -151,4 +151,40 @@ class GameSessionsTest {
 
         assertEquals(firstPlayed, state.playedIds)
     }
+
+    @Test
+    fun resettingASessionOnlyClearsThatSession() {
+        val firstId = state.activeSessionId
+        drawIds(2)
+        viewModel.createSession("Second")
+        val secondPlayed = drawIds(1)
+
+        viewModel.resetSession(firstId)
+
+        assertEquals(secondPlayed, state.playedIds)
+        assertTrue(state.sessions.single { it.id == firstId }.playedIds.isEmpty())
+        assertEquals(state.current?.id, secondPlayed.single())
+    }
+
+    @Test
+    fun resettingTheActiveSessionClearsTheCurrentQuestion() {
+        drawIds(2)
+
+        viewModel.resetSession(state.activeSessionId)
+
+        assertTrue(state.playedIds.isEmpty())
+        assertNull(state.current)
+    }
+
+    @Test
+    fun drawingAQuestionRemembersWhenTheSessionWasLastPlayed() {
+        assertEquals(0L, state.activeSession?.lastPlayedAt)
+
+        drawIds(1)
+        val lastPlayed = checkNotNull(state.activeSession).lastPlayedAt
+        reopenApp()
+
+        assertTrue(lastPlayed > 0L)
+        assertEquals(lastPlayed, state.activeSession?.lastPlayedAt)
+    }
 }

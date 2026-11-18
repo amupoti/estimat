@@ -12,6 +12,8 @@ data class GameSession(
     val name: String,
     val createdAt: Long,
     val playedIds: Set<String> = emptySet(),
+    /** When a question was last drawn in this session, or 0 if never. */
+    val lastPlayedAt: Long = 0L,
 )
 
 /** All saved sessions, in creation order, plus the one being played. */
@@ -34,6 +36,10 @@ data class GameSessions(
 
     fun rename(id: String, name: String): GameSessions =
         update(id) { it.copy(name = name.trim()) }
+
+    /** Makes every question available again in the session [id]. */
+    fun clearPlayed(id: String): GameSessions =
+        update(id) { it.copy(playedIds = emptySet()) }
 
     fun updateActive(transform: (GameSession) -> GameSession): GameSessions =
         update(activeId, transform)
