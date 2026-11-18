@@ -70,6 +70,9 @@
     <string name="view_changelog">Ver el registro de cambios</string>
     <string name="close">Cerrar</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v130_layout">La app se organiza en pestañas de Juego, Sesiones, Filtros y Ajustes. La pantalla de juego solo muestra la pregunta, con la sesión, el progreso y el interruptor «solo divertidas» arriba.</string>
+    <string name="changelog_v130_sessions">Las sesiones tienen pestaña propia: ves cuándo se jugó cada una y puedes reiniciar sus preguntas jugadas.</string>
+    <string name="changelog_v130_icon">Nuevo icono de la app.</string>
     <string name="changelog_v120_funny_europe">227 preguntas divertidas nuevas de Cataluña, España, Europa y el mundo, y un nuevo filtro de ámbito Europa.</string>
     <string name="changelog_v111_no_answer_spoiler">Ya no se ve de golpe la respuesta de la siguiente pregunta al pasar de pregunta con la respuesta abierta.</string>
     <string name="changelog_v110_sessions">Sesiones de juego: cada grupo guarda las preguntas que ya han salido, así podéis jugar varios días sin repeticiones.</string>

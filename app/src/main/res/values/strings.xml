@@ -70,6 +70,9 @@
     <string name="view_changelog">View changelog</string>
     <string name="close">Close</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v130_layout">The app is reorganised into Play, Sessions, Filters and Settings tabs. The game screen now shows just the question, with the session, progress and an “only funny” switch on top.</string>
+    <string name="changelog_v130_sessions">Sessions have their own tab: see when each one was last played and reset its played questions.</string>
+    <string name="changelog_v130_icon">New app icon.</string>
     <string name="changelog_v120_funny_europe">227 new funny questions from Catalonia, Spain, Europe and the world, and a new Europe scope filter.</string>
     <string name="changelog_v111_no_answer_spoiler">The next question\'s answer no longer flashes on screen when you move on from a revealed answer.</string>
     <string name="changelog_v110_sessions">Game sessions: each group keeps its own played questions, so you can play over several days without repeats.</string>

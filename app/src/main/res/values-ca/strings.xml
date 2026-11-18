@@ -70,6 +70,9 @@
     <string name="view_changelog">Mostra el registre de canvis</string>
     <string name="close">Tanca</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v130_layout">L\'app s\'organitza en pestanyes de Joc, Sessions, Filtres i Opcions. La pantalla de joc només mostra la pregunta, amb la sessió, el progrés i l\'interruptor «només divertides» a dalt.</string>
+    <string name="changelog_v130_sessions">Les sessions tenen pestanya pròpia: hi veus quan es va jugar cada una i en pots reiniciar les preguntes jugades.</string>
+    <string name="changelog_v130_icon">Icona nova de l\'app.</string>
     <string name="changelog_v120_funny_europe">227 preguntes divertides noves de Catalunya, Espanya, Europa i el món, i un nou filtre d\'àmbit Europa.</string>
     <string name="changelog_v111_no_answer_spoiler">Ja no es veu de cop la resposta de la pregunta següent en passar de pregunta amb la resposta oberta.</string>
     <string name="changelog_v110_sessions">Sessions de joc: cada grup guarda les preguntes que ja han sortit, i així podeu jugar diversos dies sense repeticions.</string>
