@@ -76,6 +76,8 @@
     <string name="view_changelog">Mostra el registre de canvis</string>
     <string name="close">Tanca</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v140_filters">Toca els filtres a la pantalla de joc per veure\'ls tots i canviar el tipus de preguntes sense sortir del joc.</string>
+    <string name="changelog_v140_delete">Botó nou «Elimina la pregunta»: després de confirmar-ho, aquella pregunta no tornarà a sortir a cap sessió.</string>
     <string name="changelog_v130_layout">L\'app s\'organitza en pestanyes de Joc, Sessions, Filtres i Opcions. La pantalla de joc només mostra la pregunta, amb la sessió, el progrés i l\'interruptor «només divertides» a dalt.</string>
     <string name="changelog_v130_sessions">Les sessions tenen pestanya pròpia: hi veus quan es va jugar cada una i en pots reiniciar les preguntes jugades.</string>
     <string name="changelog_v130_icon">Icona nova de l\'app.</string>

@@ -76,6 +76,8 @@
     <string name="view_changelog">Ver el registro de cambios</string>
     <string name="close">Cerrar</string>
     <string name="changelog_item">- %1$s</string>
+    <string name="changelog_v140_filters">Toca los filtros en la pantalla de juego para verlos todos y cambiar el tipo de preguntas sin salir del juego.</string>
+    <string name="changelog_v140_delete">Nuevo botón «Eliminar la pregunta»: tras confirmarlo, esa pregunta no volverá a salir en ninguna sesión.</string>
     <string name="changelog_v130_layout">La app se organiza en pestañas de Juego, Sesiones, Filtros y Ajustes. La pantalla de juego solo muestra la pregunta, con la sesión, el progreso y el interruptor «solo divertidas» arriba.</string>
     <string name="changelog_v130_sessions">Las sesiones tienen pestaña propia: ves cuándo se jugó cada una y puedes reiniciar sus preguntas jugadas.</string>
     <string name="changelog_v130_icon">Nuevo icono de la app.</string>
