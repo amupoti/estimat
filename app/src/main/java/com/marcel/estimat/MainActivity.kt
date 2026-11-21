@@ -239,6 +239,8 @@ private fun EstimatApp(
                     onRestartDeck = viewModel::restartDeck,
                     onOpenSessions = { selected = Destination.SESSIONS },
                     onOpenFilters = { selected = Destination.FILTERS },
+                    onDeleteQuestion = viewModel::deleteQuestion,
+                    onFilterChange = viewModel::setQuestionFilter,
                     onFunnyOnlyChange = { funnyOnly ->
                         val tones = state.filter.tones
                         viewModel.setQuestionFilter(

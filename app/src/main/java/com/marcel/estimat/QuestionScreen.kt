@@ -1,6 +1,14 @@
 package com.marcel.estimat
 
 import android.net.Uri
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import com.marcel.estimat.model.QuestionFilter
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.layout.Row
@@ -29,6 +37,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -62,13 +71,16 @@ fun QuestionScreen(
     onOpenSessions: () -> Unit,
     onOpenFilters: () -> Unit,
     onFunnyOnlyChange: (Boolean) -> Unit,
+    onFilterChange: (QuestionFilter) -> Unit,
+    onDeleteQuestion: (String) -> Unit,
 ) {
     val bank = state.bank
     // Opening the game always shows a question, without an extra "draw" tap.
     LaunchedEffect(bank != null, state.current == null, state.remainingCount, state.activeSessionId) {
         if (bank != null && state.current == null && state.remainingCount > 0) onDrawQuestion()
     }
-    Column(modifier = Modifier.fillMaxSize()) {
+    // One scroll for the whole tab, so the open filter panel never squeezes the question.
+    Column(modifier = Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
         if (bank != null) {
             GameHeader(
                 state = state,
@@ -76,10 +88,11 @@ fun QuestionScreen(
                 onOpenSessions = onOpenSessions,
                 onOpenFilters = onOpenFilters,
                 onFunnyOnlyChange = onFunnyOnlyChange,
+                onFilterChange = onFilterChange,
                 modifier = Modifier.padding(horizontal = 20.dp).padding(bottom = 16.dp),
             )
         }
-        QuestionContent(state, bank, onDrawQuestion, onRevealAnswer, onRestartDeck)
+        QuestionContent(state, bank, onDrawQuestion, onRevealAnswer, onRestartDeck, onDeleteQuestion)
     }
 }
 
@@ -91,8 +104,10 @@ private fun GameHeader(
     onOpenSessions: () -> Unit,
     onOpenFilters: () -> Unit,
     onFunnyOnlyChange: (Boolean) -> Unit,
+    onFilterChange: (QuestionFilter) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    var filtersExpanded by rememberSaveable { mutableStateOf(false) }
     val funnyOnly = state.filter.tones == setOf(QuestionBank.TAG_FUNNY)
     val total = state.available.size
     val played = total - state.remainingCount
@@ -144,8 +159,10 @@ private fun GameHeader(
                 modifier = Modifier
                     .fillMaxWidth()
                     .clickable(
-                        onClickLabel = stringResource(R.string.filters_edit),
-                        onClick = onOpenFilters,
+                        onClickLabel = stringResource(
+                            if (filtersExpanded) R.string.filters_hide else R.string.filters_show,
+                        ),
+                        onClick = { filtersExpanded = !filtersExpanded },
                     )
                     .padding(horizontal = 16.dp, vertical = 10.dp),
                 verticalAlignment = Alignment.CenterVertically,
@@ -166,11 +183,26 @@ private fun GameHeader(
                     modifier = Modifier.weight(1f),
                 )
                 Spacer(Modifier.width(8.dp))
-                Text(
-                    text = stringResource(R.string.filters_edit),
-                    style = MaterialTheme.typography.labelLarge,
-                    color = MaterialTheme.colorScheme.primary,
+                Icon(
+                    imageVector = if (filtersExpanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.primary,
                 )
+            }
+            // All filters inline, so the group can switch question types between rounds.
+            AnimatedVisibility(visible = filtersExpanded) {
+                Column(
+                    modifier = Modifier
+                        .padding(bottom = 12.dp),
+                ) {
+                    QuickFilters(state = state, onFilterChange = onFilterChange)
+                    TextButton(
+                        onClick = onOpenFilters,
+                        modifier = Modifier.padding(horizontal = 4.dp),
+                    ) {
+                        Text(stringResource(R.string.filters_open_tab))
+                    }
+                }
             }
             HorizontalDivider(color = MaterialTheme.colorScheme.background)
             // Quick switch between serious and funny rounds, without opening Filters.
@@ -240,10 +272,11 @@ private fun QuestionContent(
     onDrawQuestion: () -> Unit,
     onRevealAnswer: () -> Unit,
     onRestartDeck: () -> Unit,
+    onDeleteQuestion: (String) -> Unit,
 ) {
     when {
         state.loadFailed -> MessageCard(title = stringResource(R.string.questions_load_failed))
-        bank == null -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        bank == null -> Box(Modifier.fillMaxWidth().padding(top = 48.dp), contentAlignment = Alignment.Center) {
             CircularProgressIndicator()
         }
         // Keyed by question so the answer of the next question never shows while
@@ -256,6 +289,7 @@ private fun QuestionContent(
                 answerRevealed = state.answerRevealed,
                 onRevealAnswer = onRevealAnswer,
                 onNextQuestion = onDrawQuestion,
+                onDeleteQuestion = { onDeleteQuestion(state.current.id) },
             )
         }
         state.available.isEmpty() -> MessageCard(
@@ -289,8 +323,30 @@ private fun QuestionCard(
     answerRevealed: Boolean,
     onRevealAnswer: () -> Unit,
     onNextQuestion: () -> Unit,
+    onDeleteQuestion: () -> Unit,
 ) {
     val uriHandler = LocalUriHandler.current
+    var confirmDelete by rememberSaveable { mutableStateOf(false) }
+    if (confirmDelete) {
+        AlertDialog(
+            onDismissRequest = { confirmDelete = false },
+            title = { Text(stringResource(R.string.delete_question_title)) },
+            text = { Text(stringResource(R.string.delete_question_description)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    confirmDelete = false
+                    onDeleteQuestion()
+                }) {
+                    Text(stringResource(R.string.delete_question_confirm))
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { confirmDelete = false }) {
+                    Text(stringResource(android.R.string.cancel))
+                }
+            },
+        )
+    }
     val labels = listOf(QuestionBank.GROUP_SCOPE, QuestionBank.GROUP_DIFFICULTY)
         .flatMap { groupId -> bank.group(groupId)?.tags.orEmpty() }
         .filter { it.id in question.tags }
@@ -298,8 +354,7 @@ private fun QuestionCard(
 
     Column(
         modifier = Modifier
-            .fillMaxSize()
-            .verticalScroll(rememberScrollState())
+            .fillMaxWidth()
             .padding(horizontal = 20.dp)
             .padding(bottom = 20.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
@@ -386,6 +441,15 @@ private fun QuestionCard(
             ) {
                 Text(stringResource(R.string.skip_question))
             }
+        }
+        TextButton(
+            onClick = { confirmDelete = true },
+            modifier = Modifier.align(Alignment.CenterHorizontally),
+        ) {
+            Text(
+                text = stringResource(R.string.delete_question),
+                color = MaterialTheme.colorScheme.error,
+            )
         }
     }
 }

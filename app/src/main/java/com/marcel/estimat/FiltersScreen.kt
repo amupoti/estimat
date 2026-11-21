@@ -203,3 +203,93 @@ private fun FilterCard(
         }
     }
 }
+
+/**
+ * Every filter in a compact form, so the Play tab can change question types
+ * between rounds without leaving the game. Each group is one scrollable chip row.
+ */
+@Composable
+fun QuickFilters(
+    state: AppUiState,
+    onFilterChange: (QuestionFilter) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val filter = state.filter
+    val bank = state.bank ?: return
+    Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        QuickFilterRow(title = stringResource(R.string.audience)) {
+            Audience.entries.forEach { audience ->
+                FilterChip(
+                    selected = filter.audience == audience,
+                    onClick = { onFilterChange(filter.copy(audience = audience)) },
+                    label = { Text(stringResource(audience.labelRes())) },
+                )
+            }
+        }
+        listOf(
+            Triple(QuestionBank.GROUP_SCOPE, R.string.filter_scope, filter.scopes),
+            Triple(QuestionBank.GROUP_DIFFICULTY, R.string.filter_difficulty, filter.difficulties),
+            Triple(QuestionBank.GROUP_TONE, R.string.filter_tone, filter.tones),
+            Triple(QuestionBank.GROUP_THEME, R.string.filter_theme, filter.themes),
+        ).forEach { (groupId, titleRes, selected) ->
+            val group = bank.group(groupId) ?: return@forEach
+            QuickFilterRow(title = stringResource(titleRes)) {
+                group.tags.forEach { tag ->
+                    val isSelected = tag.id in selected
+                    FilterChip(
+                        selected = isSelected,
+                        onClick = {
+                            val newSelection = if (isSelected) selected - tag.id else selected + tag.id
+                            onFilterChange(filter.withGroupSelection(groupId, newSelection))
+                        },
+                        label = { Text(tag.label[state.language]) },
+                    )
+                }
+            }
+        }
+        QuickFilterRow(title = null) {
+            FilterChip(
+                selected = filter.verifiedOnly,
+                onClick = { onFilterChange(filter.copy(verifiedOnly = !filter.verifiedOnly)) },
+                label = { Text(stringResource(R.string.verified_only)) },
+            )
+        }
+        Text(
+            text = pluralStringResource(
+                R.plurals.matching_questions,
+                state.available.size,
+                state.available.size,
+            ) + " · " + stringResource(R.string.filter_any_hint),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.secondary,
+            modifier = Modifier.padding(horizontal = 16.dp),
+        )
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun QuickFilterRow(
+    title: String?,
+    chips: @Composable () -> Unit,
+) {
+    Column {
+        title?.let {
+            Text(
+                text = it,
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.secondary,
+                modifier = Modifier.padding(horizontal = 16.dp),
+            )
+        }
+        // Chips wrap onto new lines so every option is visible without scrolling sideways.
+        FlowRow(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            chips()
+        }
+    }
+}

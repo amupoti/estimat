@@ -46,8 +46,10 @@ numeric answer and the closest guess wins. It was created from the
   per-tab top app bar, and the four-tab navigation (Play, Sessions, Filters,
   Settings).
 - `app/src/main/java/com/marcel/estimat/QuestionScreen.kt` is the Play tab: a compact header (active
-  session, progress, active-filter summary; each opens its tab), then the
-  question, the answer, and the next one.
+  session, progress, active-filter summary), then the question, the answer,
+  and the next one. Tapping the filter summary expands every filter inline
+  (`QuickFilters` in `FiltersScreen.kt`), so players can switch question types
+  between rounds without leaving the game.
 - `app/src/main/java/com/marcel/estimat/FiltersScreen.kt` selects audience, tag filters, and "only verified".
 - `app/src/main/java/com/marcel/estimat/ui/AppViewModel.kt` holds the game state (bank, filters, played
   questions, current question) plus the theme preference.
@@ -87,6 +89,10 @@ numeric answer and the closest guess wins. It was created from the
 - Filters tab: match count (fixed at the top), clear button in the top bar,
   audience (everyone hides +18, kids shows only `nens`, +18 shows all), scope
   (Catalunya, Espanya, Europa, Món), difficulty, tone, and topics.
+- Delete question: a button under each question asks for confirmation, then
+  hides that question on this device in every session (ids stored in
+  `SettingsRepository` as `deleted_questions`; the bundled bank is untouched)
+  and draws the next one.
 - Filters tab also holds "only verified questions" (off by default).
 - Settings: question language, theme, changelog, and GitHub Releases update/install flow.
 - Works fully offline.

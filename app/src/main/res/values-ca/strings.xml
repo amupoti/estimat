@@ -4,8 +4,14 @@
     <string name="navigation_sessions">Sessions</string>
     <string name="skip_question">Salta la pregunta</string>
     <string name="game_progress">%1$d/%2$d</string>
+    <string name="delete_question">Elimina la pregunta</string>
+    <string name="delete_question_title">Vols eliminar aquesta pregunta?</string>
+    <string name="delete_question_description">No tornarà a sortir a cap sessió. No es pot desfer.</string>
+    <string name="delete_question_confirm">Elimina</string>
     <string name="funny_only">Només preguntes divertides</string>
-    <string name="filters_edit">Edita</string>
+    <string name="filters_show">Mostra els filtres</string>
+    <string name="filters_hide">Amaga els filtres</string>
+    <string name="filters_open_tab">Totes les opcions de filtre</string>
     <string name="filters_summary_all">Tots els temes</string>
     <string name="filters_summary_verified">Verificades</string>
     <string name="session_active">En joc</string>

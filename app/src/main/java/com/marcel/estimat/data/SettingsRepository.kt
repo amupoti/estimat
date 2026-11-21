@@ -50,6 +50,13 @@ class SettingsRepository(private val preferences: SharedPreferences) {
             .apply()
     }
 
+    /** Questions the players deleted: never shown again in any session. */
+    fun deletedQuestions(): Set<String> = stringSet(DELETED_QUESTIONS_KEY)
+
+    fun saveDeletedQuestions(ids: Set<String>) {
+        preferences.edit().putStringSet(DELETED_QUESTIONS_KEY, ids.toSet()).apply()
+    }
+
     /**
      * Loads every saved session. The first time, the questions played before
      * sessions existed are moved into a first session so nothing is lost.
@@ -120,6 +127,7 @@ class SettingsRepository(private val preferences: SharedPreferences) {
         const val FILTER_TONES_KEY = "filter_tones"
         const val FILTER_AUDIENCE_KEY = "filter_audience"
         const val FILTER_VERIFIED_ONLY_KEY = "filter_verified_only"
+        const val DELETED_QUESTIONS_KEY = "deleted_questions"
         const val LEGACY_PLAYED_QUESTIONS_KEY = "played_questions"
         const val SESSION_IDS_KEY = "session_ids"
         const val ACTIVE_SESSION_KEY = "active_session_id"

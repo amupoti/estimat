@@ -26,6 +26,7 @@ data class AppUiState(
     val filter: QuestionFilter = QuestionFilter(),
     val sessions: List<GameSession> = emptyList(),
     val activeSessionId: String = "",
+    val deletedIds: Set<String> = emptySet(),
     val current: Question? = null,
     val answerRevealed: Boolean = false,
 ) {
@@ -34,8 +35,11 @@ data class AppUiState(
     /** Questions already shown in the active session. */
     val playedIds: Set<String> = activeSession?.playedIds.orEmpty()
 
-    /** Questions that match the current filters, played or not. */
-    val available: List<Question> = bank?.let { filter.apply(it.questions) } ?: emptyList()
+    /** Questions that match the current filters, played or not; deleted ones never count. */
+    val available: List<Question> = bank
+        ?.let { filter.apply(it.questions) }
+        ?.filterNot { it.id in deletedIds }
+        ?: emptyList()
 
     val remainingCount: Int = QuestionDeck.remaining(available, playedIds).size
 }
@@ -53,6 +57,7 @@ class AppViewModel(
             filter = repository.questionFilter(),
             sessions = gameSessions.sessions,
             activeSessionId = gameSessions.activeId,
+            deletedIds = repository.deletedQuestions(),
         ),
     )
     val uiState: StateFlow<AppUiState> = _uiState
@@ -79,6 +84,17 @@ class AppViewModel(
             )
         }
         _uiState.update { it.copy(current = question, answerRevealed = false) }
+    }
+
+    /**
+     * Deletes [id] for good on this device: it stops appearing in every session,
+     * but stays in the bundled question bank. The next question is drawn at once.
+     */
+    fun deleteQuestion(id: String) {
+        val deleted = _uiState.value.deletedIds + id
+        repository.saveDeletedQuestions(deleted)
+        _uiState.update { it.copy(deletedIds = deleted) }
+        nextQuestion()
     }
 
     fun revealAnswer() {

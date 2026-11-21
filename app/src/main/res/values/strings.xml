@@ -4,8 +4,14 @@
     <string name="navigation_sessions">Sessions</string>
     <string name="skip_question">Skip question</string>
     <string name="game_progress">%1$d/%2$d</string>
+    <string name="delete_question">Delete question</string>
+    <string name="delete_question_title">Delete this question?</string>
+    <string name="delete_question_description">It won\'t appear again in any session. You can\'t undo this.</string>
+    <string name="delete_question_confirm">Delete</string>
     <string name="funny_only">Only funny questions</string>
-    <string name="filters_edit">Edit</string>
+    <string name="filters_show">Show filters</string>
+    <string name="filters_hide">Hide filters</string>
+    <string name="filters_open_tab">All filter options</string>
     <string name="filters_summary_all">All topics</string>
     <string name="filters_summary_verified">Verified</string>
     <string name="session_active">Playing</string>
